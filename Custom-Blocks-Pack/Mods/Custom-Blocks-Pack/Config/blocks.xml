@@ -19241,6 +19241,110 @@
 		<property name="SortOrder2" value="8016"/>
 	</block>
 	
+	<!-- ELEVATOR SWITCHES -->
+	<block name="cbpElevatorInsidePanelSwitch">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="ActivateSwitch"/>
+			<property name="ActivateSound" value="button4"/>
+			<property name="Powered" value="true"/>
+			<property name="SingleUse" value="true"/>
+			<property name="CustomIcon" value="elevatorInsidePanel"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Doors/elevatorDoor/elevatorInsidePanelPrefab"/>
+			<property name="ModelOffset" value="-.25,0,0.5"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="1,2" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,2" tag="allHarvest"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B317"/>
+			<property name="SortOrder2" value="0003"/>
+			<property name="FilterTags" value="MC_building,SC_doors,SC_electrical"/>
+			<property name="Tags" value="challenge_elec_parts"/>
+		</block>
+		
+		<block name="cbpElevatorOutsideButtonPanelSwitch">
+			<property name="Extends" value="cbpElevatorInsidePanelSwitch"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="ActivateSwitch"/>
+			<property name="ActivateSound" value="button4"/>
+			<property name="Powered" value="true"/>
+			<property name="SingleUse" value="true"/>
+			<property name="CustomIcon" value="elevatorOutsideButtonPanel"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Doors/elevatorDoor/elevatorOutsideButtonPanelPrefab"/>
+			<property name="ModelOffset" value="0,0,-0.5"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		
+		<block name="cbpElevatorInsidePanelHalfBlockSwitch">
+			<property name="Extends" value="cbpElevatorInsidePanelSwitch"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="ActivateSwitch"/>
+			<property name="ActivateSound" value="button4"/>
+			<property name="Powered" value="true"/>
+			<property name="SingleUse" value="true"/>
+			<property name="CustomIcon" value="elevatorInsidePanelHalfBlock"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CustomIcon" value="elevatorInsidePanel"/>
+			<property name="ModelOffset" value="-.25,0,1"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+		
+		<block name="cbpElevatorOutsideButtonPanelHalfBlockSwitch">
+			<property name="Extends" value="cbpElevatorInsidePanelSwitch"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="ActivateSwitch"/>
+			<property name="ActivateSound" value="button4"/>
+			<property name="Powered" value="true"/>
+			<property name="SingleUse" value="true"/>
+			<property name="CustomIcon" value="elevatorOutsideButtonPanelHalfBlock"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CustomIcon" value="elevatorOutsideButtonPanel"/>
+			<property name="Model" value="Entities/Doors/elevatorDoor/elevatorOutsideButtonPanelPrefab"/>
+			<property name="ModelOffset" value="0,0,-1"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		
+		<block name="cbpElevatorOutsideButtonPanelTenthBlockSwitch">
+			<property name="Extends" value="cbpElevatorInsidePanelSwitch"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="ActivateSwitch"/>
+			<property name="ActivateSound" value="button4"/>
+			<property name="Powered" value="true"/>
+			<property name="SingleUse" value="true"/>
+			<property name="CustomIcon" value="elevatorOutsideButtonPanelTenthBlock"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CustomIcon" value="elevatorOutsideButtonPanel"/>
+			<property name="Model" value="Entities/Doors/elevatorDoor/elevatorOutsideButtonPanelPrefab"/>
+			<property name="ModelOffset" value="0,0,-01.4"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+		
+		<block name="cbpElevatorInsidePanelPlateOffestSwitch">
+			<property name="Extends" value="cbpElevatorInsidePanelSwitch"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="ActivateSwitch"/>
+			<property name="ActivateSound" value="button4"/>
+			<property name="Powered" value="true"/>
+			<property name="SingleUse" value="true"/>
+			<property name="CustomIcon" value="elevatorInsidePanelPlateOffest"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CustomIcon" value="elevatorInsidePanel"/>
+			<property name="Model" value="Entities/Doors/elevatorDoor/elevatorInsidePanelPrefab"/>
+			<property name="ModelOffset" value="-.25,-1,.95"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+	
 	<!-- PC and LAPTOP Switches -->
 	<block name="cbpComputerDeskTopPCSwitch">
 		<property name="Extends" value="decoEntityMetalMaster" param1="RepairItems,CustomIcon"/>

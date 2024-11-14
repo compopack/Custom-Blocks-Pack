@@ -1,4 +1,4 @@
-CUSTOM BLOCKS PACK READ-ME -- VERSION A21.2.001.0040
+CUSTOM BLOCKS PACK READ-ME -- VERSION v1.0.001.0055
 
 GOAL:
 
@@ -51,7 +51,5 @@ likely is that an overhaul may change something upon which this modlet depends.
 
 DISTRIBUTION:
 
-Others may choose to distribute this modlet along with other modlets. This is
-intended. It is also a largely manual process, at least until 7D2D begins to
-include more modlet integration features.
+Run alongside POI packs and POI mods etc and you simply tag it as a requirement for users to download.
 

@@ -1706,12 +1706,11 @@
 		<placeholder name="cbpSwitchGunRackLargeHelper">
 		<block name="cbpSwitchGunRackLarge" prob="1"/>
 		</placeholder>
-		<!-- GUN RACKS -->			
-    </append>
+		<!-- GUN RACKS -->    
 	<!-- *************************************************************
             Zombie Tents - Tents that spawn zombies.
     ************************************************************** -->
-	<append xpath="/blockplaceholders/placeholder[@name='cntCampingTentDomeRandomHelper']">
+		<placeholder name="cbpCampingTentDomeRandomHelper">
 			<block name="cbpCampingTentDomeRainCoverRed" prob="0.2"/>
 			<block name="cbpCampingTentDomeRed" prob="0.2"/>
 			<block name="cbpCampingTentDomeDamagedRed" prob="0.6"/>
@@ -1727,8 +1726,8 @@
 			<block name="cbpCampingTentDomeRainCoverArmyGreen" prob="0.2"/>
 			<block name="cbpCampingTentDomeArmyGreen" prob="0.2"/>
 			<block name="cbpCampingTentDomeDamagedArmyGreen" prob="0.6"/>
-		</append>
-		<append xpath="/blockplaceholders/placeholder[@name='cntCampingTentAngularRandomHelper']">
+		</placeholder>
+		<placeholder name="cbpCampingTentAngularRandomHelper">
 			<block name="cbpCampingTentAngularRainCoverRed" prob="0.2"/>
 			<block name="cbpCampingTentAngularRed" prob="0.2"/>
 			<block name="cbpCampingTentAngularDamagedRed" prob="0.6"/>
@@ -1744,5 +1743,6 @@
 			<block name="cbpCampingTentAngularRainCoverArmyGreen" prob="0.2"/>
 			<block name="cbpCampingTentAngularArmyGreen" prob="0.2"/>
 			<block name="cbpCampingTentAngularDamagedArmyGreen" prob="0.6"/>
+		</placeholder>
 		</append>
 </blockplaceholders>

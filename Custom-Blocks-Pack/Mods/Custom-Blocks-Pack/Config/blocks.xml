@@ -24062,7 +24062,7 @@
 		<block name="cbpCampingTentDomeWhite">
 			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
 			<property name="CustomIcon" value="cntCampingTentDomeWhite"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentDomePrefab"/>
 			<property name="SortOrder2" value="5001"/>
 		</block>
@@ -24070,7 +24070,7 @@
 		<block name="cbpCampingTentDomeDamagedWhite">
 			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
 			<property name="CustomIcon" value="cntCampingTentDomeDamagedWhite"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentDomeDamagedPrefab"/>
 			<property name="SortOrder2" value="5002"/>
 		</block>
@@ -24079,7 +24079,7 @@
 		<block name="cbpCampingTentAngularRainCoverWhite">
 			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
 			<property name="CustomIcon" value="cntCampingTentAngularRainCoverWhite"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentAngularRaincoverPrefab"/>
 			<property name="SortOrder2" value="5003"/>
 		</block>
@@ -24087,7 +24087,7 @@
 		<block name="cbpCampingTentAngularWhite">
 			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
 			<property name="CustomIcon" value="cntCampingTentAngularWhite"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentAngularPrefab"/>
 			<property name="SortOrder2" value="5004"/>
 		</block>
@@ -24095,7 +24095,7 @@
 		<block name="cbpCampingTentAngularDamagedWhite">
 			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
 			<property name="CustomIcon" value="cntCampingTentAngularDamagedWhite"/>
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentAngularDamagedPrefab"/>
 			<property name="SortOrder2" value="5005"/>
 		</block>
@@ -24315,7 +24315,7 @@
 			<property name="TintColor" value="222222"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentDomeDamagedPrefab"/>
 			<property name="SortOrder2" value="5102"/>
-		</block>
+		</block>		
 
 			<!-- *** CAMPING_TENT_ANGULAR_BLACK -->
 		<block name="cbpCampingTentAngularRainCoverBlack">
@@ -24408,8 +24408,30 @@
 			<property name="TintColor" value="4D564B"/>
 			<property name="Model" value="Entities/OutdoorDecor/campingTentAngularDamagedPrefab"/>
 			<property name="SortOrder2" value="5205"/>
+		</block>	
+		
+		<block name="cbpCampingTentDomeRandomHelper">
+			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntCampingTentDomeWhite"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF8080"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="5998"/>
 		</block>
 
+		<block name="cbpCampingTentAngularRandomHelper">
+			<property name="Extends" value="cbpCampingTentDomeRainCoverWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntCampingTentAngularWhite"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF8080"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="5999"/>
+		</block>
+		
 		
 		<!-- ************************************************************************* 
             OVEN TRAP: when put together causes the stove to explode and the player rag dolls

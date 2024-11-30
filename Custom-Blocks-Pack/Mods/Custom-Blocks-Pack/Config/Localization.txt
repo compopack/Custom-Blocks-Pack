@@ -1459,5 +1459,7 @@ cbpElevatorInsidePanelHalfBlockSwitch,blocks,block,,,cbp Elevator Inside Panel H
 cbpElevatorOutsideButtonPanelHalfBlockSwitch,blocks,block,,,cbp Elevator Outside Button Panel Half Block Switch,,
 cbpElevatorOutsideButtonPanelTenthBlockSwitch,blocks,block,,,cbp Elevator Outside Button Panel Tenth Block Switch,,
 cbpElevatorInsidePanelPlateOffestSwitch,blocks,block,,,cbp Elevator Inside Panel Plate Offest Switch,,
+cbpHangingIvy01Climable,blocks,Block,,,cbp Hanging Ivy 01 Climable.,,
+cbpHangingIvy02Climable,blocks,Block,,,cbp Hanging Ivy 02 Climable.,,
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,, 

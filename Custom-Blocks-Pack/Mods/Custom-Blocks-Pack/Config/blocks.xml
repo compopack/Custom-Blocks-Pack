@@ -7688,6 +7688,64 @@
 			<property name="FilterTags" value="MC_building,SC_decor,SC_commercial,A21_NEW"/>
 		</block>
 		
+		<!-- Pink -->
+		<block name="cbpFastFoodBoothPink">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="fastFoodBooth"/>
+			<property name="CustomIconTint" value="7E4A6D"/>
+			<property name="TintColor" value="7E4A6D"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="MwoodMetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/fastFoodBoothPrefab"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="8"/>
+				<property name="resourceScrapIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceWood" count="4" tag="allHarvest,lumberjackHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="2"/>
+			<property name="DestroyFX" value="door_damage_metal,metaldestroy"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B475"/>
+			<property name="SortOrder2" value="0600"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_building,SC_commercial"/>
+		</block>
+
+		<block name="cbpFastFoodBoothEndClosedPink">
+			<property name="Extends" value="fastFoodBooth"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="fastFoodBoothEndClosed"/>
+			<property name="CustomIconTint" value="7E4A6D"/>
+			<property name="TintColor" value="7E4A6D"/>
+			<property name="Model" value="Entities/Furniture/fastFoodBoothEndClosedPrefab"/>
+			<property name="SortOrder2" value="0601"/>
+		</block>
+
+		<block name="cbpFastFoodBoothEndOpenPink">
+			<property name="Extends" value="fastFoodBooth"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="fastFoodBoothEndOpen"/>
+			<property name="CustomIconTint" value="7E4A6D"/>
+			<property name="TintColor" value="7E4A6D"/>
+			<property name="Model" value="Entities/Furniture/fastFoodBoothEndOpenPrefab"/>
+			<property name="SortOrder2" value="0602"/>
+		</block>
+
+		<block name="cbpFastFoodBoothMiddlePink">
+			<property name="Extends" value="fastFoodBooth"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="fastFoodBoothMiddle"/>
+			<property name="CustomIconTint" value="7E4A6D"/>
+			<property name="TintColor" value="7E4A6D"/>
+			<property name="Model" value="Entities/Furniture/fastFoodBoothMiddlePrefab"/>
+			<property name="SortOrder2" value="0603"/>
+		</block>
+		
 		<!-- ************************************************************************* 
             TFP Bundle Storage...
         ************************************************************************** -->

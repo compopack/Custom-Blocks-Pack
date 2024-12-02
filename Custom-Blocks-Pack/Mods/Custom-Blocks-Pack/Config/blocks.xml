@@ -5859,7 +5859,7 @@
 
 		<!-- Brown -->
 		<block name="cbpUmbrellaTableUpBrownCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="766356"/>
 			<property name="TintColor" value="766356"/>
@@ -5872,7 +5872,7 @@
 
 		<!-- Red -->
 		<block name="cbpUmbrellaTableUpRedCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="734B4B"/>
 			<property name="TintColor" value="734B4B"/>
@@ -5885,7 +5885,7 @@
 
 		<!-- Orange -->
 		<block name="cbpUmbrellaTableUpOrangeCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="9C7F6A"/>
 			<property name="TintColor" value="9C7F6A"/>
@@ -5898,7 +5898,7 @@
 
 		<!-- Yellow -->
 		<block name="cbpUmbrellaTableUpYellowCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="868066"/>
 			<property name="TintColor" value="868066"/>
@@ -5911,7 +5911,7 @@
 
 		<!-- Green -->
 		<block name="cbpUmbrellaTableUpGreenCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="6B7D6C"/>
 			<property name="TintColor" value="6B7D6C"/>
@@ -5924,7 +5924,7 @@
 
 		<!-- Blue -->
 		<block name="cbpUmbrellaTableUpBlueCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="6A777D"/>
 			<property name="TintColor" value="6A777D"/>
@@ -5937,7 +5937,7 @@
 
 		<!-- Purple -->
 		<block name="cbpUmbrellaTableUpPurpleCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="6C6875"/>
 			<property name="TintColor" value="6C6875"/>
@@ -5950,7 +5950,7 @@
 
 		<!-- Grey -->
 		<block name="cbpUmbrellaTableUpGreyCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="505050"/>
 			<property name="TintColor" value="505050"/>
@@ -5963,7 +5963,7 @@
 
 		<!-- Black -->
 		<block name="cbpUmbrellaTableUpBlackCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="3A3A3A"/>
 			<property name="TintColor" value="3A3A3A"/>
@@ -5976,7 +5976,7 @@
 
 		<!-- Pink -->
 		<block name="cbpUmbrellaTableUpPinkCorner">
-			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="Extends" value="cbpUmbrellaTableUpWhiteCorner"/>
 			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
 			<property name="CustomIconTint" value="867586"/>
 			<property name="TintColor" value="867586"/>

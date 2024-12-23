@@ -1482,9 +1482,30 @@
 	 <!-- *************************************************************
             Workbench Busted Helper.
      ************************************************************** -->
-		<placeholder name="cbpWorkbenchBustedRandomLootHelper">
-			<block name="cntCollapsedWorkbenchEmpty" prob=".5"/>
-			<block name="cntCollapsedWorkbench" prob="0.5"/>
+		<placeholder name="cbpWorkbenchRandomLootHelper">
+			<block name="cbpWorkbench" prob="0.4"/>
+			<block name="cbpWorkbenchEmpty" prob=".2"/>
+			<block name="cntCollapsedWorkbenchEmpty" prob=".2"/>
+			<block name="cntCollapsedWorkbench" prob="0.2"/>
+		</placeholder>
+		
+		<placeholder name="cbpCementMixerRandomLootHelper">
+			<block name="cbpCementMixer" prob="0.4"/>
+			<block name="cbpCementMixerEmpty" prob=".2"/>
+			<block name="cntCollapsedCementMixer" prob=".2"/>
+			<block name="cntCollapsedWorkbench" prob="0.2"/>
+		</placeholder>
+		
+		<placeholder name="cbpForgeRandomLootHelper">
+			<block name="cbpForge" prob="0.5"/>
+			<block name="cbpForgeEmpty" prob=".3"/>
+			<block name="cntForgeWorkstationBroken" prob=".2"/>			
+		</placeholder>
+		
+		<placeholder name="cbpChemistryStationRandomLootHelper">
+			<block name="cbpChemistryStation" prob="0.5"/>
+			<block name="cbpChemistryStationEmpty" prob=".3"/>
+			<block name="cntCollapsedChemistryStation" prob=".2"/>			
 		</placeholder>
 	 
 		 <!-- *************************************************************

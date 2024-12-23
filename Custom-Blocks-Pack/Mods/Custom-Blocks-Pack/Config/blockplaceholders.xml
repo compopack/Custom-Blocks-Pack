@@ -901,6 +901,33 @@
             <block name="zztongShippingCrateConstructionSuppliesCubeCP" prob=".49"/>
             <block name="cntShippingCrateConstructionSupplies" prob=".01"/>
         </placeholder>
+		
+		<!-- Cardboard Boxes Deco -->
+		<placeholder name="cbpGarageStorageRandomHelper">
+            <block name="cbpGarageStorageDeco" prob=".5"/>
+            <block name="cbpGarageStorageEmpty" prob=".3"/>
+			<block name="cntGarageStorage" prob=".2"/>
+        </placeholder>
+
+        <placeholder name="cbpGarageStorageAirRandomHelper">
+            <block name="air" prob=".5"/>
+            <block name="cbpGarageStorageDeco" prob=".3"/>
+            <block name="cbpGarageStorageEmpty" prob=".1"/>
+			<block name="cntGarageStorage" prob=".1"/>
+        </placeholder>
+		
+		<placeholder name="cbpCardboardBoxRandomHelper">
+            <block name="cbpCardboardBoxDeco" prob=".5"/>
+            <block name="cbpCardboardBoxEmpty" prob=".3"/>
+			<block name="cntCardboardBox" prob=".2"/>
+        </placeholder>
+		
+		<placeholder name="cbpCardboardBoxAirRandomHelper">
+            <block name="air" prob=".5"/>
+            <block name="cbpCardboardBoxDeco" prob=".3"/>
+            <block name="cbpCardboardBoxEmpty" prob=".1"/>
+			<block name="cntCardboardBox" prob=".1"/>
+        </placeholder>
 
         <!-- *************************************************************
             Shopping Carts
@@ -1156,21 +1183,19 @@
 
         <placeholder name="cbpVendingMachineRandomHelper">
             <block name="cntVendingMachine2Broken" prob=".4"/>
-            <block name="cbpVendingMachine2Empty" prob=".2"/>
-            <block name="sodaVendingMachineEnergy" prob=".1"/>
-			<block name="sodaVendingMachine" prob=".1"/>
-            <block name="sodaVendingMachineWaterPrefab" prob=".1"/>
+            <block name="cntVendingMachineEnergyBroken" prob=".1"/>
+			<block name="cntVendingMachineWaterBroken" prob=".1"/>
             <block name="cntVendingMachine2" prob=".1"/>
+            <block name="cntVendingMachineEnergy" prob=".1"/>
         </placeholder>
 
         <placeholder name="cbpVendingMachineRandomHelperAir">
             <block name="air" prob=".3"/>
-			<block name="cntVendingMachine2Broken" prob=".2"/>
-            <block name="cbpVendingMachine2Empty" prob=".1"/>
-            <block name="sodaVendingMachineEnergy" prob=".1"/>
-			<block name="sodaVendingMachine" prob=".1"/>
-            <block name="sodaVendingMachineWaterPrefab" prob=".1"/>
+			<block name="cntVendingMachine2Broken" prob=".4"/>
+            <block name="cntVendingMachineEnergyBroken" prob=".1"/>
+			<block name="cntVendingMachineWaterBroken" prob=".1"/>
             <block name="cntVendingMachine2" prob=".1"/>
+            <block name="cntVendingMachineEnergy" prob=".1"/>
 			</placeholder>
 			
 		<!-- *************************************************************
@@ -1492,8 +1517,7 @@
 		<placeholder name="cbpCementMixerRandomLootHelper">
 			<block name="cbpCementMixer" prob="0.4"/>
 			<block name="cbpCementMixerEmpty" prob=".2"/>
-			<block name="cntCollapsedCementMixer" prob=".2"/>
-			<block name="cntCollapsedWorkbench" prob="0.2"/>
+			<block name="cntCollapsedCementMixer" prob=".2"/>			
 		</placeholder>
 		
 		<placeholder name="cbpForgeRandomLootHelper">

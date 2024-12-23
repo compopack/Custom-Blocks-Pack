@@ -8085,6 +8085,99 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
 		</block>
+		
+		<!-- Cardboard Box Deco -->
+		<block name="cbpGarageStorageDeco">
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Material" value="MCardboardLoot"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/boxCardboard3Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property class="RepairItems">
+				<property name="resourcePaper" value="10"/>
+				<property name="resourceWood" value="4"/>
+			</property>
+			<drop event="Destroy" name="resourcePaper" count="2,8"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0100"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+		
+		<block name="cbpGarageStorageEmpty">
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
+			<property name="Material" value="MCardboardLoot"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/boxCardboard3Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property class="RepairItems">
+				<property name="resourcePaper" value="10"/>
+				<property name="resourceWood" value="4"/>
+			</property>
+			<drop event="Destroy" name="resourcePaper" count="2,8"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0100"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+
+		<block name="cbpCardboardBoxDeco">
+			<property name="Extends" value="cbpGarageStorageDeco"/>
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Model" value="Entities/Industrial/boxCardboardPrefab"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>	
+
+		<block name="cbpCardboardBoxEmpty">
+			<property name="Extends" value="cbpGarageStorageDeco"/>
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
+			<property name="Model" value="Entities/Industrial/boxCardboardPrefab"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+		
+		
+		<block name="cbpGarageStorageRandomHelper">
+			<property name="Extends" value="cbpGarageStorageDeco"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+		</block>
+		
+		<block name="cbpGarageStorageAirRandomHelper">
+			<property name="Extends" value="cbpGarageStorageDeco"/>
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+		</block>
+		
+		<block name="cbpCardboardBoxRandomHelper">
+			<property name="Extends" value="cbpGarageStorageDeco"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+		</block>
+		
+		<block name="cbpCardboardBoxAirRandomHelper">
+			<property name="Extends" value="cbpGarageStorageDeco"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+		</block>
+		
 		<!-- *************************************************************************
             Shopping Cart Helper
         ************************************************************************** -->
@@ -8164,6 +8257,18 @@
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="HandleFace" value="Bottom"/>
 		</block>
+		
+		<!-- *************************************************************************
+            Vending Machines
+        ************************************************************************** -->
+
+        <block name="cbpVendingMachineRandomHelper">
+            <property name="Extends" value="cntVendingMachine2RandomLootHelper"/>
+        </block>
+
+        <block name="cbpVendingMachineRandomHelperAir">
+            <property name="Extends" value="cntVendingMachine2RandomLootHelper"/>
+        </block>
 				
 		<!-- *************************************************************************
             RANDOM ROLLING TRASH BIN
@@ -17292,7 +17397,7 @@
 	
 		<block name="cbpCementMixer">
 			<property name="CustomIcon" value="cementMixer"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="MstainlessSteel"/>
 			<property name="StabilitySupport" value="true"/>
@@ -17313,6 +17418,7 @@
 		<block name="cbpCementMixerEmpty">
 			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="cementMixer"/>
+			<property name="CustomIconTint" value="464646"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Material" value="Miron_scrap"/>
@@ -17350,7 +17456,7 @@
 		
 		 <block name="cbpWorkbench">
 			<property name="CustomIcon" value="workbench"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="MstainlessSteel"/>
 			<property name="StabilitySupport" value="true"/>
@@ -17371,7 +17477,7 @@
 		
 		<block name="cbpWorkbenchEmpty">
 			<property name="CustomIcon" value="workbench"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="464646"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -17394,7 +17500,7 @@
 		
 		<block name="cbpForge">
 			<property name="CustomIcon" value="forge"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="MstainlessSteel"/>
 			<property name="StabilitySupport" value="true"/>
@@ -17414,7 +17520,7 @@
 		
 		<block name="cbpForgeEmpty">
 			<property name="CustomIcon" value="forge"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="464646"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -17436,7 +17542,7 @@
 		
 		 <block name="cbpChemistryStation">
 			<property name="CustomIcon" value="chemistryStation"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="MstainlessSteel"/>
 			<property name="StabilitySupport" value="true"/>
@@ -17456,7 +17562,7 @@
 		
 		<block name="cbpChemistryStationEmpty">
 			<property name="CustomIcon" value="chemistryStation"/>
-			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CustomIconTint" value="464646"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="playerWoodWritableStorage"/>
@@ -17510,8 +17616,7 @@
 			<property name="Material" value="Mstone"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Crafting/cementMixerPrefab"/>
-			<property name="ModelOffset" value="0,.5,0"/>
-			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="ModelOffset" value="0,0,0"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="OnlySimpleRotations" value="true"/>
@@ -17532,7 +17637,6 @@
 			<property name="Material" value="Mstone"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Crafting/forgeWorkstationPrefab"/>
-			<property name="ModelOffset" value="0,.5,0"/>
 			<property name="MultiBlockDim" value="2,2,1"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
@@ -17554,8 +17658,7 @@
 			<property name="Material" value="Mstone"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Crafting/chemStationPrefab"/>
-			<property name="ModelOffset" value="0,.5,0"/>
-			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="MultiBlockDim" value="3,2,1"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="OnlySimpleRotations" value="true"/>

@@ -332,7 +332,15 @@ cbpShippingCrateSavageCountryCube,blocks,Container,,,Shipping Crate Savage Count
 cbpShippingCrateShamwayCube,blocks,Container,,,Shipping Crate Shamway Cube,,Aufbewahrungskiste,Caja de almacenamiento,Caisse de rangement,Scatola portaoggetti,保管ボックス,보관함,Pudło na rzeczy,Caixa de Armazenamento,Коробка для хранения,Saklama Kutusu,储物盒,儲物盒,Caja de almacenamiento
 cbpShippingCrateShotgunMessiahCube,blocks,Container,,,Shipping Crate Shotgun Messiah Cube,,Aufbewahrungskiste,Caja de almacenamiento,Caisse de rangement,Scatola portaoggetti,保管ボックス,보관함,Pudło na rzeczy,Caixa de Armazenamento,Коробка для хранения,Saklama Kutusu,储物盒,儲物盒,Caja de almacenamiento
 cbpShippingCrateWorkingStiffsCube,blocks,Container,,,Shipping Crate Working Stiffs Cube,,Aufbewahrungskiste,Caja de almacenamiento,Caisse de rangement,Scatola portaoggetti,保管ボックス,보관함,Pudło na rzeczy,Caixa de Armazenamento,Коробка для хранения,Saklama Kutusu,储物盒,儲物盒,Caja de almacenamiento
-cbpShotgunTurret,blocks,Container,,,Shotgun Turret Destroyed
+cbpGarageStorageDeco,blocks,Container,,,cbp Garage Storage Deco,,
+cbpGarageStorageEmpty,blocks,Container,,,Garage Storage,,
+cbpCardboardBoxDeco,blocks,Container,,,cbp Cardboard Box Deco,,
+cbpCardboardBoxEmpty,blocks,Container,,,Cardboard Box,,
+cbpGarageStorageRandomHelper,blocks,Container,,,cbp Garage Storage Random Helper,,
+cbpCardboardBoxRandomHelper,blocks,Container,,,cbp Cardboard Box Random Helper,,
+cbpGarageStorageAirRandomHelper,blocks,Container,,,cbp Garage Storage Air Random Helper,,
+cbpCardboardBoxAirRandomHelper,blocks,Container,,,cbp Cardboard Box Air Random Helper,,
+cbpShotgunTurret,blocks,Container,,,Shotgun Turret Destroyed,,
 cbpShotgunTurretDesc,blocks,Block,,,A Destroyed Lootable Shotgun Turret used in Pois as Decoration.,,
 cbpSportsBag01Empty,blocks,Container,,,Empty Rotting Sports Bag,,Verrottende Sporttasche,Bolsa deportiva podrida,Sac de sport en décomposition,Borsa sportiva putrefatta,腐りかけのスポーツバッグ,헤진 스포츠 가방,Gnijąca torba sportowa,Bolsa Esportiva Podre,Истлевшая спортивная сумка,Çürümüş Spor Çanta,腐烂的运动包,腐爛的運動包,Bolsa deportiva podrida
 cbpSportsBag02Empty,blocks,Container,,,Empty Weathered Sports Bag,,Verwitterte Sporttasche,Bolsa deportiva erosionada,Sac de sport usé,Borsa sportiva consumata,色褪せたスポーツバッグ,오래된 스포츠 가방,Zszargana torba sportowa,Bolsa Esportiva Desgastada,Потрепанная спортивная сумка,Yıpranmış Spor Çanta,风化的运动包,褪色的運動包,Bolsa deportiva erosionada
@@ -569,8 +577,6 @@ cbpTractorRandomHelperAir,blocks,Container,,,cbp Tractor Air Random Helper,,
 cbpTractorRandomHelperAirDesc,blocks,Container,,,A cbp Random Helper block that will result in a random coloured tractor or air.,,
 cbpTractorRandomHelperDesc,blocks,Container,,,A cbp Random Helper block that will result in a random coloured tractor.,,
 cbpTrappedChest,blocks,Trap,,,Trapped Chest,,,,,,,,,,,,,,
-cbpVendingMachine2Empty,blocks,Container,,,Empty Vending Machine,,Beschädigter Verkaufsautomat,Máquina expendedora rota,Distributeur automatique en panne,Distributore automatico rotto,壊れた自動販売機,망가진 자판가,Zepsuty automat sprzedający,Máquina de Vendas Quebrada,Сломанный торговый автомат,Kırık Otomat,损坏的
-cbpVendingMachine2EmptyDesc,blocks,Block,,,Display Book Shelf Single Top 1 used in Pois as Decoration.,,
 cbpVendingMachineRandomHelper,blocks,Container,,,cbp Vending Machine Random Helper,,
 cbpVendingMachineRandomHelperAir,blocks,Container,,,cbp Vending Machine Air Random Helper,,
 cbpVendingMachineRandomHelperAirDesc,blocks,Block,,,A cbp Vending machine.,,

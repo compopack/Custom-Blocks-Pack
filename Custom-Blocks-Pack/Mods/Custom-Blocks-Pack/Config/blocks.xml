@@ -17646,7 +17646,7 @@
 			<property name="FilterTags" value="MC_helpers,SC_helperOutdoor,SC_loot"/>
 		</block>
 		
-		<block name="cbpChemStationRandomLootHelper">
+		<block name="cbpChemistryStationRandomLootHelper">
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="garbage"/>

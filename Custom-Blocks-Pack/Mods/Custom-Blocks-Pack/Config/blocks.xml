@@ -25144,5 +25144,22 @@ that are planted by players, so it is a nice bonus.
 		<property name="AllowAllRotations" value="true"/>
 		<property name="OnlySimpleRotations" value="true" rotatemax="7"/> 
 	</append>		
+	<!--MANNEQUINS -->
+	<append xpath="/blocks">
+		<block name="SpawnCubeFemaleMannequin">
+		  <property name="CustomIcon" value="decoMannequinFemale"/>
+		  <property name="CustomIconTint" value="ff8080"/>
+		  <property name="Extends" value="air"/>
+		  <property name="Config" value="ec=zombieMannequinFemale" />
+		</block>
+				
+		<block name="SpawnCubeMaleMannequin">
+		  <property name="CustomIcon" value="decoMannequinMale"/>
+	      <property name="CustomIconTint" value="ff8080"/>
+		  <property name="Extends" value="air"/>
+		  <property name="Config" value="ec=zombieMannequinMale" />
+		</block>
+	<!--MANNEQUINS -->
+	</append>
 	
 </blocks>

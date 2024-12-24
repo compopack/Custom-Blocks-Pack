@@ -1,0 +1,41 @@
+<COMPOPACK>
+	<append xpath="/entitygroups">
+	<entitygroup name="mannequinZombieFemale">mannequinZombieFemale</entitygroup>
+	<entitygroup name="mannequinZombieMale">mannequinZombieMale</entitygroup>
+	
+	
+		<entitygroup name="animalRatKing">animalRatKing</entitygroup>
+		<entitygroup name="animalRatBabies">animalRatBabies</entitygroup>
+		
+	<!-- *** POI_Rat_GROUP -->
+		<entitygroup name="ZombieRatGroup">
+		animalRatKing,1
+		animalRatBabies,8
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS1">
+		animalRatKing,1
+		animalRatBabies,10
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS50">
+		animalRatKing,1
+		animalRatBabies,12
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS100">
+		animalRatKing,1
+		animalRatBabies,14
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS200">
+		animalRatKing,1
+		animalRatBabies,16
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS400">
+		animalRatKing,1
+		animalRatBabies,18
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS800">
+		animalRatKing,1
+		animalRatBabies,20
+	</entitygroup>
+		<!-- *** POI_Rat_GROUP -->			
+</append>
+</COMPOPACK>

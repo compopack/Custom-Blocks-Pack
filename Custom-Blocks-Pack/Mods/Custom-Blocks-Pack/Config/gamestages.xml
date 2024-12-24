@@ -1,0 +1,58 @@
+<CBP>
+<append xpath="/gamestages">
+
+<group name="GroupRats" spawner="AnimalRatHorde"/>
+
+<group name="animalRatKing" spawner="animalRatKing"/>
+<group name="animalRatBabies" spawner="animalRatBabies"/>
+
+	<spawner name="animalRatKing">
+		<gamestage stage="1">
+			<spawn group="animalRatKing" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="animalRatBabies">
+		<gamestage stage="1">
+			<spawn group="animalRatBabies" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+
+<!-- CP Rats Group -->
+<spawner name="AnimalRatHorde">
+			<gamestage stage="1">
+				<spawn group="ZombieRatGroupGS1" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="ZombieRatGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="ZombieRatGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="ZombieRatGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="ZombieRatGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="ZombieRatGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+</spawner>
+<!-- CP Rats Group -->
+	
+	<group name="mannequinZombieFemale" spawner="mannequinZombieFemale"/>
+	<group name="mannequinZombieMale" spawner="mannequinZombieMale"/>
+	
+	<spawner name="mannequinZombieFemale">
+		<gamestage stage="1">
+			<spawn group="mannequinZombieFemale" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+
+	<spawner name="mannequinZombieMale">
+		<gamestage stage="1">
+			<spawn group="mannequinZombieMale" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+</append>
+</CBP>

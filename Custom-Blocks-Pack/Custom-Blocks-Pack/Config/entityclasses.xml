@@ -51,10 +51,10 @@
 			<property name="TimeStayAfterDeath" value="60"/>
 			<property name="ExperienceGain" value="600"/>
 
-			<property name="HandItem" value="meleeHandAnimalCoyote"/>
+			<property name="HandItem" value="meleeHandAnimalRatKing"/>
 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1,1.5"/>
 			</effect_group>
 
@@ -119,7 +119,7 @@
 			<property name="TimeStayAfterDeath" value="60"/>
 			<property name="ExperienceGain" value="600"/>
 
-			<property name="HandItem" value="meleeHandAnimalSnake"/>
+			<property name="HandItem" value="meleeHandAnimalRatBabies"/>
 
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>

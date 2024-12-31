@@ -1,4 +1,4 @@
-# Custom Block Pack (A21.0.001)
+# Custom Block Pack (V1.2.50.4)
 The motivation to create this modlet was to make it easier to share custom
 block definitions between custom POI developers. As a separate modlet, multiple
 modlets can depend upon it instead of each modlet creator defining their own
@@ -10,7 +10,7 @@ blocks and other configuration from Pille and MPLogue.
 
 The Future direction for this modlet likely will include adding a libary of
 Parts for POI developers to use. You should also expect bug fixes and some
-block redefinitions as A21 becomes better known.
+block redefinitions as V1 becomes better known.
 
 ### Prefab Editor Tips
 All of the blocks in this pack have names that start with a "cbp" prefix, so in
@@ -31,9 +31,9 @@ faster.
 **ATM Machines** - The pack adds an empty ATM machine, plus a helper which is
 described later to allow your POIs to _sometimes_ include an ATM.
 
-* bcpATMEmpty
-* bcpATMRandomHelper
-* bcpATMRandomHelperAir
+* cbpATMEmpty
+* cbpATMRandomHelper
+* cbpATMRandomHelperAir
 
 **Backpacks** - The game includes a number of packs, purses, and so forth that
 give out loot. This pack adds a number of empty (or effectively empty) versions.

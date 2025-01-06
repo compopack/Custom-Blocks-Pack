@@ -24914,7 +24914,63 @@
 			<property name="Explosion.DamageBonus.metal" value="1"/>
 			<property name="Explosion.DamageBonus.wood" value="-1"/>
 		</block>
+		
+		
+		<!-- ************************************************************************* 
+           MANNEQUINS: ADDS XYTH AND SHPEREII MANEQUINS
+		   ************************************************************************** -->		
+		<block name="SpawnCubeMannequinFemale">
+		  <property name="Extends" value="air"/>
+		  <property name="Config" value="ec=zombieMannequinFemale" />
+		</block>
+		<block name="SpawnCubeMannequinMale">
+		  <property name="Extends" value="air"/>
+		  <property name="Config" value="ec=zombieMannequinMale" />
+		</block>
+		
+		<!--MANNEQUINS Frozen upon death-->
+	
+		<block name="SpawnCubeFemaleMannequinFreeze">
+		  <property name="CustomIcon" value="decoMannequinFemale"/>
+		  <property name="CustomIconTint" value="ff8080"/>
+		  <property name="Extends" value="air"/>
+		  <property name="Config" value="ec=zombieMannequinFemale" />
+		</block>
+				
+		<block name="SpawnCubeMaleMannequinFreeze">
+		  <property name="CustomIcon" value="decoMannequinMale"/>
+	      <property name="CustomIconTint" value="ff8080"/>
+		  <property name="Extends" value="air"/>
+		  <property name="Config" value="ec=zombieMannequinMale" />
+		</block>
+	<!--MANNEQUINS Frozen upon death -->
+	
+		
+		<block name="mannequinFemaleTrapRandomHelper">
+			<property name="Extends" value="decoMannequinMale"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="decoMannequinFemale"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Model" value="Entities/Commercial/mannequinFemalePrefab"/>
+			<property name="SortOrder2" value="0250"/>
+		</block>
+		<block name="mannequinMaleTrapRandomHelper">
+			<property name="Extends" value="decoMannequinMale"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="decoMannequinMale"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Model" value="Entities/Commercial/mannequinMalePrefab"/>
+			<property name="SortOrder2" value="0250"/>
+		</block>
 		</append>
+		
+		
+		
+		
 		<!-- ************************************************************************* 
             ADDS RANDOM ROTATION TO PLANTS, RUBISH, TRASH, ETC: When placed 
         ************************************************************************** -->
@@ -25143,23 +25199,6 @@ that are planted by players, so it is a nice bonus.
 		<property name="PlaceAsRandomRotation" value="true"/>
 		<property name="AllowAllRotations" value="true"/>
 		<property name="OnlySimpleRotations" value="true" rotatemax="7"/> 
-	</append>		
-	<!--MANNEQUINS -->
-	<append xpath="/blocks">
-		<block name="SpawnCubeFemaleMannequin">
-		  <property name="CustomIcon" value="decoMannequinFemale"/>
-		  <property name="CustomIconTint" value="ff8080"/>
-		  <property name="Extends" value="air"/>
-		  <property name="Config" value="ec=zombieMannequinFemale" />
-		</block>
-				
-		<block name="SpawnCubeMaleMannequin">
-		  <property name="CustomIcon" value="decoMannequinMale"/>
-	      <property name="CustomIconTint" value="ff8080"/>
-		  <property name="Extends" value="air"/>
-		  <property name="Config" value="ec=zombieMannequinMale" />
-		</block>
-	<!--MANNEQUINS -->
-	</append>
+	</append>	
 	
 </blocks>

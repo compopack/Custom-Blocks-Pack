@@ -1790,4 +1790,19 @@
 			<block name="cbpCampingTentAngularDamagedArmyGreen" prob="0.6"/>
 		</placeholder>
 		</append>
+		
+		<!-- XYTH AND SPHEREII MANNEQUINS -->
+		<append xpath="/blockplaceholders">
+			<placeholder name="mannequinFemaleTrapRandomHelper">
+			<block name="decoMannequinFemale" prob=".0003" />
+			<block name="SpawnCubeMannequinFemale" prob=".0001"/>	
+			</placeholder>
+			<placeholder name="mannequinMaleTrapRandomHelper">
+			<block name="decoMannequinMale" prob=".0003" />
+			<block name="SpawnCubeMannequinMale" prob=".0001"/>	
+			</placeholder>
+		  </append>
+		<!-- XYTH AND SPHEREII MANNEQUINS -->
+		
+		
 </blockplaceholders>

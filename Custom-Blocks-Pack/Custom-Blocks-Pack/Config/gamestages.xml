@@ -38,21 +38,35 @@
 				<spawn group="ZombieRatGroupGS800" num="1" maxAlive="1" duration="1" />
 			</gamestage>
 </spawner>
-<!-- CP Rats Group -->
-	
-	<group name="mannequinZombieFemale" spawner="mannequinZombieFemale"/>
-	<group name="mannequinZombieMale" spawner="mannequinZombieMale"/>
-	
-	<spawner name="mannequinZombieFemale">
-		<gamestage stage="1">
-			<spawn group="mannequinZombieFemale" num="1" maxAlive="1" duration="10"/>
-		</gamestage>
-	</spawner>
+<!-- CP Rats Group -->	
+<!-- XYTH SPHEREII MANNEQUINS -->
+			<group name="mannequinZombieFemale" spawner="mannequinZombieFemale"/>
+			<group name="mannequinZombieMale" spawner="mannequinZombieMale"/>
+			<group name="mannequinZombieFemaleFreeze" spawner="mannequinZombieFemaleFreeze"/>
+			<group name="mannequinZombieMaleFreeze" spawner="mannequinZombieMaleFreeze"/>
+			
+			<spawner name="mannequinZombieFemale">
+				<gamestage stage="1">
+					<spawn group="mannequinZombieFemale" num="1" maxAlive="1" duration="10"/>
+				</gamestage>
+			</spawner>
 
-	<spawner name="mannequinZombieMale">
-		<gamestage stage="1">
-			<spawn group="mannequinZombieMale" num="1" maxAlive="1" duration="10"/>
-		</gamestage>
-	</spawner>
+			<spawner name="mannequinZombieMale">
+				<gamestage stage="1">
+					<spawn group="mannequinZombieMale" num="1" maxAlive="1" duration="10"/>
+				</gamestage>
+			</spawner>	
+			<spawner name="mannequinZombieFemaleFreeze">
+				<gamestage stage="1">
+					<spawn group="mannequinZombieFemaleFreeze" num="1" maxAlive="1" duration="10"/>
+				</gamestage>
+			</spawner>
+
+			<spawner name="mannequinZombieMaleFreeze">
+				<gamestage stage="1">
+					<spawn group="mannequinZombieMaleFreeze" num="1" maxAlive="1" duration="10"/>
+				</gamestage>
+			</spawner>
+<!-- XYTH SPHEREII MANNEQUINS -->
 </append>
 </CBP>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
     <Name value="Custom-Blocks-Pack" />
-    <Author value="MPLogue,Pille,Stallionsden,ZZTong" />
+    <Author value="MPLogue,Pille,Stallionsden,ZZTong,Xyth,Sphereii" />
     <Description value="Adds custom block definitions and supporting configurations. " />
     <DisplayName value="Custom-Blocks-Pack" />
     <Version value="1.2.50.4" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->

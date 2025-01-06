@@ -240,7 +240,7 @@
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?so_cold" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?so_cold2" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?spectres_madly_dancing" />
-      <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?SpirtWhispers" />
+      <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?SpirtWhispers.txt" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stare_into_the_void" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_away" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_here" />
@@ -325,10 +325,7 @@
       <maxVoicesPerEntity name="1" />
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
-	
-	<!-- INDIVIDUAL SOUNDS -->
-	<!-- SPIRITANGRY-->
-	
+
 	<SoundDataNode name="angry_disgusting">
       <AudioSource name="Sounds/AudioSource_VO" />
       <Channel name="Mouth"/>
@@ -3794,9 +3791,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<!-- WHISPERS -->
-	
-	
-	
+
 
   </append>
   

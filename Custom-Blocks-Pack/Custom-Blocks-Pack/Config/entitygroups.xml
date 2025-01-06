@@ -1,8 +1,9 @@
 <COMPOPACK>
 	<append xpath="/entitygroups">
-	<entitygroup name="mannequinZombieFemale">mannequinZombieFemale</entitygroup>
-	<entitygroup name="mannequinZombieMale">mannequinZombieMale</entitygroup>
-	
+		<entitygroup name="mannequinZombieFemale">mannequinZombieFemale</entitygroup>
+		<entitygroup name="mannequinZombieMale">mannequinZombieMale</entitygroup>		
+		<entitygroup name="mannequinZombieFemaleFreeze">mannequinZombieFemaleFreeze</entitygroup>
+		<entitygroup name="mannequinZombieMaleFreeze">mannequinZombieMaleFreeze</entitygroup>
 	
 		<entitygroup name="animalRatKing">animalRatKing</entitygroup>
 		<entitygroup name="animalRatBabies">animalRatBabies</entitygroup>

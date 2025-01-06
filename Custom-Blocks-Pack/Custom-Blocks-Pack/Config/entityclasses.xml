@@ -136,9 +136,48 @@
 
 			<property name="NavObject" value="animaltracking_rabbit" />
 		</entity_class>
-		<!-- RAT ARMY -->
-		
+		<!-- RAT ARMY -->	
+		<!-- XYTH SPHEREII MANNEQUINS -->	
 		<entity_class name="mannequinZombieFemale" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,female,zombie,walker,mannequin"/>
+			<property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinFemale_X"/>
+			<property name="Faction" value="undead"/>
+			<property name="PhysicsBody" value="mixamoConvertedMannequin"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="120"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="EntityFlags" value="zombie"/><!-- This decides for scoring -->
+			<property name="EntityType" value="Zombie"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="Prefab" value="NPC"/> 
+			<property name="Class" value="EntityZombie"/>
+			<property name="Parent" value="Enemies"/>
+			<property name="AITask" value="
+				BreakBlock|
+				DestroyArea|
+				Territorial|
+				ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityNPC,0,EntityEnemyAnimal|
+				ApproachSpot|
+				Look|
+				"/>
+				<property name="AITarget" value="
+				SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityNPC,EntityEnemyAnimal|
+				BlockingTargetTask|
+				SetNearestCorpseAsTarget flags=edible|
+				SetNearestEntityAsTarget class=EntityPlayer,3,3,EntityNPC,3,3,EntityBandit,3,3|
+				"/>	  
+		  <property name="SoundAlert" value="SpiritAngry"/>
+		  <property name="SoundSense" value="SpiritWhispers"/>
+		</entity_class>
+
+		<entity_class name="mannequinZombieMale" extends="mannequinZombieFemale">
+			<property name="UserSpawnType" value="Menu"/>
+			  <property name="Tags" value="entity,male,zombie,walker,mannequin"/>
+			  <property name="Faction" value="undead"/>
+			  <property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinMale_X"/>
+		</entity_class>
+		<entity_class name="mannequinZombieFemaleFreeze" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 		  <property name="Tags" value="entity,female,zombie,mannequin"/>
 		  <property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinFemale_X"/>
@@ -164,13 +203,14 @@
 		  <property name="SoundSense" value="SpiritWhispers"/>
 		</entity_class>
 
-		<entity_class name="mannequinZombieMale" extends="mannequinZombieFemale">
+		<entity_class name="mannequinZombieMaleFreeze" extends="mannequinZombieFemaleFreeze">
 			<property name="UserSpawnType" value="Menu"/>
 			  <property name="Tags" value="entity,male,zombie,mannequin"/>
 			  <property name="Faction" value="undead"/>
 			  <property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinMale_X"/>
 			  <property name="Faction" value="undead"/>
-		</entity_class>
-		
+		</entity_class>		
+		<!-- XYTH SPHEREII MANNEQUINS -->	
+			
 	</append>
 </CBP>

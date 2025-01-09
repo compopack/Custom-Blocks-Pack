@@ -94,7 +94,7 @@
 			<property name="Extends" value="cntBookShelfDoubleTopFull01"/>
 			<property name="CustomIcon" value="cntBookShelfDoubleTopFull01" />
 			<property name="CustomIconTint" value="a4ffb7"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>            
 
@@ -103,7 +103,7 @@
 			<property name="Extends" value="cntBookShelfDoubleBottomFull01"/>
 			<property name="CustomIcon" value="cntBookShelfDoubleBottomFull01" />
 			<property name="CustomIconTint" value="a4ffb7"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
@@ -112,7 +112,7 @@
 			<property name="CustomIcon" value="cntBookShelfSingleBottomFull01" />
 			<property name="CustomIconTint" value="a4ffb7"/>
 			<property name="Material" value="Mfurniture"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
@@ -121,7 +121,7 @@
 			<property name="CustomIcon" value="cntBookShelfSingleTopFull01" />
 			<property name="CustomIconTint" value="a4ffb7"/>
 			<property name="Material" value="Mfurniture"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
@@ -130,7 +130,7 @@
 			<property name="CustomIcon" value="cntBookcaseFull" />
 			<property name="CustomIconTint" value="a4ffb7"/>
 			<property name="Material" value="Mfurniture"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
@@ -140,7 +140,7 @@
 			<property name="CustomIconTint" value="a4ffb7"/>
 			<property name="ModelOffset" value="1,0.5,1"/>
 			<property name="Material" value="Mfurniture"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
@@ -149,7 +149,7 @@
 			<property name="CustomIcon" value="cntBookcaseCornerFull" />
 			<property name="CustomIconTint" value="a4ffb7"/>
 			<property name="Material" value="Mfurniture"/>
-			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="LootList" value="bookPile"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
@@ -375,7 +375,7 @@
 			<property name="CustomIcon" value="cntATMSecure"/>
 			<property name="Model" value="Entities/Commercial/ATMPrefab"/>
 			<property name="WaterFlow" value="permitted"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 		</block>
 		<block name="cbpATMRandomHelper">
 			<property name="Extends" value="cntATMSecure"/>
@@ -415,7 +415,7 @@
 			<property name="ImposterExchange" value="imposterBlock" param1="108"/>
 			<property name="FilterTags" value="MC_building,SC_loot,SC_residential"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBathroom"/>
+			<property name="LootList" value="bathtub"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="cntCabinetBottomFiller"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
@@ -494,7 +494,7 @@
 			<property name="DescriptionKey" value="cbpCupboardCornerRedEmptyDesc"/>
 			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpWaterCoolerEmpty"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Model" value="cupboard_corner"/>
 			<property name="Path" value="solid"/>
@@ -506,7 +506,7 @@
 			<property name="DescriptionKey" value="cbpCupboardCornerRedDesc"/>
 			<property name="Model" value="cupboard_corner"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpKitchen"/>
+			<property name="LootList" value="cupboard"/>
 			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Path" value="solid"/>
@@ -517,7 +517,7 @@
 			<property name="Extends" value="cbpCupboardCabinetRedMaster"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpKitchen"/>
+			<property name="LootList" value="cupboard"/>
 			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
 			<property name="CustomIconTint" value="ff8080"/>
 			<property name="ItemTypeIcon" value="other"/>
@@ -557,7 +557,7 @@
 			<property name="CustomIcon" value="cntCupboardCornerCNROld"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpWaterCoolerEmpty"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Model" value="cupboard_corner"/>
 			<property name="Path" value="solid"/>
 			<property name="SortOrder1" value="B108"/>
@@ -569,7 +569,7 @@
 			<property name="CustomIcon" value="cntCupboardCornerCNROld"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpKitchen"/>
+			<property name="LootList" value="cupboard"/>
 			<property name="Model" value="cupboard_corner"/>
 			<property name="Path" value="solid"/>
 			<property name="SortOrder1" value="B108"/>
@@ -580,7 +580,7 @@
 			<property name="DescriptionKey" value="cbpCupboardCornerCNROldLootHelperDesc"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpKitchen"/>
+			<property name="LootList" value="cupboard"/>
 			<property name="Model" value="cupboard_corner"/>
 			<property name="CustomIcon" value="cntCupboardCornerCNROld"/>
 			<property name="CustomIconTint" value="ff8080"/>
@@ -609,7 +609,7 @@
 			<property name="UseGlobalUV" value="Local"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="10"/>
 			</property>
@@ -625,7 +625,7 @@
 			<property name="CustomIcon" value="cntBookcaseCornerFull"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mwood_weak"/>
 			<property name="Shape" value="New"/>
@@ -649,7 +649,7 @@
 			<property name="CustomIcon" value="cntBookShelfSingleBottomFull01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="Entities/Commercial/bookshelfBottomFullPrefab"/>
@@ -665,7 +665,7 @@
 			<property name="CustomIcon" value="cntBookShelfSingleTopFull01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Model" value="Entities/Commercial/bookshelfTopFullPrefab"/>
 			<drop event="Destroy" name="resourcePaper" count="3,6"/>
@@ -680,7 +680,7 @@
 			<property name="CustomIcon" value="cntBookShelfDoubleBottomFull01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Model" value="Entities/Commercial/bookshelfBottomDoubleFullPrefab"/>
 			<drop event="Destroy" name="resourcePaper" count="3,6"/>
@@ -695,7 +695,7 @@
 			<property name="CustomIcon" value="cntBookShelfDoubleTopFull01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Model" value="Entities/Commercial/bookshelfTopDoubleFullPrefab"/>
 			<drop event="Destroy" name="resourcePaper" count="3,6"/>
@@ -710,7 +710,7 @@
 			<property name="CustomIcon" value="cntBookShelfSingleCapBottomFull01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Model" value="Entities/Commercial/bookshelfBottomCapFullPrefab"/>
 			<drop event="Destroy" name="resourcePaper" count="3,6"/>
@@ -725,7 +725,7 @@
 			<property name="CustomIcon" value="cntBookShelfSingleCapTopFull01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="junk"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Model" value="Entities/Commercial/bookshelfTopCapFullPrefab"/>
 			<drop event="Destroy" name="resourcePaper" count="3,6"/>
@@ -1209,7 +1209,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="Entities/Commercial/mannequinMalePrefab"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpDelosAndroid"/>
+			<property name="LootList" value="oldWestChest"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property class="RepairItems">
 				<property name="resourceScrapPolymers" value="10"/>
@@ -1391,7 +1391,7 @@
 			<property name="WaterFlow" value="permitted"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="GndAlign" value="1"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
 			<drop event="Destroy" name="resourceCloth" count="1"/>
 			<property name="FilterTags" value="MC_building,SC_loot"/>
@@ -1427,7 +1427,7 @@
 			<property name="CustomIcon" value="cntCoffeeMaker"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Model" value="Entities/Appliances/coffeeMakerPrefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -1476,7 +1476,7 @@
 			<property name="Extends" value="cbpCoffeeMaker"/>
 			<property name="CustomIcon" value="cntSodaFountain"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Model" value="Entities/Electrical/sodaFountainPrefab"/>
 			<property name="SortOrder1" value="B162"/>
 			<property name="SortOrder2" value="0003"/>
@@ -7771,7 +7771,7 @@
 			<property name="CustomIcon" value="cntWoodWritableCrate"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Entities/LootContainers/woodWritableCratePrefab.prefab"/>
@@ -7807,7 +7807,7 @@
 			<property name="CustomIcon" value="cntIronWritableCrate"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Entities/LootContainers/ironWritableCratePrefab.prefab"/>
@@ -7843,7 +7843,7 @@
 			<property name="CustomIcon" value="cntSteelWritableCrate"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Entities/LootContainers/steelWritableCratePrefab.prefab"/>
@@ -8358,7 +8358,7 @@
 		<!-- White -->
 		<block name="cbpBinTrashRollingWhiteEmpty">
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpJunk"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
 			<property name="CustomIconTint" value="808080"/>
 			<property name="TintColor" value="808080"/>
@@ -9947,7 +9947,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpFood"/>
+			<property name="LootList" value="cbpGrocery"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Commercial/storeShelfBottomEmptyPrefab"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -10319,7 +10319,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpTrash"/>
+			<property name="LootList" value="junk"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Commercial/storeShelfBottomEmptyPrefab"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -10666,7 +10666,7 @@
 			<property name="CustomIcon" value="cntShelvesFreeStandingFullA"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpTrash"/>
+			<property name="LootList" value="junk"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Model" value="Entities/Commercial/traderRektShelvesFreeStandingFullAPrefab"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
@@ -10679,7 +10679,7 @@
 			<property name="CustomIcon" value="cntShelvesMetalFullA"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpTrash"/>
+			<property name="LootList" value="junk"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Commercial/traderRektShelvesMetalFullAPrefab"/>
@@ -11098,7 +11098,7 @@
 			<property name="CustomIcon" value="cntClothesRackRoundPants"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpPants"/>
+			<property name="LootList" value="closet"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackRoundPantsPrefab.prefab"/>
@@ -11214,7 +11214,7 @@
 			<property name="CustomIcon" value="cntClothesRackWallPants"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpPants"/>
+			<property name="LootList" value="closet"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackWallJeansPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -11229,7 +11229,7 @@
 			<property name="CustomIcon" value="cntClothesRackWallLongSleeve"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpShirts"/>
+			<property name="LootList" value="closet"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackWallLongSleevePrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -11438,7 +11438,7 @@
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="DescriptionKey" value="cbpClothesPileFloorADesc"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpCloset"/>
+			<property name="LootList" value="closet"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Commercial/ClothsFloor01Prefab"/>
@@ -11470,7 +11470,7 @@
 			<property name="CustomIcon" value="cntClothesRackRoundPantsMilitary"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpArmyPants"/>
+			<property name="LootList" value="closet"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackRoundPantsMilitaryPrefab.prefab"/>
@@ -11504,7 +11504,7 @@
 			<property name="CustomIcon" value="cntClothesRackRoundShirtsMilitary"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpArmyShirts"/>
+			<property name="LootList" value="closet"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackRoundShirtsMilitaryPrefab.prefab"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="DowngradeBlock" value="cntClothesRackRoundEmpty2"/>
@@ -11583,7 +11583,7 @@
 			<property name="CustomIcon" value="cntClothesRackWallPantsMilitary"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpArmyPants"/>
+			<property name="LootList" value="closet"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackWallJeansMilitaryPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -11613,7 +11613,7 @@
 			<property name="CustomIcon" value="cntClothesRackWallLongSleeveMilitary"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpArmyShirts"/>
+			<property name="LootList" value="closet"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackWallLongSleeveMilitaryPrefab.prefab"/>
 			<drop event="Destroy" name="resourceCloth" count="3,6"/>
@@ -11660,7 +11660,7 @@
 			<property name="CustomIcon" value="cntStoreShelfDoubleBottomShoesFull"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpShoes"/>
+			<property name="LootList" value="closet"/>
 			<property name="Material" value="Mfurniture"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Commercial/shoeShelfCommercialBottomDoubleFullPrefab"/>
@@ -12206,7 +12206,7 @@
 			<property name="CustomIcon" value="autoTurret"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpAutoTurretLoot"/>
+			<property name="LootList" value="ammoPileSmall"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="CanPickup" value="False"/>
 			<property name="Stacknumber" value="1"/>
@@ -12237,7 +12237,7 @@
 			<property name="CustomIcon" value="shotgunTurret"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpShotgunTurretLoot"/>
+			<property name="LootList" value="ammoPileSmall"/>
 			<property name="CanPickup" value="False"/>
 			<property name="Model" value="Entities/Traps/AutoTurret/autoTurretShotgunPrefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
@@ -12280,7 +12280,7 @@
 			<property name="CustomIcon" value="dartTrap"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpDartTurretLoot"/>
+			<property name="LootList" value="ammoPileSmall"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Material" value="Mmetal_hard"/>
@@ -12353,7 +12353,7 @@
 			<property name="CustomIcon" value="cntWaterCoolerFull"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpWaterCoolerEmpty"/>
+			<property name="LootList" value="playerWoodWritableStorage"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal_thin"/>
 			<property name="Shape" value="ModelEntity"/>

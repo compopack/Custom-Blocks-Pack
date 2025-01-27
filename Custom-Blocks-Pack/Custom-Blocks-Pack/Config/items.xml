@@ -96,9 +96,18 @@
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
 	</effect_group>
 </item>
-
-
-
 <!-- Rat Hands -->
+<item name="cbp_meleeHandRatAnimal">	<property name="Extends" value="meleeHandMaster"/>	<property name="Extends" value="meleeHandZombie01"/>
+			<property name="CreativeMode" value="None"/>
+			<property class="Action0">
+				<property name="DamageEntity" value="4"/>
+				<property name="DamageBlock" value="1"/>
+				<property name="Range" value="1"/>
+			</property>
+			<effect_group name="cbp_meleeHandRatAnimal" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="1"/>
+			</effect_group>
+		</item>
     </append>
 </items>

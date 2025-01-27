@@ -24966,10 +24966,51 @@
 			<property name="Model" value="Entities/Commercial/mannequinMalePrefab"/>
 			<property name="SortOrder2" value="0250"/>
 		</block>
-		</append>
 		
-		
-		
+		<!-- ************************************************************************* 
+            Bats and Rats
+        ************************************************************************** -->	
+	<!-- Vanilla -->
+	<block name="cbp_animalRat">
+		<property name="Extends" value="sleeperBoarAnimal"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Model" value="Entities/Animals/Rabbit/sleeperPose/idleSleeperRabbit"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="SpawnGroup" value="mpl_animalRatGroup"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="SortOrder2" value="0012"/>
+	</block>
+
+	<block name="cbp_animalZombieBat">
+		<property name="Extends" value="sleeperBoarAnimal"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVulturePrefab"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="SpawnGroup" value="mpl_animalZombieBatGroup"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="SortOrder2" value="0012"/>
+	</block>	
+	
+	<!-- Infested -->
+	<block name="infestedcbp_animalRat">
+		<property name="Extends" value="infestedSleeperWolfAnimal"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="sleeperBoarAnimal"/>
+		<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoarInfestedPrefab"/>
+		<property name="SpawnGroup" value="BoarGroup"/>
+		<property name="SortOrder2" value="0009"/>
+	</block>
+	
+	<block name="infestedcbp_animalZombieBat">
+		<property name="Extends" value="infestedSleeperWolfAnimal"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="sleeperBoarAnimal"/>
+		<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoarInfestedPrefab"/>
+		<property name="SpawnGroup" value="BoarGroup"/>
+		<property name="SortOrder2" value="0009"/>
+	</block>
+	
+	</append>		
 		
 		<!-- ************************************************************************* 
             ADDS RANDOM ROTATION TO PLANTS, RUBISH, TRASH, ETC: When placed 

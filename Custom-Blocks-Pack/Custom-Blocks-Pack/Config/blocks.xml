@@ -25009,6 +25009,14 @@
 		<property name="SpawnGroup" value="BoarGroup"/>
 		<property name="SortOrder2" value="0009"/>
 	</block>
+	<!-- ************************************************************************* 
+            Svarii
+        ************************************************************************** -->
+	<block name="cbpterrainFiller_Fake">
+		<property name="Extends" value="terrainFiller"/>
+		<property name="MaxDamage" value="1"/>
+		<property name="CustomIcon" value="terrainFiller"/>
+	</block>
 	
 	</append>		
 		

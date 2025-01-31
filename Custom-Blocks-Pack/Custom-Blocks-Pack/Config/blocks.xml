@@ -25012,7 +25012,7 @@
 	<!-- ************************************************************************* 
             Svarii
         ************************************************************************** -->
-	<block name="cbpTerrainFiller_Fake">
+	<block name="cbpterrainFiller_Fake">
 		<property name="Extends" value="terrainFiller"/>
 		<property name="MaxDamage" value="1"/>
 		<property name="CustomIcon" value="terrainFiller"/>

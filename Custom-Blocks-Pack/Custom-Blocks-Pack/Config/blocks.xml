@@ -25012,10 +25012,39 @@
 	<!-- ************************************************************************* 
             Svarii
         ************************************************************************** -->
-	<block name="cbpterrainFiller_Fake">
+	<block name="cbpTerrainFiller_Fake">
 		<property name="Extends" value="terrainFiller"/>
 		<property name="MaxDamage" value="1"/>
 		<property name="CustomIcon" value="terrainFiller"/>
+	</block>
+	
+	<block name="cbpChevron6">
+		<property name="Extends" value="recessedLight"/>
+		<property name="ModelOffset" value="0.25,0.5,0.0"/>
+	   <property name="TintColor" value="bd0f09"/>
+	</block>
+
+	<block name="cbpChevron1">
+		<property name="Extends" value="recessedLight"/>
+		<property name="ModelOffset" value="0.25,0.5,0.20"/>
+	   <property name="TintColor" value="bd0f09"/>
+	</block>
+
+	<block name="cbpChevron2">
+		<property name="Extends" value="recessedLight"/>
+		<property name="ModelOffset" value="0.5,0.5,0.5"/>
+	   <property name="TintColor" value="bd0f09"/>
+	</block>
+
+	<block name="cbpPushButtonSwitch01HalfOffsetDown">
+		<property name="Extends" value="pushButtonSwitch01"/>
+		<property name="CustomIcon" value="pushButtonSwitch01"/>
+		<property name="CustomIconTint" value="#A0A0A0"/>
+		<property name="ItemTypeIcon" value="other"/>
+		<property name="ModelOffset" value="0,-0.5,-0.25"/>
+		<property name="ItemTypeIcon" value="other"/>
+		<property name="LocalizationKey" value="Left Offset Half Block pusButtonSwitch01"/>
+		<property name="DescriptionKey" value="I need this for a staircase"/>
 	</block>
 	
 	</append>		

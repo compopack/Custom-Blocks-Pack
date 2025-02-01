@@ -25047,8 +25047,48 @@
 		<property name="DescriptionKey" value="I need this for a staircase"/>
 	</block>
 	
-	</append>		
+	
+
+	<!-- ************************************************************************* 
+            ZEEBARK
+        ************************************************************************** -->
+		<block name="cbpPlantCherryBlossomMint_Green">
+		<property name="Extends" value="plantCherryBlossomWhite"/>
+		<property name="CustomIcon" value="treePlant02"/>
+		<property name="CustomIconTint" value="a02adb"/>
+		<property name="TintColor" value="34eba4"/>
+	</block>	
+	
+	<block name="cbpStunBattonPropWall_Red">
+		<property name="Extends" value="cbpStunBattonPropWall"/>
+		<property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="e60e20"/>
+	</block>
+	
+	<block name="cbpStunBattonPropWall_Purple">
+		<property name="Extends" value="cbpStunBattonPropWall"/>
+		<property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="9211cf"/>
+	</block>
+	
+	<block name="cbpStunBattonPropWall_Blue">
+		<property name="Extends" value="cbpStunBattonPropWall"/>
+		<property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="0e15e6"/>
+	</block>
+	
+	<block name="cbpPipeBattonPropWall">
+		<property name="Extends" value="cbpStunBattonPropWall"/>
+		<property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="0e15e6"/>
+		<property name="Model" value="@:Other/Items/Weapons/Melee/PipeBaton/pipeBatonPrefab.prefab"/>
+	</block>
 		
+</append>		
 		<!-- ************************************************************************* 
             ADDS RANDOM ROTATION TO PLANTS, RUBISH, TRASH, ETC: When placed 
         ************************************************************************** -->

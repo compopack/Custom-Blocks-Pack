@@ -1804,5 +1804,23 @@
 		  </append>
 		<!-- XYTH AND SPHEREII MANNEQUINS -->
 		
+		<placeholder name="cbpStunBattonWallRandomHelper">
+			<block name="cbpStunBattonPropWall_Green" prob="1"/>
+			<block name="cbpStunBattonPropWall_Red" prob="1"/>
+			<block name="cbpStunBattonPropWall_Purple" prob="1"/>
+			<block name="cbpStunBattonPropWall_Blue" prob="1"/>
+			<block name="cbpPipeBattonPropWall" prob="1"/>					
+		</placeholder>	
+				
+		<placeholder name="cbpSMG5WallRandomHelper">
+			<block name="cbpSMG5PropWall_Red" prob="1"/>
+			<block name="cbpSMG5PropWall_Blue" prob="1"/>			
+		</placeholder>
+			
+		<placeholder name="cbpTacticalARWallRandomHelper">
+			<block name="cbpTacticalARPropWall_Red" prob="1"/>
+			<block name="cbpTacticalARPropWall_Orange" prob="1"/>			
+		</placeholder>
+		
 		
 </blockplaceholders>

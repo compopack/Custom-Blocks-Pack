@@ -25087,6 +25087,67 @@
 		<property name="TintColor" value="0e15e6"/>
 		<property name="Model" value="@:Other/Items/Weapons/Melee/PipeBaton/pipeBatonPrefab.prefab"/>
 	</block>
+	
+	<block name="cbpGyroPropRed">			
+		<property name="Extends" value="cbpGyroProp"/>
+		<property name="CustomIcon" value="gyrocopterStatic"/>
+		<property name="CustomIconTint" value="a02adb"/>
+		<property name="TintColor" value="9C7A7A"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="1,1,4"/>
+	</block>
+	
+	<block name="cbpSMG5PropWall_Red">
+		<property name="Extends" value="cbpSMG5PropWall"/>
+		<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="c2061c"/>
+	</block>
+	
+	<block name="cbpSMG5PropWall_Blue">
+		<property name="Extends" value="cbpSMG5PropWall"/>
+		<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="1f0991"/>
+	</block>
+	
+	<block name="cbpTacticalARPropWall_Red">
+		<property name="Extends" value="cbpTacticalARPropWall"/>
+		<property name="CustomIcon" value="gunMGT2TacticalAR"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="990615"/>
+	</block>
+	
+	<block name="cbpTacticalARPropWall_Orange">
+		<property name="Extends" value="cbpTacticalARPropWall"/>
+		<property name="CustomIcon" value="gunMGT2TacticalAR"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="996606"/>
+	</block>	
+	
+	<block name="cbpStunBattonWallRandomHelper">
+		<property name="Extends" value="cbpStunBattonPropWall"/>
+		<property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="190aa3"/>
+	</block>
+	
+	<block name="cbpSMG5WallRandomHelper">
+		<property name="Extends" value="cbpSMG5PropWall"/>
+		<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="1f0991"/>
+	</block>
+	
+	<block name="cbpTacticalARWallRandomHelper">
+		<property name="Extends" value="cbpTacticalARPropWall"/>
+		<property name="CustomIcon" value="gunMGT2TacticalAR"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="TintColor" value="996606"/>
+	</block>
+	
 		
 </append>		
 		<!-- ************************************************************************* 

@@ -207,8 +207,8 @@
         <property name="SortOrder1" value="B109"/>
         <property name="SortOrder2" value="0202"/>
         <property name="FilterTags" value="MC_building,SC_plumbing"/>
-        <property name="CustomIcon" value="powerSwitch01"/>
-        <property name="CustomIconTint" value="A0A0A0"/> <!-- Added tint color -->
+        <property name="CustomIcon" value="showerHandle01"/>
+        <property name="CustomIconTint" value="A0A0A0"/>
     </block>
     <block name="cbpLightPanelLED">
         <property name="Extends" value="lightPanelLEDWhite"/>

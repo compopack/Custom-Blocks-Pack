@@ -25086,18 +25086,7 @@
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="TintColor" value="0e15e6"/>
 		<property name="Model" value="@:Other/Items/Weapons/Melee/PipeBaton/pipeBatonPrefab.prefab"/>
-	</block>
-	
-	<block name="cbpGyroPropRed">			
-		<property name="Extends" value="cbpGyroProp"/>
-		<property name="CustomIcon" value="gyrocopterStatic"/>
-		<property name="CustomIconTint" value="a02adb"/>
-		<property name="TintColor" value="9C7A7A"/>
-		<property name="CreativeMode" value="Dev"/>
-		<property name="Material" value="MstainlessSteel"/>
-		<property name="DisplayType" value="blockMulti"/>
-		<property name="MultiBlockDim" value="1,1,4"/>
-	</block>
+	</block>	
 	
 	<block name="cbpSMG5PropWall_Red">
 		<property name="Extends" value="cbpSMG5PropWall"/>

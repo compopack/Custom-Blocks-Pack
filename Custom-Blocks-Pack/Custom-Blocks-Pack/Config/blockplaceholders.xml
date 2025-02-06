@@ -1789,20 +1789,6 @@
 			<block name="cbpCampingTentAngularArmyGreen" prob="0.2"/>
 			<block name="cbpCampingTentAngularDamagedArmyGreen" prob="0.6"/>
 		</placeholder>
-		</append>
-		
-		<!-- XYTH AND SPHEREII MANNEQUINS -->
-		<append xpath="/blockplaceholders">
-			<placeholder name="mannequinFemaleTrapRandomHelper">
-			<block name="decoMannequinFemale" prob=".0003" />
-			<block name="SpawnCubeMannequinFemale" prob=".0001"/>	
-			</placeholder>
-			<placeholder name="mannequinMaleTrapRandomHelper">
-			<block name="decoMannequinMale" prob=".0003" />
-			<block name="SpawnCubeMannequinMale" prob=".0001"/>	
-			</placeholder>
-		  </append>
-		<!-- XYTH AND SPHEREII MANNEQUINS -->
 		
 		<placeholder name="cbpStunBattonWallRandomHelper">
 			<block name="cbpStunBattonPropWall_Green" prob="1"/>
@@ -1821,6 +1807,22 @@
 			<block name="cbpTacticalARPropWall_Red" prob="1"/>
 			<block name="cbpTacticalARPropWall_Orange" prob="1"/>			
 		</placeholder>
+		</append>
+		
+		<!-- XYTH AND SPHEREII MANNEQUINS -->
+		<append xpath="/blockplaceholders">
+			<placeholder name="mannequinFemaleTrapRandomHelper">
+			<block name="decoMannequinFemale" prob=".0003" />
+			<block name="SpawnCubeMannequinFemale" prob=".0001"/>	
+			</placeholder>
+			<placeholder name="mannequinMaleTrapRandomHelper">
+			<block name="decoMannequinMale" prob=".0003" />
+			<block name="SpawnCubeMannequinMale" prob=".0001"/>	
+			</placeholder>
+		  </append>
+		<!-- XYTH AND SPHEREII MANNEQUINS -->
+		
+		
 		
 		
 </blockplaceholders>

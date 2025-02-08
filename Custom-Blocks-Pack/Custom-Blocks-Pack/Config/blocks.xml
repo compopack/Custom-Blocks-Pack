@@ -25009,6 +25009,28 @@
 		<property name="SpawnGroup" value="BoarGroup"/>
 		<property name="SortOrder2" value="0009"/>
 	</block>
+	
+	<block name="cbpUDTriggerBlockCube">
+        <property name="CreativeMode" value="Dev"/>    
+        <property name="Class" value="TriggerDowngrade"/>
+        <property name="Extends" value="concreteNoUpgradeMaster"/>
+        <property name="CustomIcon" value="shapeCube"/>
+        <property name="CustomIconTint" value="ad3b85"/>    
+        <property name="Shape" value="New"/>
+        <property name="Model" value="Cube"/> 
+        <property name="DowngradeBlock" value="cbpUDAir"/>
+        <property name="ItemTypeIcon" value="fire"/>
+        <property name="ModelOffset" value="1,0,1"/>
+    </block>
+
+    <block name="cbpUDAir">
+        <property name="Material" value="Mair"/>
+        <property name="Shape" value="Invisible"/>
+        <property name="Model" value="Cube"/>
+        <property name="Texture" value="250"/>
+        <property name="WaterFlow" value="permitted"/>
+        <property name="ImposterDontBlock" value="true"/>
+    </block>
 	<!-- ************************************************************************* 
             Svarii
         ************************************************************************** -->

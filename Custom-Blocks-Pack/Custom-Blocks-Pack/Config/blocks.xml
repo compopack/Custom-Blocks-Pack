@@ -24915,6 +24915,144 @@
 			<property name="Explosion.DamageBonus.wood" value="-1"/>
 		</block>
 		
+	<!-- ************************************************************************* 
+           NON SLEEPER BLOCK ANIMALS: to SPAWN IN NORMAL VOLUMES
+		   ************************************************************************** -->			
+	
+	<!-- REGULAR -->
+	<block name="cbpsleeperStagAnimal">
+			<property name="Extends" value="sleeperSit" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DescriptionKey" value="sleeperAnimalDesc"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepWolfPrefab"/>
+			<property name="SpawnGroup" value="StagGroup"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="cbpsleeperBearSmallAnimal">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Animals/Bear/sleeperPose/idleSleeperBearPrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="SpawnGroup" value="BearSmallGroup"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="cbpsleeperCoyoteAnimal">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepZombieDogPrefab"/>
+			<property name="SpawnGroup" value="CoyoteGroup"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<block name="cbpsleeperDireWolfAnimal">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="animalDireWolf"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepWolfPrefab"/>
+			<property name="SpawnGroup" value="DireWolfGroup"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<block name="cbpsleeperDoeAnimal">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/CHICKEN/sleeperPose/idleSleepChickenPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="SpawnGroup" value="DoeGroup"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+
+		<block name="cbpsleeperMountainLionAnimal">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Rabbit/sleeperPose/idleSleeperRabbit"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="SpawnGroup" value="MountainLionGroup"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+
+		<block name="cbpsleeperVultureRadiatedAnimal">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVulturePrefab"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,radiated,vulture"/>
+			<property name="Radiated" value=""/>
+			<property name="SpawnGroup" value="ZombieVultureRadiatedGroup"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+		<!-- REGULAR -->
+		<!-- INFESTED -->
+		<block name="cbpinfestedSleeperStagAnimal">
+			<property name="Extends" value="infestedSleeperSit" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DescriptionKey" value="sleeperAnimalDesc"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepWolfInfestedPrefab"/>
+			<property name="SpawnGroup" value="StagGroup"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="cbpinfestedSleeperBearSmallAnimal">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Animals/Bear/sleeperPose/idleSleeperBearInfestedPrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="SpawnGroup" value="BearSmallGroup"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="cbpinfestedSleeperCoyoteAnimal">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepZombieDogInfestedPrefab"/>
+			<property name="SpawnGroup" value="CoyoteGroup"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<block name="cbpinfestedSleeperDireWolfAnimal">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="animalDireWolf"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepWolfInfestedPrefab"/>
+			<property name="SpawnGroup" value="DireWolfGroup"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<block name="cbpinfestedSleeperDoeAnimal">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVultureInfestedPrefab"/>
+			<property name="SpawnGroup" value="DoeGroup"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+
+		<block name="cbpinfestedSleeperMountainLionAnimal">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVultureInfestedPrefab"/>
+			<property name="SpawnGroup" value="MountainLionGroup"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+
+		<block name="cbpinfestedSleeperVultureRadiatedAnimal">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVultureInfestedPrefab"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,radiated,vulture"/>
+			<property name="Radiated" value=""/>
+			<property name="SpawnGroup" value="ZombieVultureRadiatedGroup"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+		<!-- INFESTED -->
+	
 		
 		<!-- ************************************************************************* 
            MANNEQUINS: ADDS XYTH AND SHPEREII MANEQUINS

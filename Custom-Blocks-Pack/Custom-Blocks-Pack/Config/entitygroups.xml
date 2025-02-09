@@ -115,4 +115,12 @@
 		cbp_animalZombieBat
     </csv>
 </append>
+<append xpath="/entitygroups">
+		<entitygroup name="CoyoteGroup">animalCoyote</entitygroup>
+		<entitygroup name="DireWolfGroup">animalDireWolf</entitygroup>
+		<entitygroup name="DoeGroup">animalDoe</entitygroup>
+		<entitygroup name="MountainLionGroup">animalMountainLion</entitygroup>
+		<entitygroup name="StagGroup">animalStag</entitygroup>
+		<entitygroup name="ZombieVultureRadiatedGroup">animalZombieVultureRadiated</entitygroup>
+</append>
 </COMPOPACK>

@@ -11132,7 +11132,7 @@
 			<property name="CustomIcon" value="cntClothesRackRoundShirts"/>
 			<property name="CustomIconTint" value="#FFF0F5"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="cbpShirts"/>
+			<property name="LootList" value="closet"/>
 			<property name="Model" value="@:Entities/LootContainers/clothsRackRoundShirtsPrefab.prefab"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="DowngradeBlock" value="cntClothesRackRoundEmpty2"/>

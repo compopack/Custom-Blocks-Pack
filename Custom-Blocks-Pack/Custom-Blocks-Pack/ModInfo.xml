@@ -4,7 +4,7 @@
     <Author value="MPLogue,Pille,Stallionsden,ZZTong,Xyth,Sphereii" />
     <Description value="Adds custom block definitions and supporting configurations. " />
     <DisplayName value="Custom-Blocks-Pack" />
-    <Version value="1.2.50.6" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
+    <Version value="1.2.50.7" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
     <!-- Build Date: 12/25/2023 -->
     <Website value="" />
     <!-- Dependencies: None -->

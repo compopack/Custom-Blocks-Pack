@@ -12971,9 +12971,11 @@
 			<property name="Explosion.ParticleIndex" value="7"/>
 		</block>
 		
-		<block name="cubpPoiAir">
+		<block name="cbpPoiAir">
 				<property name="Extends" value="air" />
 				<property name="Tags" value="air" />
+				<property name="CustomIcon" value="terrWaterPOI"/>
+				<property name="CustomIconTint" value="ff1a36"/>
 				<property name="CreativeMode" value="None" />
 				<property name="StabilityFull" value="true" />
 				<property name="Shape" value="Invisible" />

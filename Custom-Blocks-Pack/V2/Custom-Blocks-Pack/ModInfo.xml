@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Custom-Blocks-Pack" />
+    <Author value="MPLogue,Pille,Stallionsden,ZZTong,Xyth,Sphereii" />
+    <Description value="Adds custom block definitions and supporting configurations. " />
+    <DisplayName value="Custom-Blocks-Pack" />
+    <Version value="2.1.51.0" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
+    <!-- Build Date: 12/25/2023 -->
+    <Website value="" />
+    <!-- Dependencies: None -->
+</xml>
+<!-- Survive Playing: Predator Zombies(Ghosts) -->

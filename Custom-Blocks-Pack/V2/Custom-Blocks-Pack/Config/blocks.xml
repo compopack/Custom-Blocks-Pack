@@ -12974,9 +12974,7 @@
 		<block name="cbpPoiAir">
 				<property name="Extends" value="air" />
 				<property name="Tags" value="air" />
-				<property name="CustomIcon" value="terrWaterPOI"/>
-				<property name="CustomIconTint" value="ff1a36"/>
-				<property name="CreativeMode" value="Dev" />
+				<property name="CreativeMode" value="None" />
 				<property name="StabilityFull" value="true" />
 				<property name="Shape" value="Invisible" />
 				<property name="StabilitySupport" value="true" />
@@ -23461,6 +23459,14 @@
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="TintColor" value="996606"/>
 	</block>
+	
+	<block name="cbpCinderBlocks03">
+        <property name="Extends" value="cinderBlocks03"/>
+        <property name="CustomIcon" value="cinderBlocks03"/>
+        <property name="CustomIconTint" value="a02adb"/>
+        <property name="SortOrder2" value="6005"/>
+        <property name="ModelOffset" value="0,.5,.3"/>
+    </block>
 	
 	<!-- ************************************************************************* 
             ZOMBIE STATUES: Adds Zombie statues 

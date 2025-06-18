@@ -27,6 +27,9 @@
 <group name="cbpGhostMoe" spawner="cbpGhostMoe"/>
 <group name="cbpGhostYo" spawner="cbpGhostYo"/>
 <group name="cbpGhostBusinessMan" spawner="cbpGhostBusinessMan"/>
+<group name="cbpGhostBurnt" spawner="cbpGhostBurnt"/>
+<group name="cbpGhostPlagueSpitter" spawner="cbpGhostPlagueSpitter"/>
+<group name="cbpGhostFrostclaw" spawner="cbpGhostFrostclaw"/>
 <group name="cbpGhostArlene" spawner="cbpGhostArlene"/>
 <group name="cbpGhostDarlene" spawner="cbpGhostDarlene"/>
 <group name="cbpGhostMarlene" spawner="cbpGhostMarlene"/>
@@ -50,6 +53,9 @@
 <group name="cbpGhostMoeFeral" spawner="cbpGhostMoeFeral"/>
 <group name="cbpGhostYoFeral" spawner="cbpGhostYoFeral"/>
 <group name="cbpGhostBusinessManFeral" spawner="cbpGhostBusinessManFeral"/>
+<group name="cbpGhostBurntFeral" spawner="cbpGhostBurntFeral"/>
+<group name="cbpGhostPlagueSpitterFeral" spawner="cbpGhostPlagueSpitterFeral"/>
+<group name="cbpGhostFrostclawFeral" spawner="cbpGhostFrostclawFeral"/>
 <group name="cbpGhostArleneFeral" spawner="cbpGhostArleneFeral"/>
 <group name="cbpGhostDarleneFeral" spawner="cbpGhostDarleneFeral"/>
 <group name="cbpGhostMarleneFeral" spawner="cbpGhostMarleneFeral"/>
@@ -73,6 +79,9 @@
 <group name="cbpGhostMoeRadiated" spawner="cbpGhostMoeRadiated"/>
 <group name="cbpGhostYoRadiated" spawner="cbpGhostYoRadiated"/>
 <group name="cbpGhostBusinessManRadiated" spawner="cbpGhostBusinessManRadiated"/>
+<group name="cbpGhostBurntRadiated" spawner="cbpGhostBurntRadiated"/>
+<group name="cbpGhostPlagueSpitterRadiated" spawner="cbpGhostPlagueSpitterRadiated"/>
+<group name="cbpGhostFrostclawRadiated" spawner="cbpGhostFrostclawRadiated"/>
 <group name="cbpGhostArleneRadiated" spawner="cbpGhostArleneRadiated"/>
 <group name="cbpGhostDarleneRadiated" spawner="cbpGhostDarleneRadiated"/>
 <group name="cbpGhostMarleneRadiated" spawner="cbpGhostMarleneRadiated"/>
@@ -121,6 +130,21 @@
 	<spawner name="cbpGhostBusinessMan">
 		<gamestage stage="1">
 			<spawn group="cbpGhostBusinessMan" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="cbpGhostBurnt">
+		<gamestage stage="1">
+			<spawn group="cbpGhostBurnt" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>	
+	<spawner name="cbpGhostPlagueSpitter">
+		<gamestage stage="1">
+			<spawn group="cbpGhostPlagueSpitter" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>	
+	<spawner name="cbpGhostFrostclaw">
+		<gamestage stage="1">
+			<spawn group="cbpGhostFrostclaw" num="1" maxAlive="1" duration="10"/>
 		</gamestage>
 	</spawner>
 	<spawner name="cbpGhostArlene">
@@ -234,6 +258,21 @@
 			<spawn group="cbpGhostBusinessManFeral" num="1" maxAlive="1" duration="10"/>
 		</gamestage>
 	</spawner>
+	<spawner name="cbpGhostBurntFeral">
+		<gamestage stage="1">
+			<spawn group="cbpGhostBurntFeral" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>	
+	<spawner name="cbpGhostPlagueSpitterFeral">
+		<gamestage stage="1">
+			<spawn group="cbpGhostPlagueSpitterFeral" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>	
+	<spawner name="cbpGhostFrostclawFeral">
+		<gamestage stage="1">
+			<spawn group="cbpGhostFrostclawFeral" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
 	<spawner name="cbpGhostArleneFeral">
 		<gamestage stage="1">
 			<spawn group="cbpGhostArleneFeral" num="1" maxAlive="1" duration="10"/>
@@ -343,6 +382,21 @@
 	<spawner name="cbpGhostBusinessManRadiated">
 		<gamestage stage="1">
 			<spawn group="cbpGhostBusinessManRadiated" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="cbpGhostBurntRadiated">
+		<gamestage stage="1">
+			<spawn group="cbpGhostBurntRadiated" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>	
+	<spawner name="cbpGhostPlagueSpitterRadiated">
+		<gamestage stage="1">
+			<spawn group="cbpGhostPlagueSpitterRadiated" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>	
+	<spawner name="cbpGhostFrostclawRadiated">
+		<gamestage stage="1">
+			<spawn group="cbpGhostFrostclawRadiated" num="1" maxAlive="1" duration="10"/>
 		</gamestage>
 	</spawner>
 	<spawner name="cbpGhostArleneRadiated">

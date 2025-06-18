@@ -17,6 +17,9 @@
 		<entitygroup name="cbpGhostMoe">cbpGhostMoe</entitygroup>
 		<entitygroup name="cbpGhostYo">cbpGhostYo</entitygroup>		
 		<entitygroup name="cbpGhostBusinessMan">cbpGhostBusinessMan</entitygroup>
+		<entitygroup name="cbpGhostBurnt">cbpGhostBurnt</entitygroup>
+		<entitygroup name="cbpGhostPlagueSpitter">cbpGhostPlagueSpitter</entitygroup>
+		<entitygroup name="cbpGhostFrostclaw">cbpGhostFrostclaw</entitygroup>
 		<entitygroup name="cbpGhostArlene">cbpGhostArlene</entitygroup>
 		<entitygroup name="cbpGhostDarlene">cbpGhostDarlene</entitygroup>
 		<entitygroup name="cbpGhostMarlene">cbpGhostMarlene</entitygroup>
@@ -40,6 +43,9 @@
 		<entitygroup name="cbpGhostMoeFeral">cbpGhostMoeFeral</entitygroup>
 		<entitygroup name="cbpGhostYoFeral">cbpGhostYoFeral</entitygroup>
 		<entitygroup name="cbpGhostBusinessManFeral">cbpGhostBusinessManFeral</entitygroup>
+		<entitygroup name="cbpGhostBurntFeral">cbpGhostBurntFeral</entitygroup>
+		<entitygroup name="cbpGhostPlagueSpitterFeral">cbpGhostPlagueSpitterFeral</entitygroup>
+		<entitygroup name="cbpGhostFrostclawFeral">cbpGhostFrostclawFeral</entitygroup>
 		<entitygroup name="cbpGhostArleneFeral">cbpGhostArleneFeral</entitygroup>
 		<entitygroup name="cbpGhostDarleneFeral">cbpGhostDarleneFeral</entitygroup>
 		<entitygroup name="cbpGhostMarleneFeral">cbpGhostMarleneFeral</entitygroup>
@@ -63,6 +69,9 @@
 		<entitygroup name="cbpGhostMoeRadiated">cbpGhostMoeRadiated</entitygroup>
 		<entitygroup name="cbpGhostYoRadiated">cbpGhostYoRadiated</entitygroup>
 		<entitygroup name="cbpGhostBusinessManRadiated">cbpGhostBusinessManRadiated</entitygroup>
+		<entitygroup name="cbpGhostBurntRadiated">cbpGhostBurntRadiated</entitygroup>
+		<entitygroup name="cbpGhostPlagueSpitterRadiated">cbpGhostPlagueSpitterRadiated</entitygroup>
+		<entitygroup name="cbpGhostFrostclawRadiated">cbpGhostFrostclawRadiated</entitygroup>
 		<entitygroup name="cbpGhostArleneRadiated">cbpGhostArleneRadiated</entitygroup>
 		<entitygroup name="cbpGhostDarleneRadiated">cbpGhostDarleneRadiated</entitygroup>
 		<entitygroup name="cbpGhostMarleneRadiated">cbpGhostMarleneRadiated</entitygroup>
@@ -117,6 +126,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -141,6 +153,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -164,6 +179,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -187,6 +205,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -210,6 +231,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -233,6 +257,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -256,6 +283,9 @@
 		cbpGhostMoe,1
 		cbpGhostYo,1
 		cbpGhostBusinessMan,1
+		cbpGhostBurnt,1
+		cbpGhostPlagueSpitter,1
+		cbpGhostFrostclaw,1
 		cbpGhostArlene,1
 		cbpGhostDarlene,1
 		cbpGhostMarlene,1
@@ -280,7 +310,10 @@
 		cbpGhostTomClarkFeral,1
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
-		cbpGhostBusinessManFeral,1
+		cbpGhostBusinessManFeral,1		
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1		
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -304,6 +337,9 @@
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
 		cbpGhostBusinessManFeral,1
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -327,6 +363,9 @@
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
 		cbpGhostBusinessManFeral,1
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -350,6 +389,9 @@
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
 		cbpGhostBusinessManFeral,1
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -373,6 +415,9 @@
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
 		cbpGhostBusinessManFeral,1
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -396,6 +441,9 @@
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
 		cbpGhostBusinessManFeral,1
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -419,6 +467,9 @@
 		cbpGhostMoeFeral,1
 		cbpGhostYoFeral,1
 		cbpGhostBusinessManFeral,1
+		cbpGhostBurntFeral,1
+		cbpGhostPlagueSpitterFeral,1
+		cbpGhostFrostclawFeral,1
 		cbpGhostArleneFeral,1
 		cbpGhostDarleneFeral,1
 		cbpGhostMarleneFeral,1
@@ -443,7 +494,10 @@
 		cbpGhostTomClarkRadiated,1
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
-		cbpGhostBusinessManRadiated,1
+		cbpGhostBusinessManRadiated,1		
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1		
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1
@@ -466,6 +520,9 @@
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
 		cbpGhostBusinessManRadiated,1
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1
@@ -488,6 +545,9 @@
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
 		cbpGhostBusinessManRadiated,1
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1
@@ -510,6 +570,9 @@
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
 		cbpGhostBusinessManRadiated,1
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1
@@ -532,6 +595,9 @@
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
 		cbpGhostBusinessManRadiated,1
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1
@@ -554,6 +620,9 @@
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
 		cbpGhostBusinessManRadiated,1
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1
@@ -576,6 +645,9 @@
 		cbpGhostMoeRadiated,1
 		cbpGhostYoRadiated,1
 		cbpGhostBusinessManRadiated,1
+		cbpGhostBurntRadiated,1
+		cbpGhostPlagueSpitterRadiated,1
+		cbpGhostFrostclawRadiated,1
 		cbpGhostArleneRadiated,1
 		cbpGhostDarleneRadiated,1
 		cbpGhostMarleneRadiated,1

@@ -348,7 +348,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="0.9"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArlene.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Arlene/ZArlene.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SoundRandom" value="snakeroam"/>
 			<property name="SoundAlert" value="snakealert"/>
@@ -384,7 +384,7 @@
 		<entity_class name="cbpGhostArleneFeral" extends="cbpGhostArlene">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArleneFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Arlene/ZArleneFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -403,7 +403,7 @@
 		<entity_class name="cbpGhostArleneRadiated" extends="cbpGhostArleneFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArleneRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Arlene/ZArleneRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -422,7 +422,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="0.97"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMarlene.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarlene.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="SoundRandom" value="snakeroam"/>
@@ -457,7 +457,7 @@
 		<entity_class name="cbpGhostMarleneFeral" extends="cbpGhostMarlene">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMarleneFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarleneFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -476,7 +476,7 @@
 		<entity_class name="cbpGhostMarleneRadiated" extends="cbpGhostMarleneFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMarleneRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarleneRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -495,7 +495,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="0.99"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCocktailWaitress.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitress.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name ="DismemberTag_L_HeadGore" value="Cocktailwaitress/Blade/Head;Cocktailwaitress/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
@@ -518,7 +518,7 @@
 		<entity_class name="cbpGhostPartyGirlFeral" extends="cbpGhostPartyGirl">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCocktailWaitressFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitressFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -537,7 +537,7 @@
 		<entity_class name="cbpGhostPartyGirlRadiated" extends="cbpGhostPartyGirlFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCocktailWaitressRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitressRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -555,7 +555,7 @@
 		<entity_class name="cbpGhostNurse" extends="zombieTemplateShort">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZNurse.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurse.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="SoundRandom" value="snakeroam"/>
@@ -591,7 +591,7 @@
 		<entity_class name="cbpGhostNurseFeral" extends="cbpGhostNurse">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZNurseFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurseFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -610,7 +610,7 @@
 		<entity_class name="cbpGhostNurseRadiated" extends="cbpGhostNurseFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZNurseRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurseRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -628,7 +628,7 @@
 		<entity_class name="cbpGhostJoe" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZJoe.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Joe/ZJoe.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -655,7 +655,7 @@
 		<entity_class name="cbpGhostJoeFeral" extends="cbpGhostJoe">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZJoeFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Joe/ZJoeFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -674,7 +674,7 @@
 		<entity_class name="cbpGhostJoeRadiated" extends="cbpGhostJoeFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZJoeRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Joe/ZJoeRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -693,7 +693,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="0.95"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteve.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Steve/ZSteve.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -721,7 +721,7 @@
 		<entity_class name="cbpGhostSteveFeral" extends="cbpGhostSteve">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Steve/ZSteveFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -740,7 +740,7 @@
 		<entity_class name="cbpGhostSteveRadiated" extends="cbpGhostSteveFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Steve/ZSteveRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -759,7 +759,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="0.95"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZTomClark.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClark.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -786,7 +786,7 @@
 		<entity_class name="cbpGhostTomClarkFeral" extends="cbpGhostTomClark">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZTomClarkFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClarkFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -805,7 +805,7 @@
 		<entity_class name="cbpGhostTomClarkRadiated" extends="cbpGhostTomClarkFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZTomClarkRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClarkRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -823,7 +823,7 @@
 		<entity_class name="cbpGhostBusinessMan" extends="zombieTemplateShort">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuit.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Suit/ZSuit.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -850,7 +850,7 @@
 		<entity_class name="cbpGhostBusinessManFeral" extends="cbpGhostBusinessMan">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuitFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -869,7 +869,7 @@
 		<entity_class name="cbpGhostBusinessManRadiated" extends="cbpGhostBusinessManFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuitRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -888,7 +888,7 @@
 		<entity_class name="cbpGhostBurnt" extends="zombieTemplateShort">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurnt.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurnt.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="WalkType" value="7"/>
 			<property name="Mass" value="160"/>
@@ -922,7 +922,7 @@
 		<entity_class name="cbpGhostBurntFeral" extends="cbpGhostBurnt">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurntFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SoundSpawn" value="Ambient_Loops/a_fire_embersmoke_sm_lp"/>
 
@@ -942,7 +942,7 @@
 		<entity_class name="cbpGhostBurntRadiated" extends="cbpGhostBurntFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurntRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -955,6 +955,182 @@
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		 </entity_class>
+		 
+		 <!-- cbp Ghost Plaque Spitter -->
+		 <entity_class name="cbpGhostPlagueSpitter" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Censor" value="1,2"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/PlagueSpitter/ZPlagueSpitter.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="160"/>
+			<property name="SoundRandom" value="plagueroam"/>
+			<property name="SoundAlert" value="plaguealert"/>
+			<property name="SoundAttack" value="plagueattack"/>
+			<property name="SoundHurt" value="plaguepain"/>
+			<property name="SoundDeath" value="plaguedeath"/>
+			<property name="SoundSense" value="plaguesense"/>
+			<property name="SoundStepType" value="barestep"/>
+			<property name="ExperienceGain" value="600"/><!-- XP Plague Spitter -->
+			
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value="PlagueSpitter/Dismemberment/Blade/Head;PlagueSpitter/Dismemberment/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="PlagueSpitter/Dismemberment/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="PlagueSpitter/Dismemberment/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="PlagueSpitter/Dismemberment/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="PlagueSpitter/Dismemberment/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="PlagueSpitter/Dismemberment/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="PlagueSpitter/Dismemberment/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="AITask" value="
+			BreakBlock|
+			ApproachDistraction|
+			RangedAttackTarget itemType=1;cooldown=4;duration=5|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+
+			<!-- Gameplay zombiePlagueSpitter -->
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/> <!-- Normal -->
+			<property name="HandItem" value="meleeHandZombiePlagueSpitter"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrong"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostPlagueSpitterFeral" extends="cbpGhostPlagueSpitter">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/PlagueSpitter/ZPlagueSpitterFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<!-- Gameplay zombiePlagueSpitterFeral -->
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
+			<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/> <!-- Normal Feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterFeral"/>
+			<property name="ExperienceGain" value="750"/><!-- XP Normal Feral -->
+			<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongFeral"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostPlagueSpitterRadiated" extends="cbpGhostPlagueSpitterFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/PlagueSpitter/ZPlagueSpitterRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<!-- Gameplay zombiePlagueSpitterRadiated -->
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+			<property name="ExperienceGain" value="1200"/><!-- XP Normal Radiated -->
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongRadiated"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+		
+		<!-- *** ZOMBIE_FROSTCLAW-->
+		<entity_class name="cbpGhostFrostclaw" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SizeScale" value="1.2"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Frostclaw/ZFrostClaw.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="220"/>
+			<property name="SoundRandom" value="frostclawroam"/>
+			<property name="SoundAlert" value="frostclawalert"/>
+			<property name="SoundAttack" value="frostclawattack"/>
+			<property name="SoundHurt" value="frostclawpain"/>
+			<property name="SoundDeath" value="frostclawdeath"/>
+			<property name="SoundSense" value="frostclawsense"/>
+			<property name="SoundStepType" value="barestep"/>
+			<property name="PainResistPerHit" value="3, .8, .4"/><!-- normal, at low health, health% -->
+			<property name="ExperienceGain" value="600"/><!-- XP Frostclaw -->
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value="Frostclaw/Dismemberment/Blade/Head;Frostclaw/Dismemberment/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Frostclaw/Dismemberment/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Frostclaw/Dismemberment/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Frostclaw/Dismemberment/Blade/LeftLowerLeg" data="type=blade+target=LeftLeg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Frostclaw/Dismemberment/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Frostclaw/Dismemberment/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Frostclaw/Dismemberment/Blade/RightLowerLeg" data="type=blade+target=RightLeg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="AITask" value="
+			BreakBlock|
+			ApproachDistraction|
+			RangedAttackTarget startAnimType=2;itemType=1;cooldown=4;duration=5;minRange=5;maxRange=40;sndStart=frostclawwarning;sndRelease=frostclawrelease|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+
+			<!-- Gameplay zombieFrostclaw -->
+			<property name="MoveSpeed" value=".17"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/> <!-- Normal -->
+			<property name="HandItem" value="meleeHandZombieFrostclaw"/>
+			<property name="RightHandJointName" value="Boulder"/>
+			<property name="SightRange" value="40"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdy"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostFrostclawFeral" extends="cbpGhostFrostclaw">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Frostclaw/ZFrostClawFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<!-- Gameplay zombieFrostclawFeral -->
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
+			<property name="MoveSpeedAggro" value=".6, 1.45"/> <!-- Normal Feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieFrostclawFeral"/>
+			<property name="ExperienceGain" value="750"/><!-- XP Frostclaw Feral -->
+			<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyFeral"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostFrostclawRadiated" extends="cbpGhostFrostclawFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Frostclaw/ZFrostClawRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="MatColor" value="radiated"/>			
+
+			<!-- Gameplay zombieFrostclawRadiated -->
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+			<property name="ExperienceGain" value="1200"/><!-- XP Frostclaw Radiated -->
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthSturdyRadiated"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+		
 
 		<!-- cbpGhost Spider -->
 		<entity_class name="cbpGhostSpider" extends="zombieTemplateMale">
@@ -962,7 +1138,7 @@
 			<property name="SizeScale" value=".94"/>
 			<property name="Tags" value="entity,zombie,spider"/>
 			<property name="Prefab" value="ZLong"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpider.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Spider/ZSpider.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="RootMotion" value="true"/>
@@ -1027,7 +1203,7 @@
 		<entity_class name="cbpGhostSpiderFeral" extends="cbpGhostSpider">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,feral,spider"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpiderFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1046,7 +1222,7 @@
 		<entity_class name="cbpGhostSpiderRadiated" extends="cbpGhostSpiderFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,feral,radiated,spider"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpiderRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1071,7 +1247,7 @@
 			<property name="SoundHurt" value="snakepain"/>
 			<property name="SoundDeath" value="snakedeath"/>
 			<property name="SoundSense" value="snakesense"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBoe.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Boe/ZBoe.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -1098,7 +1274,7 @@
 		<entity_class name="cbpGhostBoeFeral" extends="cbpGhostBoe">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBoeFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1116,7 +1292,7 @@
 		<entity_class name="cbpGhostBoeRadiated" extends="cbpGhostBoeFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBoeRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1140,7 +1316,7 @@
 			<property name="SoundHurt" value="snakepain"/>
 			<property name="SoundDeath" value="snakedeath"/>
 			<property name="SoundSense" value="snakesense"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHazmat.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmat.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="WalkType" value="7"/>
@@ -1165,7 +1341,7 @@
 		<entity_class name="cbpGhostMaleHazmatFeral" extends="cbpGhostMaleHazmat">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHazmatFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 		  
 			<property name="WalkType" value="7"/>
@@ -1191,7 +1367,7 @@
 		<entity_class name="cbpGhostMaleHazmatRadiated" extends="cbpGhostMaleHazmat">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHazmatRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="WalkType" value="7"/>
@@ -1219,7 +1395,7 @@
 		<entity_class name="cbpGhostJanitor" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMechanic.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanic.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -1245,7 +1421,7 @@
 		<entity_class name="cbpGhostJanitorFeral" extends="cbpGhostJanitor">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMechanicFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1263,7 +1439,7 @@
 		<entity_class name="cbpGhostJanitorRadiated" extends="cbpGhostJanitor">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMechanicRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1286,7 +1462,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="1.08"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZInmate.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZInmate.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -1312,7 +1488,7 @@
 		<entity_class name="cbpGhostInmateFeral" extends="cbpGhostInmate">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZInmateFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZInmateFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1330,7 +1506,7 @@
 		<entity_class name="cbpGhostInmateRadiated" extends="cbpGhostInmate">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZInmateRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZInmateRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1353,7 +1529,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="1.08"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMoe.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Moe/ZMoe.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -1389,7 +1565,7 @@
 		<entity_class name="cbpGhostMoeFeral" extends="cbpGhostMoe">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMoeFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1407,7 +1583,7 @@
 		<entity_class name="cbpGhostMoeRadiated" extends="cbpGhostMoeFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMoeRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1425,7 +1601,7 @@
 		<entity_class name="cbpGhostLab" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLab.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Lab/ZLab.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SoundRandom" value="snakeroam"/>
 			<property name="SoundAlert" value="snakealert"/>
@@ -1460,7 +1636,7 @@
 		<entity_class name="cbpGhostLabFeral" extends="cbpGhostLab">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLabFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Lab/ZLabFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1478,7 +1654,7 @@
 		<entity_class name="cbpGhostLabRadiated" extends="cbpGhostLabFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLabRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Lab/ZLabRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1497,7 +1673,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="0.98"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZDarlene.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarlene.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="SoundRandom" value="snakeroam"/>
@@ -1530,7 +1706,7 @@
 		<entity_class name="cbpGhostDarleneFeral" extends="cbpGhostDarlene">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZDarleneFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1548,7 +1724,7 @@
 		<entity_class name="cbpGhostDarleneRadiated" extends="cbpGhostDarleneFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZDarleneRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1567,7 +1743,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="1.02"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZYo.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Yo/ZYo.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -1593,7 +1769,7 @@
 		<entity_class name="cbpGhostYoFeral" extends="cbpGhostYo">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZYoFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Yo/ZYoFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1611,7 +1787,7 @@
 		<entity_class name="cbpGhostYoRadiated" extends="cbpGhostYoFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZYoRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Yo/ZYoRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1635,7 +1811,7 @@
 			<property name="SoundHurt" value="snakepain"/>
 			<property name="SoundDeath" value="snakedeath"/>
 			<property name="SoundSense" value="snakesense"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWorker.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Worker/ZWorker.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="ModelType" value="Standard"/>
@@ -1665,7 +1841,7 @@
 		<entity_class name="cbpGhostUtilityWorkerFeral" extends="cbpGhostUtilityWorker">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWorkerFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1684,7 +1860,7 @@
 		<entity_class name="cbpGhostUtilityWorkerRadiated" extends="cbpGhostUtilityWorkerFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWorkerRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1704,7 +1880,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="1.08"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBiker.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Biker/ZBiker.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="Mass" value="230"/>
 			<property name="WalkType" value="7"/>
@@ -1735,7 +1911,7 @@
 		<entity_class name="cbpGhostBikerFeral" extends="cbpGhostBiker">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBikerFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1755,7 +1931,7 @@
 		<entity_class name="cbpGhostBikerRadiated" extends="cbpGhostBikerFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBikerRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1775,7 +1951,7 @@
 		<entity_class name="cbpGhostLumberjack" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLumberjack.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjack.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="WalkType" value="2"/>
@@ -1813,7 +1989,7 @@
 		<entity_class name="cbpGhostLumberjackFeral" extends="cbpGhostLumberjack">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLumberjackFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1832,7 +2008,7 @@
 		<entity_class name="cbpGhostLumberjackRadiated" extends="cbpGhostLumberjackFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLumberjackRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1851,7 +2027,7 @@
 		<entity_class name="cbpGhostFemaleFat" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMama.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/BigMama/ZBigMama.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="SoundRandom" value="snakeroam"/>
@@ -1897,7 +2073,7 @@
 		<entity_class name="cbpGhostFemaleFatFeral" extends="cbpGhostFemaleFat">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMamaFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/BigMama/ZBigMamaFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1916,7 +2092,7 @@
 		<entity_class name="cbpGhostFemaleFatRadiated" extends="cbpGhostFemaleFatFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMamaRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/BigMama/ZBigMamaRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -1935,7 +2111,7 @@
 		<entity_class name="cbpGhostFatHawaiian" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHawaiian.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiian.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="SoundRandom" value="snakeroam"/>
@@ -1975,7 +2151,7 @@
 		<entity_class name="cbpGhostFatHawaiianFeral" extends="cbpGhostFatHawaiian">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHawaiianFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -1994,7 +2170,7 @@
 		<entity_class name="cbpGhostFatHawaiianRadiated" extends="cbpGhostFatHawaiianFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHawaiianRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -2013,7 +2189,7 @@
 		<entity_class name="cbpGhostBowler" extends="zombieTemplateMale">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBowler.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZBowler.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="SoundRandom" value="snakeroam"/>
@@ -2053,7 +2229,7 @@
 		<entity_class name="cbpGhostBowlerFeral" extends="cbpGhostBowler">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBowlerFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZBowlerFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -2072,7 +2248,7 @@
 		<entity_class name="cbpGhostBowlerRadiated" extends="cbpGhostBowlerFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBowlerRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZBowlerRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -2092,7 +2268,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Class" value="EntityZombieCop"/>
 			<property name="Tags" value="entity,zombie,walker,zombieCop"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCop.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Cop/ZCop.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="WalkType" value="1"/>
 			<property name="RightHandJointName" value="Jaw"/>
@@ -2164,7 +2340,7 @@
 		<entity_class name="cbpGhostFatCopFeral" extends="cbpGhostFatCop">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCopFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Cop/ZCopFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -2187,7 +2363,7 @@
 		<entity_class name="cbpGhostFatCopRadiated" extends="cbpGhostFatCopFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieCop"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCopRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Cop/ZCopRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -2211,7 +2387,7 @@
 		<entity_class name="cbpGhostSkateboarder" extends="cbpGhostBoe">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZThug.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Thug/ZThug.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="SoundRandom" value="snakeroam"/>
@@ -2241,7 +2417,7 @@
 		<entity_class name="cbpGhostSkateboarderFeral" extends="cbpGhostSkateboarder">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZThugFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Thug/ZThugFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -2260,7 +2436,7 @@
 		<entity_class name="cbpGhostSkateboarderRadiated" extends="cbpGhostSkateboarderFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZThugRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Thug/ZThugRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -2285,7 +2461,7 @@
 			<property name="SoundHurt" value="snakepain"/>
 			<property name="SoundDeath" value="snakedeath"/>
 			<property name="SoundSense" value="snakesense"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSoldier.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Soldier/ZSoldier.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="WalkType" value="2"/>
@@ -2317,7 +2493,7 @@
 		<entity_class name="cbpGhostSoldierFeral" extends="cbpGhostSoldier">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,zombieSoldier"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSoldierFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Soldier/ZSoldierFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -2337,7 +2513,7 @@
 		<entity_class name="cbpGhostSoldierRadiated" extends="cbpGhostSoldierFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieSoldier"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSoldierRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Soldier/ZSoldierRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -2358,7 +2534,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="SizeScale" value="1.1"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWightFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Wight/ZWightFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SoundRandom" value="snakeroam"/>
 			<property name="SoundAlert" value="snakealert"/>
@@ -2396,7 +2572,7 @@
 		<entity_class name="cbpGhostWightRadiated" extends="cbpGhostWightFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Wight/ZWightRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="LegCrawlerThreshold" value="0"/>
@@ -2428,7 +2604,7 @@
 		<entity_class name="cbpGhostScreamer" extends="zombieTemplateShort">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamer.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Screamer/ZScreamer.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SoundRandom" value="snakeroam"/>
 			<property name="SoundAlert" value="snakealert"/>
@@ -2463,7 +2639,7 @@
 		<entity_class name="cbpGhostScreamerFeral" extends="cbpGhostScreamer">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamerFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Screamer/ZScreamerFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
@@ -2481,7 +2657,7 @@
 		<entity_class name="cbpGhostScreamerRadiated" extends="cbpGhostScreamerFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamerRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Screamer/ZScreamerRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
@@ -2501,7 +2677,7 @@
 		<entity_class name="cbpGhostMutated" extends="cbpGhostFatCop">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mutated/ZMutated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SizeScale" value="1"/>
 			<property name="ModelType" value="Standard"/>
@@ -2550,7 +2726,7 @@
 		<entity_class name="cbpGhostMutatedFeral" extends="cbpGhostMutated">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mutated/ZMutatedFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="SizeScale" value="1.1"/>
 
@@ -2569,7 +2745,7 @@
 		<entity_class name="cbpGhostMutatedRadiated" extends="cbpGhostMutatedFeral">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Mutated/ZMutatedRadiated.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
@@ -2591,7 +2767,7 @@
 			<property name="Class" value="EntityZombie"/>
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,crawler"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCrawler.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Crawler/ZCrawler.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 			<property name="Mass" value="140"/>
 			<property name="WalkType" value="21"/>
@@ -2627,7 +2803,7 @@
 		<entity_class name="cbpGhostSteveCrawlerFeral" extends="cbpGhostSteveCrawler">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,crawler,feral"/>
-			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCrawlerFeral.prefab"/>
+			<property name="Mesh" value="@:Entities/Zombies/Crawler/ZCrawlerFeral.prefab"/>
 			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
 
 			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>

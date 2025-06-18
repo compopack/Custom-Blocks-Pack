@@ -36,6 +36,6 @@
 				<property name="Mass" type="int" value="0"/>
 				<property name="MaxDamage" value="50000"/>
 				<property name="CanDestroy" value="false" />
-	</material>
+	  </material>
 </append>   
 </CBP>

@@ -1,4 +1,6 @@
 ﻿<doc>
+<conditional>
+    <if cond="game_version() &gt;= version(1,2,0)">
     <!-- **************************************************************
         Add an informative message to the game...
     *************************************************************** -->
@@ -6,4 +8,15 @@
     <append xpath="/doc/tips">
         <tip key="loadingCustomBlocksPack"/>
     </append>
+</if>
+    <else>
+	 <!-- **************************************************************
+        Add an informative message to the game...
+    *************************************************************** -->
+
+    <append xpath="/doc/tips">
+        <tip key="loadingCustomBlocksPack"/>
+    </append>
+</else>
+</conditional>
 </doc>

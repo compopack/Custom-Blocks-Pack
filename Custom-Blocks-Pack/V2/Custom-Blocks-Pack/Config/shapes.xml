@@ -1,5 +1,6 @@
-<configs>
-
+<CBP>
+<conditional>
+    <if cond="game_version() &gt;= version(1,2,0)">
 
 	<append xpath="/shapes">
 		<!-- *************************************************************************
@@ -1428,8 +1429,1439 @@
         <property name="Model" value="@:Shapes/cube.fbx"/>
 		<property name="ShapeCategories" value="Basic,Square" />
         <property name="Collide" value="movement"/>
-    </shape> 
-	 
+    </shape> 	 
 	</append>
+</if>
+    <else>
+	<append xpath="/shapes">
+		<!-- *************************************************************************
+            Admin Glass: Windows that are undamageable. 
+        ************************************************************************** -->
+		<!-- CLEAR -->
+		<shape name="cbpWindowStoreThreeSidedFull">
+		<property class="Admin"/>
+		<property name="Model" value="window_store_three_sided_full" />
+		<property name="Material" value="Mbedrock"/>
+		<property name="CustomIcon" value="shapeWindowStoreThreeSidedFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.975" />
+		<property name="WaterFlow" value="T,B,W,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowStoreThreeSidedFullOffset">
+		<property class="Admin"/>
+		<property name="Model" value="window_store_three_sided_full" />
+		<property name="Material" value="Mbedrock"/>
+		<property name="CustomIcon" value="shapeWindowStoreThreeSidedFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ModelOffset" value="1,0,-.95"/>
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.975" />
+		<property name="WaterFlow" value="T,B,W,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowStoreCornerFull">
+		<property class="Admin"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Model" value="window_store_corner_full" />
+		<property name="CustomIcon" value="shapeWindowStoreCornerFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
+		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowStoreCornerFullOffset">
+		<property class="Admin"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Model" value="window_store_corner_full" />
+		<property name="CustomIcon" value="shapeWindowStoreCornerFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ModelOffset" value="1,0,-.95"/>
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
+		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+	
+	<shape name="cbpWindow_01_offset">
+        <property name="Model" value="window_01" />
+		<property name="CustomIcon" value="shapeWindow01" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Basic,Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="ModelOffset" value="1,0,0.53"/>
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExchange" value="imposterPlate" />
+		<property name="UseGlobalUV" value=",GGGGGLL" />
+		<property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<property class="UpgradeBlock">
+			<property name="ItemCount" value="10000" /> <!-- Needed for material upgrade due to MaterialHitpointMultiplier -->
+		</property>
+		<property name="DowngradeBlock" value=":window01Broken" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+		<property name="WaterFlow" value="permitted" />
+	</shape>
+		
+		<!-- BULLETPROOF -->
+		<shape name="cbpWindowStoreThreeSidedBulletproofFull" tag="Bulletproof">
+			<property name="ShapeMenu" value="false" />
+			<property class="Admin"/>
+			<!-- <property name="Path" value="solid" /> -->
+			<property name="Model" value="window_store_three_sided_full" />
+			<property name="Material" value="Mbedrock"/>
+			<!-- <property name="Place" value="TowardsPlacerInverted" /> -->
+			<property name="CustomIcon" value="shapeWindowStoreThreeSidedBulletproofFull" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ShapeCategories" value="Windows" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="ImposterExclude" value="true" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="UseGlobalUV" value=",DDLDDDL" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E,333" />
+			<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+			<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+			<drop event="Destroy" count="0" />
+			<property name="WaterClipPlane" value="0, 0, 1, -0.975" />
+			<property name="WaterFlow" value="T,B,N,S,E," />
+		</shape>
+		
+		<shape name="cbpWindowStoreCornerBulletproofFull" tag="Bulletproof">
+		<property name="ShapeMenu" value="false" />
+		<property class="Admin"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Model" value="window_store_corner_full" />
+		<property name="CustomIcon" value="shapeWindowStoreCornerBulletproofFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,333" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
+		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowPlateRoundedSquare4SidedHalfWidthFullOffset">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="window_plate_rounded_square_4sided_half_width_full" />
+		<!-- <property name="Place" value="TowardsPlacerInverted" /> -->
+		<property name="CustomIcon" value="shapeWindowPlateRoundedSquare4SidedHalfWidthFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ModelOffset" value="1,0,.15"/>
+		<property name="UseGlobalUV" value=",DDDDDDL" />
+		<property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<property class="UpgradeBlock">
+			<property name="ItemCount" value="10000" /> <!-- Needed for material upgrade due to MaterialHitpointMultiplier -->
+		</property>
+		<property name="DowngradeBlock" value=":windowPlateRoundedSquare4SidedHalfWidthBroken" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+		<property name="WaterFlow" value="T,B,W,S,E," />
+	</shape>
+	
+		<shape name="cbpCubeHalfConfessionalOffset">
+			<property name="Path" value="solid" />
+			<property name="Model" value="cube_half_centered_confessional" />
+			<property name="CustomIcon" value="shapeCubeHalfCenteredConfessional" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value="1,0,0.75"/>
+			<property name="ShapeCategories" value="Deco" />
+			<property name="ImposterExclude" value="true" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="Collide" value="movement,melee,rocket" />
+			<property name="LightOpacity" value="0" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
 
-</configs>
+		<!-- *************************************************************************
+            WINDOW SHAPES: Windows that are waterproof. No water leakage
+        ************************************************************************** -->
+
+		<shape name="cbpBulletProofWaterProofWindowFull" tag="Bulletproof">
+			<property name="ShapeMenu" value="false" />
+			<property name="Model" value="window_store_four_sided_full" />
+			<property name="CustomIcon" value="shapeWindowStoreFourSidedBulletproofFull" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ShapeCategories" value="Windows" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="ImposterExclude" value="true" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="UseGlobalUV" value=",DDLDDDL" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E,333" />
+			<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+			<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+			<property name="DowngradeBlock" value="corrugatedMetalShapes:windowStoreFourSidedBroken" />
+			<drop event="Destroy" count="0" />
+		</shape>
+		
+		<shape name="cbpWindowStoreOneSidedFullNWL">
+		<property name="Model" value="window_store_one_sided_full" />
+		<property name="CustomIcon" value="shapeWindowStoreOneSidedFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<property class="UpgradeBlock">
+			<property name="ItemCount" value="10000" /> <!-- Needed for material upgrade due to MaterialHitpointMultiplier -->
+		</property>
+		<property name="DowngradeBlock" value=":windowStoreOneSidedBroken" />
+		<drop event="Destroy" count="0" />
+	</shape>	
+		
+		<!-- *************************************************************************
+            SINK: Farm Sink used in the creation of a farm sink.
+        ************************************************************************** -->
+		
+		 <shape name="cbpFarmSink">
+        <property name="Path" value="solid" />
+        <property name="Model" value="counter_half_hollow_top_offset" />
+        <property name="Place" value="TowardsPlacerInverted" />
+        <property name="CustomIcon" value="shapeCounterHalfHollowTopOffset" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+        <property name="ShapeCategories" value="Deco" />
+        <property name="ImposterExchange" value="imposterBlock" />
+        <property name="ShapeAltTexture" value="312,312,312,312,312,312,312" />
+        <property name="WaterClipPlane" value="0, 1, -1.192093E-07, -0.5189999" />
+        <property name="WaterFlow" value="permitted" />
+        <property name="ModelOffset" value="1,.01,.06"/>
+    </shape>
+	
+		<!-- *************************************************************************
+            ROUND SHAPES: Used to make the round a bouts in residential Culdesac Tiles
+        ************************************************************************** -->
+		
+		<shape name="cbpPlateRound13mLeft01">
+			<property name="Model" value="plate_round_13m_left01"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft02">
+			<property name="Model" value="plate_round_13m_left02"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft03">
+			<property name="Model" value="plate_round_13m_left03"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft04">
+			<property name="Model" value="plate_round_13m_left04"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft05">
+			<property name="Model" value="plate_round_13m_left05"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft06">
+			<property name="Model" value="plate_round_13m_left06"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft07">
+			<property name="Model" value="plate_round_13m_left07"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft08">
+			<property name="Model" value="plate_round_13m_left08"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft09">
+			<property name="Model" value="plate_round_13m_left09"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft10">
+			<property name="Model" value="plate_round_13m_left10"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft11">
+			<property name="Model" value="plate_round_13m_left11"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft12">
+			<property name="Model" value="plate_round_13m_left12"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft13">
+			<property name="Model" value="plate_round_13m_left13"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft14">
+			<property name="Model" value="plate_round_13m_left14"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft15">
+			<property name="Model" value="plate_round_13m_left15"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft16">
+			<property name="Model" value="plate_round_13m_left16"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft17">
+			<property name="Model" value="plate_round_13m_left17"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft18">
+			<property name="Model" value="plate_round_13m_left18"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft19">
+			<property name="Model" value="plate_round_13m_left19"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft20">
+			<property name="Model" value="plate_round_13m_left20"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mLeft21">
+			<property name="Model" value="plate_round_13m_left21"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke01" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mCenter01">
+			<property name="Model" value="plate_round_13m_center01"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke02" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mCenter02">
+			<property name="Model" value="plate_round_13m_center02"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke02" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		<shape name="cbpPlateRound13mRight01">
+			<property name="Model" value="plate_round_13m_right01"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight02">
+			<property name="Model" value="plate_round_13m_right02"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight03">
+			<property name="Model" value="plate_round_13m_right03"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight04">
+			<property name="Model" value="plate_round_13m_right04"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight05">
+			<property name="Model" value="plate_round_13m_right05"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight06">
+			<property name="Model" value="plate_round_13m_right06"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight07">
+			<property name="Model" value="plate_round_13m_right07"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight08">
+			<property name="Model" value="plate_round_13m_right08"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight09">
+			<property name="Model" value="plate_round_13m_right09"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight10">
+			<property name="Model" value="plate_round_13m_right10"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight11">
+			<property name="Model" value="plate_round_13m_right11"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight12">
+			<property name="Model" value="plate_round_13m_right12"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight13">
+			<property name="Model" value="plate_round_13m_right13"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight14">
+			<property name="Model" value="plate_round_13m_right14"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight15">
+			<property name="Model" value="plate_round_13m_right15"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight16">
+			<property name="Model" value="plate_round_13m_right16"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight17">
+			<property name="Model" value="plate_round_13m_right17"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight18">
+			<property name="Model" value="plate_round_13m_right18"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight19">
+			<property name="Model" value="plate_round_13m_right19"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight20">
+			<property name="Model" value="plate_round_13m_right20"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPlateRound13mRight21">
+			<property name="Model" value="plate_round_13m_right21"/>
+			<property name="CustomIcon" value="shapePlateSidewalkBroke03" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
+			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
+			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPillar50Plate">
+			<!-- <property name="Path" value="solid" /> -->
+			<property name="Model" value="pillar50_plate" />
+			<property name="CustomIcon" value="shapepillar50Plate" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value="0.75,0,0.75" />
+			<property name="ShapeCategories" value="Round" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<!-- *************************************************************************
+            POLE SQUARE TIP CENTERED: The LEft side turned into a center piece
+        ************************************************************************** -->
+		<shape name="cbpPoleSquareTipCentered">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="pole_square_tip_left" />
+		<property name="CustomIcon" value="shapePoleSquareTipLeft" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Square,Poles" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ModelOffset" value=".6,0,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="LightOpacity" value="0" />
+		<property name="WaterFlow" value="permitted" />
+	</shape>
+	
+	<!-- *************************************************************************
+           Bowling ball: offset corner
+        ************************************************************************** -->
+	
+		<shape name="cbpBowlingBall_Corner">
+			<property name="Model" value="bowling_ball" />
+			<property name="CustomIcon" value="shapeBowlingBall" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E" />
+			<property name="WaterFlow" value="permitted" />
+			<property name="ModelOffset" value=".6,-.05,.6" />
+		</shape>
+		
+		<!-- *************************************************************************
+            OFFSET LETTERS AND NUMBERS.
+        ************************************************************************** -->
+		<shape name="cbpOffset_signNumber_0">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_0" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont0" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_1">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont1" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_2">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_2" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont2" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_3">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_3" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont3" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_4">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_4" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont4" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_5">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_5" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont5" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_6">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_6" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont6" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_7">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_7" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont7" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_8">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_8" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont8" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signNumber_9">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_9" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFont9" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_a">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_a" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontA" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_b">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_b" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontB" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_c">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_c" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontC" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_d">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_d" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontD" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_e">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_e" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontE" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_f">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_f" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontF" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_g">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_g" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontG" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_h">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_h" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontH" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_i">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_i" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontI" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_j">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_j" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontJ" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_k">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_k" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontK" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_l">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_l" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontL" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_m">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_m" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontM" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_n">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_n" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontN" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_o">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_o" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontO" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_p">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_p" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontP" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_q">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_q" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontQ" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_r">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_r" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontR" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_s">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_s" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontS" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_t">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_t" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontT" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_u">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_u" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontU" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_v">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_v" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontV" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_w">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_w" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontW" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_x">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_x" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontX" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_y">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_y" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontY" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_z">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_z" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontZ" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_cross">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_cross" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontCross" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_period">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_period" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontPeriod" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_comma">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_comma" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontComma" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_apostrophe">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_apostrophe" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontApostrophe" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_exclamation">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_exclamation" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontExclamation" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_question">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_question" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontQuestion" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_ampersand">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_ampersand" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeSignLetter_ampersand" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>
+
+	<shape name="cbpOffset_signLetter_prohibition">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="font_prohibition" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="shapeFontProhibition" />
+		<property name="ShapeCategories" value="Letters" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="CustomIconTint" value="d9e6fa"/>		
+		<property name="ModelOffset" value=".5,0,1"/>
+	</shape>	
+	
+	 <shape name="cbpCubeCopSpitBlockMovement">
+        <property name="Path" value="solid" />
+        <property name="Model" value="cube" />
+        <property name="CustomIcon" value="shapeCube" />
+        <property name="ShapeCategories" value="Basic,Square" />
+        <property name="Collide" value="sight,movement,melee" />
+    </shape>
+
+
+    <shape name="cbpCubeCopSpitSpitpassThrough">
+        <property name="Path" value="solid" />
+        <property name="Model" value="cube" />
+        <property name="CustomIcon" value="shapeCube" />
+        <property name="ShapeCategories" value="Basic,Square" />
+        <property name="Collide" value="melee" />
+    </shape>
+	
+	<shape name="cbpHiddenCopWall">
+		<property name="Path" value="solid" />
+        <property name="CustomIcon" value="mirror"/>
+        <property name="CustomIconTint" value="00e6ff"/>
+        <property name="Model" value="cube"/>
+		<property name="ShapeCategories" value="Basic,Square" />
+        <property name="Collide" value="movement"/>
+    </shape> 	 
+	</append>
+</else>
+</conditional>
+</CBP>

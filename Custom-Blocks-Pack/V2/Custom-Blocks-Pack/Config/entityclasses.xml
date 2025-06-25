@@ -1,4 +1,6 @@
 <CBP>	
+<conditional>
+    <if cond="game_version() &gt;= version(1,2,0)">
 	<append xpath="/entity_classes">		
 		<!-- RAT ARMY -->
 		<entity_class name="animalRatKing" extends="animalTemplateHostile"> 
@@ -2816,8 +2818,2651 @@
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 			</effect_group>
-		</entity_class>	
-	
+		</entity_class>		
 		<!-- GhostS -->	
 	</append>
+</if>
+    <else>
+	<append xpath="/entity_classes">		
+		<!-- RAT ARMY -->
+		<entity_class name="animalRatKing" extends="animalTemplateHostile"> 
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,rabbit,perkAT01,perkAT02,perkAT03"/>
+			<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="PhysicsBody" value="rabbit"/>
+			<property name="Class" value="EntityEnemyAnimal"/>
+			<property name="Mass" value="33"/>
+			<property name="Weight" value="11"/>
+			<property name="Prefab" value="/Entities/Animals/Rabbit/animalRabbitPrefab"/>
+			<property name="SizeScale" value=".7"/>
+
+			<property name="SoundRandom" value="mlionroam"/>
+			<property name="SoundAlert" value="mlionalert"/>
+			<property name="SoundHurt" value="Animals/rabbitpain"/>
+			<property name="SoundDeath" value="rabbitdeath"/>
+			<property name="SoundAttack" value="mlionattack"/>
+			<property name="SoundSense" value="mlionsense"/>
+			<property name="SoundGiveUp" value="mliongiveup"/>
+			<property name="SwimOffset" value="2"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="CanBigHead" value="false" />
+
+			<property name="AITask-1" value="Leap" data="legs=4"/>
+			<property name="AITask-2" value="BreakBlock"/>
+			<property name="AITask-3" value="Territorial"/>
+			<property name="AITask-4" value="DestroyArea"/>
+			<!-- property name="AITask-4" value="RunawayWhenHurt" data="runChance=.4;healthPer=.1;healthPerMax=.4"/--> <!-- No running away ^^ -->
+			<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/> <!-- Zombie Bear -->
+			<property name="AITask-6" value="ApproachSpot"/>
+			<property name="AITask-7" value="Look"/>
+			<property name="AITask-8" value="Wander"/>
+			<property name="AITask-9" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/> <!-- Zombie Bear -->
+			<property name="AITarget-4" value=""/>
+
+			<!-- Gameplay  -->
+			<property name="MoveSpeed" value=".7"/>
+			<property name="MoveSpeedAggro" value="2.1, 2.3"/>
+			<property name="JumpDelay" value=".1"/>
+			<property name="JumpMaxDistance" value="11, 13"/> <!-- Spider -->
+			<property name="PainResistPerHit" value=".8"/>
+			
+			<property name="TimeStayAfterDeath" value="60"/>
+			<property name="ExperienceGain" value="600"/>
+
+			<property name="HandItem" value="meleeHandAnimalRatKing"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1,1.5"/>
+			</effect_group>
+
+			<property name="DeadBodyHitPoints" value="150"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="150"/> <!-- animalBoar -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="35"/>
+			<drop event="Harvest" name="resourceAnimalFat" count="20" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="75"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="25"/>
+
+			<property name="NavObject" value="animaltracking_rabbit" />
+		</entity_class>
+		
+		<entity_class name="animalRatBabies" extends="animalTemplateHostile"> 
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,rabbit,perkAT01,perkAT02,perkAT03"/>
+			<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="PhysicsBody" value="rabbit"/>
+			<property name="Class" value="EntityEnemyAnimal"/>
+			<property name="Mass" value="33"/>
+			<property name="Weight" value="11"/>
+			<property name="Prefab" value="/Entities/Animals/Rabbit/animalRabbitPrefab"/>
+			<property name="SizeScale" value=".3"/>
+
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundHurt" value="Animals/rabbitpain"/>
+			<property name="SoundDeath" value="rabbitdeath"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundGiveUp" value="mliongiveup"/>
+			<property name="SwimOffset" value="2"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="CanBigHead" value="false" />
+
+			<property name="AITask-1" value="Leap" data="legs=2"/>
+			<property name="AITask-2" value="BreakBlock"/>
+			<property name="AITask-3" value="Territorial"/>
+			<property name="AITask-4" value="DestroyArea"/>
+			<!-- property name="AITask-4" value="RunawayWhenHurt" data="runChance=.4;healthPer=.1;healthPerMax=.4"/--> <!-- No running away ^^ -->
+			<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/> <!-- Zombie Bear -->
+			<property name="AITask-6" value="ApproachSpot"/>
+			<property name="AITask-7" value="Look"/>
+			<property name="AITask-8" value="Wander"/>
+			<property name="AITask-9" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/> <!-- Zombie Bear -->
+			<property name="AITarget-4" value=""/>
+
+			<!-- Gameplay  -->
+			<property name="MoveSpeed" value=".7"/>
+			<property name="MoveSpeedAggro" value="1.1, 1.3"/>
+			<property name="JumpDelay" value=".1"/>
+			<property name="JumpMaxDistance" value="4, 6"/> <!-- Spider -->
+			<property name="PainResistPerHit" value=".8"/>
+			
+			<property name="TimeStayAfterDeath" value="60"/>
+			<property name="ExperienceGain" value="600"/>
+
+			<property name="HandItem" value="meleeHandAnimalRatBabies"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1,1.5"/>
+			</effect_group>
+
+			<property name="DeadBodyHitPoints" value="150"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="150"/> <!-- animalBoar -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="35"/>
+			<drop event="Harvest" name="resourceAnimalFat" count="20" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="75"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="25"/>
+
+			<property name="NavObject" value="animaltracking_rabbit" />
+		</entity_class>
+		<!-- RAT ARMY -->	
+<!-- *** ZOMBIE_Bat and Rats-->
+	<entity_class name="cbp_animalZombieBat" extends="animalTemplateHostile">
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityFlags" value="animal,zombie"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,animal,zombie,hostile,vulture"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="PhysicsBody" value="vulture"/>
+		<property name="Mass" value="10"/>
+		<property name="Prefab" value="/Entities/Animals/Vulture/animalBirdVulturePrefab"/>
+		<property name="SizeScale" value=".13"/>
+
+		<property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/>
+
+		<property name="SoundRandom" value=""/>
+		<property name="SoundAlert" value="rabbitpain"/>
+		<property name="SoundHurt" value=""/>
+		<property name="SoundDeath" value="rabbitdeath"/>
+		<property name="SoundAttack" value="rabbitpain"/>
+		<property name="SoundSense" value=""/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="20"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value="1"/>
+		<property name="MoveSpeedAggro" value="1.5, 2"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="150"/>
+
+		<property name="HandItem" value="cbp_meleeHandRatAnimal"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="-1"/> <!-- no pain -->
+
+		<property name="DeadBodyHitPoints" value="10"/>
+		<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+		<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="1"/> <!-- animalZombieVulture -->
+		<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="1"/>
+		<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+		<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="5"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+		</effect_group>
+	</entity_class>
+	<!-- Killer Rat (mini-rabbit) -->	
+		<entity_class name="cbp_animalRat" extends="animalTemplateHostile"> 
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,rabbit,perkAT01,perkAT02,perkAT03"/>
+			<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="PhysicsBody" value="rabbit"/>
+			<property name="Class" value="EntityEnemyAnimal"/>
+			<property name="Mass" value="33"/>
+			<property name="Weight" value="11"/>
+			<property name="Prefab" value="/Entities/Animals/Rabbit/animalRabbitPrefab"/>
+			<property name="SizeScale" value=".33"/>
+
+			<property name="SoundRandom" value=""/>
+			<property name="SoundAlert" value="rabbitpain"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value="rabbitdeath"/>
+			<property name="SoundAttack" value="rabbitpain"/>
+			<property name="SoundSense" value="rabbitpain"/>
+			<property name="SoundGiveUp" value=""/>
+			<property name="SwimOffset" value="2"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="CanBigHead" value="false" />
+
+			<property name="AITask-1" value="Leap" data="legs=4"/>
+			<property name="AITask-2" value="BreakBlock"/>
+			<property name="AITask-3" value="Territorial"/>
+			<property name="AITask-4" value="DestroyArea"/>
+			<!-- property name="AITask-4" value="RunawayWhenHurt" data="runChance=.4;healthPer=.1;healthPerMax=.4"/--> <!-- No running away ^^ -->
+			<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityPlayer,0,EntityNPC,0, EntityZombie,0"/> <!-- Zombie Bear -->
+			<property name="AITask-6" value="ApproachSpot"/>
+			<property name="AITask-7" value="Look"/>
+			<property name="AITask-8" value="Wander"/>
+			<property name="AITask-9" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/> <!-- Zombie Bear -->
+			<property name="AITarget-4" value=""/>
+
+
+
+			<property name="SmellAlertThreshold" value="2"/>
+			<property name="AISeeOffset" value=".2"/>
+	
+	
+			<!-- Gameplay  -->
+			<property name="JumpDelay" value=".1"/>
+			<property name="MoveSpeed" value=".5"/>
+			<property name="MoveSpeedAggro" value=".8, 1"/>
+			<property name="JumpMaxDistance" value="1, 1.5"/> <!-- Spider -->
+			<property name="PainResistPerHit" value=".2"/>
+			
+			<property name="TimeStayAfterDeath" value="60"/>
+			<property name="ExperienceGain" value="100"/>
+
+			<property name="HandItem" value="cbp_meleeHandRatAnimal"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="10"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1,1.5"/>
+			</effect_group>
+
+			<property name="DeadBodyHitPoints" value="10"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/> <!-- animalBoar -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceAnimalFat" count="1" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+
+			<property name="NavObject" value="animaltracking_rabbit" />
+		</entity_class>
+	
+<!-- *** ZOMBIE_Bat and Rats -->		
+		<!-- XYTH SPHEREII MANNEQUINS -->	
+		<entity_class name="mannequinZombieFemale" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,female,zombie,walker,mannequin"/>
+			<property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinFemale_X"/>
+			<property name="Faction" value="undead"/>
+			<property name="PhysicsBody" value="mixamoConvertedMannequin"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="120"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="EntityFlags" value="zombie"/><!-- This decides for scoring -->
+			<property name="EntityType" value="Zombie"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="Prefab" value="NPC"/> 
+			<property name="Class" value="EntityZombie"/>
+			<property name="Parent" value="Enemies"/>
+			<property name="AITask" value="
+				BreakBlock|
+				DestroyArea|
+				Territorial|
+				ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityNPC,0,EntityEnemyAnimal|
+				ApproachSpot|
+				Look|
+				"/>
+				<property name="AITarget" value="
+				SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityNPC,EntityEnemyAnimal|
+				BlockingTargetTask|
+				SetNearestCorpseAsTarget flags=edible|
+				SetNearestEntityAsTarget class=EntityPlayer,3,3,EntityNPC,3,3,EntityBandit,3,3|
+				"/>	  
+		  <property name="SoundAlert" value="SpiritAngry"/>
+		  <property name="SoundSense" value="SpiritWhispers"/>
+		</entity_class>
+
+		<entity_class name="mannequinZombieMale" extends="mannequinZombieFemale">
+			<property name="UserSpawnType" value="Menu"/>
+			  <property name="Tags" value="entity,male,zombie,walker,mannequin"/>
+			  <property name="Faction" value="undead"/>
+			  <property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinMale_X"/>
+		</entity_class>
+		<entity_class name="mannequinZombieFemaleFreeze" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+		  <property name="Tags" value="entity,female,zombie,mannequin"/>
+		  <property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinFemale_X"/>
+		  <property name="Faction" value="undead"/>
+		  <property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		  <property name="WalkType" value="7"/>
+		  <property name="Mass" value="120"/>
+				<property name="AITask" value="
+				BreakBlock|
+				DestroyArea|
+				Territorial|
+				ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityNPC,0,EntityEnemyAnimal|
+				ApproachSpot|
+				Look|
+				"/>
+				<property name="AITarget" value="
+				SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityNPC,EntityEnemyAnimal|
+				BlockingTargetTask|
+				SetNearestCorpseAsTarget flags=edible|
+				SetNearestEntityAsTarget class=EntityPlayer,3,3,EntityNPC,3,3,EntityBandit,3,3|
+				"/>	  
+		  <property name="SoundAlert" value="SpiritAngry"/>
+		  <property name="SoundSense" value="SpiritWhispers"/>
+		</entity_class>
+
+		<entity_class name="mannequinZombieMaleFreeze" extends="mannequinZombieFemaleFreeze">
+			<property name="UserSpawnType" value="Menu"/>
+			  <property name="Tags" value="entity,male,zombie,mannequin"/>
+			  <property name="Faction" value="undead"/>
+			  <property name="Mesh" value="#@modfolder:Resources/mannequin.unity3d?mannequinMale_X"/>
+			  <property name="Faction" value="undead"/>
+		</entity_class>		
+		<!-- XYTH SPHEREII MANNEQUINS -->	
+		<!-- GhostS -->
+		<!-- cbpGhost Arlene -->
+		<entity_class name="cbpGhostArlene" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.9"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArlene.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="3"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AIPathCostScale" value=".4, .4"/>
+			<property name="NavObjectHeadOffset" value="0,-0.15,0" />
+			<property name="DanceType" value="2" />
+
+			<property name ="DismemberTag_L_HeadGore" value="Arlene/Blade/Head;Arlene/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Arlene/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Arlene/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Arlene/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Arlene/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Arlene/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Arlene/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostArleneFeral" extends="cbpGhostArlene">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArleneFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostArleneRadiated" extends="cbpGhostArleneFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArleneRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Marlene -->
+		<entity_class name="cbpGhostMarlene" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.97"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMarlene.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="5"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="DanceType" value="2" />
+
+			<property name ="DismemberTag_L_HeadGore" value="Marlene/Blade/Head;Marlene/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Marlene/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Marlene/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Marlene/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Marlene/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Marlene/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Marlene/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostMarleneFeral" extends="cbpGhostMarlene">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMarleneFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="cbpGhostMarleneRadiated" extends="cbpGhostMarleneFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMarleneRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost PartyGirl -->
+		<entity_class name="cbpGhostPartyGirl" extends="zombieTemplateSlimFemale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.99"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCocktailWaitress.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Cocktailwaitress/Blade/Head;Cocktailwaitress/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Cocktailwaitress/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Cocktailwaitress/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Cocktailwaitress/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Cocktailwaitress/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Cocktailwaitress/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Cocktailwaitress/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="cbpGhostPartyGirlFeral" extends="cbpGhostPartyGirl">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCocktailWaitressFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>		
+
+		<entity_class name="cbpGhostPartyGirlRadiated" extends="cbpGhostPartyGirlFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCocktailWaitressRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Nurse -->
+		<entity_class name="cbpGhostNurse" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZNurse.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="130"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AIPathCostScale" value=".5, .65"/>
+			<property name="DanceType" value="2" />
+
+			<property name ="DismemberTag_L_HeadGore" value="Nurse/Blade/Head;Nurse/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Nurse/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Nurse/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Nurse/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Nurse/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Nurse/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Nurse/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostNurseFeral" extends="cbpGhostNurse">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZNurseFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostNurseRadiated" extends="cbpGhostNurseFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZNurseRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Joe -->
+		<entity_class name="cbpGhostJoe" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZJoe.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="5"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Joe/Blade/Head;Joe/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Joe/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Joe/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Joe/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Joe/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Joe/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Joe/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostJoeFeral" extends="cbpGhostJoe">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZJoeFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostJoeRadiated" extends="cbpGhostJoeFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZJoeRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Steve -->
+		<entity_class name="cbpGhostSteve" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.95"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteve.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="6"/>
+			<property name="Mass" value="160"/>
+			<property name="RootMotion" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Steve/Blade/Head;Steve/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Steve/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Steve/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Steve/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Steve/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Steve/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Steve/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSteveFeral" extends="cbpGhostSteve">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSteveRadiated" extends="cbpGhostSteveFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Tom Clark -->
+		<entity_class name="cbpGhostTomClark" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.95"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZTomClark.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="6"/>
+			<property name="Mass" value="160"/>
+			<property name="RootMotion" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Tomclark/Blade/Head;Tomclark/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Tomclark/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Tomclark/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Tomclark/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Tomclark/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Tomclark/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Tomclark/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostTomClarkFeral" extends="cbpGhostTomClark">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZTomClarkFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostTomClarkRadiated" extends="cbpGhostTomClarkFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZTomClarkRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost BusinessMan -->
+		<entity_class name="cbpGhostBusinessMan" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuit.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="160"/>
+			<property name="RootMotion" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Suit/Blade/Head;Suit/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Suit/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true+sol=true+soltarget=leftforearmroll+solscale=.5,.95,.95"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Suit/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true+sol=true+solscale=0.725,1,1"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Suit/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Suit/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true+sol=true+soltarget=rightforearmroll+solscale=.5,.95,.95"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Suit/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true+sol=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Suit/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBusinessManFeral" extends="cbpGhostBusinessMan">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuitFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieShortFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBusinessManRadiated" extends="cbpGhostBusinessManFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuitRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Burnt -->
+		<entity_class name="cbpGhostBurnt" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurnt.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="160"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="zombieburntfootstep"/>
+			<property name="PainResistPerHit" value="1"/>
+			
+			<property name ="DismemberTag_L_HeadGore" value="Burnt/Blade/Head;Burnt/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Burnt/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Burnt/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Burnt/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Burnt/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Burnt/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Burnt/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieBurning"/>
+			<property name="HandItemCrawler" value="meleeHandZombieBurningCrawler"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBurntFeral" extends="cbpGhostBurnt">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurntFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SoundSpawn" value="Ambient_Loops/a_fire_embersmoke_sm_lp"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieBurningFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBurntRadiated" extends="cbpGhostBurntFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurntRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		 </entity_class>
+
+		<!-- cbpGhost Spider -->
+		<entity_class name="cbpGhostSpider" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value=".94"/>
+			<property name="Tags" value="entity,zombie,spider"/>
+			<property name="Prefab" value="ZLong"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpider.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="22"/>
+			<property name="Mass" value="150"/>
+			<property name="LookAtAngle" value="0"/>
+
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundSense" value="snakesense"/>
+
+			<property name="DismemberMultiplierHead" value="0"/>
+			<property name="DismemberMultiplierArms" value="0"/>
+			<property name="DismemberMultiplierLegs" value="0"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0"/>
+			<property name="KnockdownProneDamageThreshold" value="0"/>
+			<property name="KnockdownKneelDamageThreshold" value="0"/>
+
+			<property name="AINoiseSeekDist" value="3"/>
+			<property name="AIPathCostScale" value=".6, 1"/>
+			<property name="AITask" value="
+			Leap|
+			BreakBlock|
+			DestroyArea|
+			Territorial|
+			ApproachDistraction|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+			
+			<property name ="DismemberTag_L_HeadGore" value="Spider/Blade/Head;Spider/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Spider/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Spider/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Spider/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Spider/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Spider/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Spider/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeed" value="0.08"/>
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<property name="MoveSpeedPanic" value="1.2"/>
+			<property name="SwimSpeed" value="1.3"/>
+			<property name="SwimStrokeRate" value="1.5,1.7"/>
+			<property name="CanClimbVertical" value="true"/>
+			<property name="JumpMaxDistance" value="7, 9"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSpiderFeral" extends="cbpGhostSpider">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,feral,spider"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpiderFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="11, 13"/>
+			<property name="HandItem" value="meleeHandZombie02Feral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSpiderRadiated" extends="cbpGhostSpiderFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,feral,radiated,spider"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpiderRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Boe -->
+		<entity_class name="cbpGhostBoe" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.08"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBoe.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+  
+			<property name ="DismemberTag_L_HeadGore" value="Boe/Blade/Head;Boe/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Boe/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Boe/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Boe/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Boe/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Boe/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Boe/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBoeFeral" extends="cbpGhostBoe">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBoeFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBoeRadiated" extends="cbpGhostBoeFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBoeRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Male Hazmat -->
+		<entity_class name="cbpGhostMaleHazmat" extends="cbpGhostBoe">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHazmat.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="WalkType" value="7"/>
+			<property name="AINoiseSeekDist" value="6"/>
+			<property name="AIPathCostScale" value=".65, .9"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Hazmat/Blade/Head;Hazmat/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Hazmat/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Hazmat/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Hazmat/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Hazmat/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Hazmat/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Hazmat/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".5, .6"/>
+			<property name="HandItem" value="meleeHandZombieHazMat"/>
+		</entity_class>
+
+		<entity_class name="cbpGhostMaleHazmatFeral" extends="cbpGhostMaleHazmat">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHazmatFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+		  
+			<property name="WalkType" value="7"/>
+			<property name="AINoiseSeekDist" value="6"/>
+			<property name="AIPathCostScale" value=".65, .9"/>
+
+			<property name="MoveSpeedAggro" value=".5, 1.3"/>
+			<property name="JumpMaxDistance" value=".5, .6"/>
+			<property name="HandItem" value="meleeHandZombieHazMatFeral"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostMaleHazmatRadiated" extends="cbpGhostMaleHazmat">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHazmatRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="WalkType" value="7"/>
+			<property name="AINoiseSeekDist" value="6"/>
+			<property name="AIPathCostScale" value=".65, .9"/>
+
+			<property name="MoveSpeedAggro" value=".5, 1.3"/>
+			<property name="JumpMaxDistance" value=".5, .6"/>
+			<property name="HandItem" value="meleeHandZombieHazMatFeral"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/>
+			<property name="DismemberMultiplierArms" value=".4"/>
+			<property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Janitor -->
+		<entity_class name="cbpGhostJanitor" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMechanic.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="5"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Mechanic/Blade/Head;Mechanic/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Mechanic/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Mechanic/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Mechanic/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Mechanic/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Mechanic/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Mechanic/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+		  
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostJanitorFeral" extends="cbpGhostJanitor">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMechanicFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostJanitorRadiated" extends="cbpGhostJanitor">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMechanicRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Inmate -->
+		<entity_class name="cbpGhostInmate" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.08"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZInmate.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="5"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Mechanic/Blade/Head;Mechanic/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Mechanic/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Mechanic/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Mechanic/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Mechanic/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Mechanic/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Mechanic/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+		  
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostInmateFeral" extends="cbpGhostInmate">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZInmateFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostInmateRadiated" extends="cbpGhostInmate">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZInmateRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Moe -->
+		<entity_class name="cbpGhostMoe" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.08"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMoe.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="1"/>
+			<property name="Mass" value="210"/>
+			<property name="Weight" value="70"/>
+			<property name="PushFactor" value="20"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundAttack" value="snakeattack"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Moe/Blade/Head;Moe/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Moe/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Moe/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Moe/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Moe/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Moe/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Moe/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostMoeFeral" extends="cbpGhostMoe">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMoeFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostMoeRadiated" extends="cbpGhostMoeFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMoeRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Lab -->
+		<entity_class name="cbpGhostLab" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLab.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="130"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AIPathCostScale" value=".5, .65"/>
+			<property name="NavObjectHeadOffset" value="0,-0.15,0" />
+			<property name="DanceType" value="2" />
+
+			<property name ="DismemberTag_L_HeadGore" value="Lab/Blade/Head;Lab/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Lab/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Lab/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Lab/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Lab/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Lab/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Lab/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostLabFeral" extends="cbpGhostLab">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLabFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostLabRadiated" extends="cbpGhostLabFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLabRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Darlene -->
+		<entity_class name="cbpGhostDarlene" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.98"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZDarlene.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="3"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="DanceType" value="2" />
+
+			<property name ="DismemberTag_L_HeadGore" value="Darlene/Blade/Head;Darlene/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Darlene/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Darlene/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Darlene/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Darlene/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Darlene/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Darlene/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostDarleneFeral" extends="cbpGhostDarlene">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZDarleneFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostDarleneRadiated" extends="cbpGhostDarleneFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZDarleneRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Yo -->
+		<entity_class name="cbpGhostYo" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.02"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZYo.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="5"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Yo/Blade/Head;Yo/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Yo/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Yo/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Yo/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Yo/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Yo/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Yo/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostYoFeral" extends="cbpGhostYo">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZYoFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostYoRadiated" extends="cbpGhostYoFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZYoRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Utility Worker -->
+		<entity_class name="cbpGhostUtilityWorker" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWorker.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="6"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AINoiseSeekDist" value="4"/>
+			<property name="AIPathCostScale" value=".9, 1"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Worker/Blade/Head;Worker/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Worker/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Worker/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Worker/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Worker/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Worker/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Worker/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="HandItem" value="meleeHandZombieWorker"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostUtilityWorkerFeral" extends="cbpGhostUtilityWorker">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWorkerFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostUtilityWorkerRadiated" extends="cbpGhostUtilityWorkerFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWorkerRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1300"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Biker -->
+		<entity_class name="cbpGhostBiker" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.08"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBiker.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="Mass" value="230"/>
+			<property name="WalkType" value="7"/>
+			<property name="PainResistPerHit" value=".75"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieStrong"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="550"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+			</effect_group>
+
+			<property name ="DismemberTag_L_HeadGore" value="Biker/Blade/Head;Biker/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Biker/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Biker/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Biker/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Biker/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Biker/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Biker/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+		</entity_class>
+
+		<entity_class name="cbpGhostBikerFeral" extends="cbpGhostBiker">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBikerFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieStrongFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="900"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBikerRadiated" extends="cbpGhostBikerFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBikerRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1800"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Lumberjack -->
+		<entity_class name="cbpGhostLumberjack" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLumberjack.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="230"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="zombielumberjack_footstep"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Lumberjack/Blade/Head;Lumberjack/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Lumberjack/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Lumberjack/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Lumberjack/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true+sol=true+soltarget=leftleg+solscale=0,0,0"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Lumberjack/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Lumberjack/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Lumberjack/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true+sol=true+soltarget=rightleg+solscale=0,0,0"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieStrong"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="450"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostLumberjackFeral" extends="cbpGhostLumberjack">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLumberjackFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieStrongFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+		  <effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="950"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostLumberjackRadiated" extends="cbpGhostLumberjackFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZLumberjackRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1900"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Female Fat -->
+		<entity_class name="cbpGhostFemaleFat" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMama.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="1"/>
+			<property name="Mass" value="260"/>
+			<property name="PhysicsBody" value="zombieFemaleFat"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="DanceType" value="2" />
+
+			<property name="SleeperSmellWakeThreshold" value="20,50"/>
+			<property name="SmellAlertThreshold" value="20"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="450"/>
+			</effect_group>
+
+
+			<property name ="DismemberTag_L_HeadGore" value="Bigmama/Blade/Head;Bigmama/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Bigmama/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Bigmama/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Bigmama/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Bigmama/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Bigmama/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Bigmama/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+		</entity_class>
+
+		<entity_class name="cbpGhostFemaleFatFeral" extends="cbpGhostFemaleFat">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMamaFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieCopFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="950"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostFemaleFatRadiated" extends="cbpGhostFemaleFatFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMamaRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1900"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Fat Hawaiian -->
+		<entity_class name="cbpGhostFatHawaiian" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHawaiian.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="bear_footstep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="1"/>
+			<property name="Mass" value="250"/>
+			<property name="PhysicsBody" value="zombieFat"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerArmGore"/>
+			<property name ="DismemberTag_L_RightUpperArmGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="450"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostFatHawaiianFeral" extends="cbpGhostFatHawaiian">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHawaiianFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/> 
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieCopFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="950"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostFatHawaiianRadiated" extends="cbpGhostFatHawaiianFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZHawaiianRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1900"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Bowler -->
+		<entity_class name="cbpGhostBowler" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBowler.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="bear_footstep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="1"/>
+			<property name="Mass" value="250"/>
+			<property name="PhysicsBody" value="zombieFat"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+
+			<property name ="DismemberTag_L_HeadGore"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerArmGore"/>
+			<property name ="DismemberTag_L_RightUpperArmGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="450"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBowlerFeral" extends="cbpGhostBowler">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBowlerFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieCopFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="950"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostBowlerRadiated" extends="cbpGhostBowlerFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBowlerRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1900"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Fat Cop -->
+		<entity_class name="cbpGhostFatCop" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="Tags" value="entity,zombie,walker,zombieCop"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCop.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="WalkType" value="1"/>
+			<property name="RightHandJointName" value="Jaw"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="Mass" value="320"/>
+			<property name="Weight" value="70"/>
+			<property name="PhysicsBody" value="zombieFat"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="PushFactor" value="20"/>
+
+			<property name="AITask" value="
+			BreakBlock|
+			ApproachDistraction|
+			RangedAttackTarget itemType=1;cooldown=4;duration=5|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="bear_footstep"/>
+			<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+
+			<property name="DismemberMultiplierLegs" value="0"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0"/>
+			<property name="KnockdownProneDamageThreshold" value="0"/>
+			<property name="KnockdownKneelDamageThreshold" value="0"/>
+			<property name="LegsExplosionDamageMultiplier" value="2"/>
+			<property name="ArmsExplosionDamageMultiplier" value="2"/>
+			<property name="HeadExplosionDamageMultiplier" value="2"/>
+			<property name="ChestExplosionDamageMultiplier" value="2"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Cop/Blade/Head;Cop/Blunt/Head" data="type=blade+target=head+atp=true+detach=true+ico=neck;type=blunt+target=head+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Cop/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Cop/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Cop/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Cop/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Cop/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Cop/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="450"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+			</effect_group>
+
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="500"/>
+			<property name="Explosion.EntityDamage" value="150"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+		</entity_class>
+
+		<entity_class name="cbpGhostFatCopFeral" extends="cbpGhostFatCop">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCopFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieCopFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="950"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+			</effect_group>
+
+			<property name="Explosion.BlockDamage" value="650"/>
+			<property name="Explosion.EntityDamage" value="200"/>
+		</entity_class>
+
+		<entity_class name="cbpGhostFatCopRadiated" extends="cbpGhostFatCopFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieCop"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCopRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="HandItem" value="meleeHandZombieCopRadiated"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1900"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+			</effect_group>
+
+			<property name="Explosion.BlockDamage" value="750"/>
+			<property name="Explosion.EntityDamage" value="250"/>
+		</entity_class>
+
+		<!-- cbpGhost Skateboarder -->
+		<entity_class name="cbpGhostSkateboarder" extends="cbpGhostBoe">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZThug.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Thug/Blade/Head;Thug/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Thug/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Thug/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Thug/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Thug/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Thug/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Thug/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<property name="ExperienceGain" value="400"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="250"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSkateboarderFeral" extends="cbpGhostSkateboarder">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZThugFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="700"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSkateboarderRadiated" extends="cbpGhostSkateboarderFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZThugRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1400"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Soldier -->
+		<entity_class name="cbpGhostSoldier" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,zombieSoldier"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSoldier.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="190"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AIPathCostScale" value=".35, .55"/>
+
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieWorker"/>
+			<property name="ExperienceGain" value="750"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="250"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+			</effect_group>
+
+			<property name ="DismemberTag_L_HeadGore" value="Soldier/Blade/Head;Soldier/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Soldier/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Soldier/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Soldier/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Soldier/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Soldier/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Soldier/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+		</entity_class>
+
+		<entity_class name="cbpGhostSoldierFeral" extends="cbpGhostSoldier">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,zombieSoldier"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSoldierFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSoldierRadiated" extends="cbpGhostSoldierFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieSoldier"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSoldierRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1600"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- *** cbpGhost Wight Feral -->
+		<entity_class name="cbpGhostWightFeral" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.1"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWightFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="210"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Wight/Blade/Head;Wight/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Wight/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Wight/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Wight/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Wight/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Wight/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Wight/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostWightRadiated" extends="cbpGhostWightFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Screamer -->
+		<entity_class name="cbpGhostScreamer" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamer.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="3"/>
+			<property name="Mass" value="110"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AIPathCostScale" value=".5, .6"/>
+			<property name="DanceType" value="2" />
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			</effect_group>
+
+			<property name ="DismemberTag_L_HeadGore" value="Screamer/Blade/Head;Screamer/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Screamer/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="Screamer/Blade/LeftLowerLeg" data="type=blade+target=leftleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Screamer/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Screamer/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="Screamer/Blade/RightLowerLeg" data="type=blade+target=rightleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Screamer/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="linked" data="DismemberTag_L_LeftLowerLegGore"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="linked" data="DismemberTag_L_RightLowerLegGore"/>
+
+		</entity_class>
+
+		<entity_class name="cbpGhostScreamerFeral" extends="cbpGhostScreamer">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamerFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="250"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostScreamerRadiated" extends="cbpGhostScreamerFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZScreamerRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="2.5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Mutated -->
+		<entity_class name="cbpGhostMutated" extends="cbpGhostFatCop">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SizeScale" value="1"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+
+			<property name ="DismemberTag_L_HeadGore" value="Mutated/Blade/Head;Mutated/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Mutated/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Mutated/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Mutated/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Mutated/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Mutated/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Mutated/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<property name="AITask" value="
+			BreakBlock|
+			ApproachDistraction|
+			RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+			DestroyArea|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+
+			<property name="HandItem" value="meleeHandzombieMutated"/>
+			<property name="ExplodeHealthThreshold" value="0"/>
+			<property name="MoveSpeed" value=".25"/>
+			<property name="MoveSpeedAggro" value=".4, 1.3"/>
+			<property name="ExperienceGain" value="750"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="600"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostMutatedFeral" extends="cbpGhostMutated">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="SizeScale" value="1.1"/>
+
+			<property name="HandItem" value="meleeHandzombieMutatedFeral"/>
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="900"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostMutatedRadiated" extends="cbpGhostMutatedFeral">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1800"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="2.5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- cbpGhost Steve Crawler -->
+		<entity_class name="cbpGhostSteveCrawler" extends="zombieTemplateMale">
+			<property name="Class" value="EntityZombie"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,crawler"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCrawler.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+			<property name="Mass" value="140"/>
+			<property name="WalkType" value="21"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="RootMotion" value="true"/>
+			<property name="SoundRandomTime" value="20"/>
+			<property name="SoundRandom" value="snakeroam"/>
+			<property name="SoundAlertTime" value="15"/>
+			<property name="SoundAlert" value="snakealert"/>
+			<property name="SoundSense" value="snakesense"/>
+			<property name="SoundHurt" value="snakepain"/>
+			<property name="SoundDeath" value="snakedeath"/>
+			<property name="SoundAttack" value="snakeattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="DanceType" value="0" />
+
+			<property name ="DismemberTag_L_HeadGore" value="Crawler/Blade/Head;Crawler/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Crawler/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Crawler/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Crawler/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+atp=true+detach=true+mask=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Crawler/Blade/RightUpperArm" data="type=blade+target=rightarmroll+atp=true+detach=true+mask=true"/>
+
+			<property name="MoveSpeed" value="0.25"/>
+			<property name="MoveSpeedAggro" value=".7, 1"/>
+			<property name="CanClimbLadders" value="false"/>
+			<property name="HandItem" value="meleeHandZombie02"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="cbpGhostSteveCrawlerFeral" extends="cbpGhostSteveCrawler">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,crawler,feral"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZCrawlerFeral.prefab"/>
+			<property name="SwapMats" value="@:Entities/Vehicles/Materials/car_glass.mat"/>
+
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="MoveSpeedAggro" value="1.2, 1.4"/>
+			<property name="PainResistPerHit" value=".7"/>
+			<property name="HandItem" value="meleeHandZombie02Feral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			</effect_group>
+		</entity_class>		
+		<!-- GhostS -->
+	</append>
+</else>
+</conditional>
 </CBP>

@@ -1,0 +1,681 @@
+<COMPOPACK>
+<conditional>
+    <if cond="game_version() &gt;= version(1,1,0)">
+	<append xpath="/entitygroups">
+		<entitygroup name="mannequinZombieFemale">mannequinZombieFemale</entitygroup>
+		<entitygroup name="mannequinZombieMale">mannequinZombieMale</entitygroup>		
+		<entitygroup name="mannequinZombieFemaleFreeze">mannequinZombieFemaleFreeze</entitygroup>
+		<entitygroup name="mannequinZombieMaleFreeze">mannequinZombieMaleFreeze</entitygroup>
+	
+		<entitygroup name="animalRatKing">animalRatKing</entitygroup>
+		<entitygroup name="animalRatBabies">animalRatBabies</entitygroup>
+		<entitygroup name="cbp_animalZombieBat">cbp_animalZombieBat</entitygroup>
+		<entitygroup name="cbp_animalRat">cbp_animalRat</entitygroup>
+		<entitygroup name="cbpGhostBoe">cbpGhostBoe</entitygroup>
+		<entitygroup name="cbpGhostJoe">cbpGhostJoe</entitygroup>
+		<entitygroup name="cbpGhostSteve">cbpGhostSteve</entitygroup>
+		<entitygroup name="cbpGhostTomClark">cbpGhostTomClark</entitygroup>
+		<entitygroup name="cbpGhostMoe">cbpGhostMoe</entitygroup>
+		<entitygroup name="cbpGhostYo">cbpGhostYo</entitygroup>		
+		<entitygroup name="cbpGhostBusinessMan">cbpGhostBusinessMan</entitygroup>
+		<entitygroup name="cbpGhostArlene">cbpGhostArlene</entitygroup>
+		<entitygroup name="cbpGhostDarlene">cbpGhostDarlene</entitygroup>
+		<entitygroup name="cbpGhostMarlene">cbpGhostMarlene</entitygroup>
+		<entitygroup name="cbpGhostSkateboarder">cbpGhostSkateboarder</entitygroup>
+		<entitygroup name="cbpGhostBiker">cbpGhostBiker</entitygroup>
+		<entitygroup name="cbpGhostPartyGirl">cbpGhostPartyGirl</entitygroup>
+		<entitygroup name="cbpGhostUtilityWorker">cbpGhostUtilityWorker</entitygroup>
+		<entitygroup name="cbpGhostJanitor">cbpGhostJanitor</entitygroup>
+		<entitygroup name="cbpGhostNurse">cbpGhostNurse</entitygroup>
+		<entitygroup name="cbpGhostSteveCrawler">cbpGhostSteveCrawler</entitygroup>
+		<entitygroup name="cbpGhostFatHawaiian">cbpGhostFatHawaiian</entitygroup>
+		<entitygroup name="cbpGhostBowler">cbpGhostBowler</entitygroup>
+		<entitygroup name="cbpGhostInmate">cbpGhostInmate</entitygroup>
+		<entitygroup name="cbpGhostFemaleFat">cbpGhostFemaleFat</entitygroup>
+		<entitygroup name="cbpGhostScreamer">cbpGhostScreamer</entitygroup>
+		
+		<entitygroup name="cbpGhostBoeFeral">cbpGhostBoeFeral</entitygroup>
+		<entitygroup name="cbpGhostJoeFeral">cbpGhostJoeFeral</entitygroup>
+		<entitygroup name="cbpGhostSteveFeral">cbpGhostSteveFeral</entitygroup>
+		<entitygroup name="cbpGhostTomClarkFeral">cbpGhostTomClarkFeral</entitygroup>
+		<entitygroup name="cbpGhostMoeFeral">cbpGhostMoeFeral</entitygroup>
+		<entitygroup name="cbpGhostYoFeral">cbpGhostYoFeral</entitygroup>
+		<entitygroup name="cbpGhostBusinessManFeral">cbpGhostBusinessManFeral</entitygroup>
+		<entitygroup name="cbpGhostArleneFeral">cbpGhostArleneFeral</entitygroup>
+		<entitygroup name="cbpGhostDarleneFeral">cbpGhostDarleneFeral</entitygroup>
+		<entitygroup name="cbpGhostMarleneFeral">cbpGhostMarleneFeral</entitygroup>
+		<entitygroup name="cbpGhostSkateboarderFeral">cbpGhostSkateboarderFeral</entitygroup>
+		<entitygroup name="cbpGhostBikerFeral">cbpGhostBikerFeral</entitygroup>
+		<entitygroup name="cbpGhostPartyGirlFeral">cbpGhostPartyGirlFeral</entitygroup>
+		<entitygroup name="cbpGhostUtilityWorkerFeral">cbpGhostUtilityWorkerFeral</entitygroup>
+		<entitygroup name="cbpGhostJanitorFeral">cbpGhostJanitorFeral</entitygroup>
+		<entitygroup name="cbpGhostNurseFeral">cbpGhostNurseFeral</entitygroup>
+		<entitygroup name="cbpGhostSteveCrawlerFeral">cbpGhostSteveCrawlerFeral</entitygroup>
+		<entitygroup name="cbpGhostFatHawaiianFeral">cbpGhostFatHawaiianFeral</entitygroup>
+		<entitygroup name="cbpGhostBowlerFeral">cbpGhostBowlerFeral</entitygroup>
+		<entitygroup name="cbpGhostInmateFeral">cbpGhostInmateFeral</entitygroup>
+		<entitygroup name="cbpGhostFemaleFatFeral">cbpGhostFemaleFatFeral</entitygroup>
+		<entitygroup name="cbpGhostScreamerFeral">cbpGhostScreamerFeral</entitygroup>
+		
+		<entitygroup name="cbpGhostBoeRadiated">cbpGhostBoeRadiated</entitygroup>
+		<entitygroup name="cbpGhostJoeRadiated">cbpGhostJoeRadiated</entitygroup>
+		<entitygroup name="cbpGhostSteveRadiated">cbpGhostSteveRadiated</entitygroup>
+		<entitygroup name="cbpGhostTomClarkRadiated">cbpGhostTomClarkRadiated</entitygroup>
+		<entitygroup name="cbpGhostMoeRadiated">cbpGhostMoeRadiated</entitygroup>
+		<entitygroup name="cbpGhostYoRadiated">cbpGhostYoRadiated</entitygroup>
+		<entitygroup name="cbpGhostBusinessManRadiated">cbpGhostBusinessManRadiated</entitygroup>
+		<entitygroup name="cbpGhostArleneRadiated">cbpGhostArleneRadiated</entitygroup>
+		<entitygroup name="cbpGhostDarleneRadiated">cbpGhostDarleneRadiated</entitygroup>
+		<entitygroup name="cbpGhostMarleneRadiated">cbpGhostMarleneRadiated</entitygroup>
+		<entitygroup name="cbpGhostSkateboarderRadiated">cbpGhostSkateboarderRadiated</entitygroup>
+		<entitygroup name="cbpGhostBikerRadiated">cbpGhostBikerRadiated</entitygroup>
+		<entitygroup name="cbpGhostPartyGirlRadiated">cbpGhostPartyGirlRadiated</entitygroup>
+		<entitygroup name="cbpGhostUtilityWorkerRadiated">cbpGhostUtilityWorkerRadiated</entitygroup>
+		<entitygroup name="cbpGhostJanitorRadiated">cbpGhostJanitorRadiated</entitygroup>
+		<entitygroup name="cbpGhostNurseRadiated">cbpGhostNurseRadiated</entitygroup>
+		<entitygroup name="cbpGhostFatHawaiianRadiated">cbpGhostFatHawaiianRadiated</entitygroup>
+		<entitygroup name="cbpGhostBowlerRadiated">cbpGhostBowlerRadiated</entitygroup>
+		<entitygroup name="cbpGhostInmateRadiated">cbpGhostInmateRadiated</entitygroup>
+		<entitygroup name="cbpGhostFemaleFatRadiated">cbpGhostFemaleFatRadiated</entitygroup>
+		<entitygroup name="cbpGhostScreamerRadiated">cbpGhostScreamerRadiated</entitygroup>
+	
+		
+	<!-- *** POI_Rat_GROUP -->
+		<entitygroup name="ZombieRatGroup">
+		animalRatKing,1
+		animalRatBabies,8
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS1">
+		animalRatKing,1
+		animalRatBabies,10
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS50">
+		animalRatKing,1
+		animalRatBabies,12
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS100">
+		animalRatKing,1
+		animalRatBabies,14
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS200">
+		animalRatKing,1
+		animalRatBabies,16
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS400">
+		animalRatKing,1
+		animalRatBabies,18
+	</entitygroup>
+		<entitygroup name="ZombieRatGroupGS800">
+		animalRatKing,1
+		animalRatBabies,20
+	</entitygroup>
+		<!-- *** POI_Rat_GROUP -->	
+		<!-- *** POI_Ghost_GROUP -->
+		<entitygroup name="ZombieGhostGroup">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1		
+		cbpGhostInmate,1
+		cbpGhostFatCop,1
+		cbpGhostFemaleFat,1
+	</entitygroup>
+		<entitygroup name="ZombieGhostGroupGS1">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1	
+		cbpGhostInmate,1
+		cbpGhostFemaleFat,1		
+	</entitygroup>
+		<entitygroup name="ZombieGhostGroupGS50">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1		
+		cbpGhostInmate,1
+		cbpGhostFemaleFat,1
+	</entitygroup>
+		<entitygroup name="ZombieGhostGroupGS100">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1		
+		cbpGhostInmate,1
+		cbpGhostFemaleFat,1		
+	</entitygroup>
+		<entitygroup name="ZombieGhostGroupGS200">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1	
+		cbpGhostInmate,1	
+		cbpGhostFemaleFat,1
+		</entitygroup>
+		<entitygroup name="ZombieGhostGroupGS400">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1		
+		cbpGhostInmate,1
+		cbpGhostFemaleFat,1
+	</entitygroup>
+		<entitygroup name="ZombieGhostGroupGS800">
+		cbpGhostBoe,1
+		cbpGhostJoe,1
+		cbpGhostSteve,1
+		cbpGhostTomClark,1
+		cbpGhostMoe,1
+		cbpGhostYo,1
+		cbpGhostBusinessMan,1
+		cbpGhostArlene,1
+		cbpGhostDarlene,1
+		cbpGhostMarlene,1
+		cbpGhostSkateboarder,1
+		cbpGhostBiker,1
+		cbpGhostPartyGirl,1
+		cbpGhostUtilityWorker,1
+		cbpGhostJanitor,1
+		cbpGhostNurse,1
+		cbpGhostSteveCrawler,1
+		cbpGhostFatHawaiian,1
+		cbpGhostBowler,1		
+		cbpGhostInmate,1
+		cbpGhostFemaleFat,1
+	</entitygroup>
+	<!-- *** POI_Ghost_GROUP -->	
+	<!-- *** POI_Ghost_Feral_GROUP -->
+	<entitygroup name="ZombieGhostFeralGroup">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostFeralGroupGS1">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostFeralGroupGS50">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostFeralGroupGS100">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostFeralGroupGS200">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1	
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostFeralGroupGS400">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostFeralGroupGS800">
+		cbpGhostBoeFeral,1
+		cbpGhostJoeFeral,1
+		cbpGhostSteveFeral,1
+		cbpGhostTomClarkFeral,1
+		cbpGhostMoeFeral,1
+		cbpGhostYoFeral,1
+		cbpGhostBusinessManFeral,1
+		cbpGhostArleneFeral,1
+		cbpGhostDarleneFeral,1
+		cbpGhostMarleneFeral,1
+		cbpGhostSkateboarderFeral,1
+		cbpGhostBikerFeral,1
+		cbpGhostPartyGirlFeral,1
+		cbpGhostUtilityWorkerFeral,1
+		cbpGhostJanitorFeral,1
+		cbpGhostNurseFeral,1
+		cbpGhostSteveCrawlerFeral,1
+		cbpGhostFatHawaiianFeral,1
+		cbpGhostBowlerFeral,1		
+		cbpGhostInmateFeral,1
+		cbpGhostFemaleFatFeral,1
+	</entitygroup>
+	<!-- *** POI_Ghost_Feral_GROUP -->			
+	<!-- *** POI_Ghost_Radiated_GROUP -->
+	<entitygroup name="ZombieGhostRadiatedGroup">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1
+		cbpGhostFemaleFatRadiated,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostRadiatedGroupGS1">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1	
+		cbpGhostFemaleFatRadiated,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostRadiatedGroupGS50">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1
+		cbpGhostFemaleFatRadiated,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostRadiatedGroupGS100">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1
+		cbpGhostFemaleFatRadiated,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostRadiatedGroupGS200">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1
+		cbpGhostFemaleFatRadiated,1		
+	</entitygroup>
+	<entitygroup name="ZombieGhostRadiatedGroupGS400">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1
+		cbpGhostFemaleFatRadiated,1
+	</entitygroup>
+	<entitygroup name="ZombieGhostRadiatedGroupGS800">
+		cbpGhostBoeRadiated,1
+		cbpGhostJoeRadiated,1
+		cbpGhostSteveRadiated,1
+		cbpGhostTomClarkRadiated,1
+		cbpGhostMoeRadiated,1
+		cbpGhostYoRadiated,1
+		cbpGhostBusinessManRadiated,1
+		cbpGhostArleneRadiated,1
+		cbpGhostDarleneRadiated,1
+		cbpGhostMarleneRadiated,1
+		cbpGhostSkateboarderRadiated,1
+		cbpGhostBikerRadiated,1
+		cbpGhostPartyGirlRadiated,1
+		cbpGhostUtilityWorkerRadiated,1
+		cbpGhostJanitorRadiated,1
+		cbpGhostNurseRadiated,1		
+		cbpGhostFatHawaiianRadiated,1
+		cbpGhostBowlerRadiated,1		
+		cbpGhostInmateRadiated,1
+		cbpGhostFemaleFatRadiated,1
+	</entitygroup>
+	<!-- *** POI_Ghost_Radiated_GROUP -->	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestAny']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestNight']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesertNight']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnowNight']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForest']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForestNight']/text()" delim="\n" op="add">
+        cbp_animalRat
+		cbp_animalZombieBat
+    </csv>
+</append>
+<append xpath="/entitygroups">
+		<entitygroup name="CoyoteGroup">animalCoyote</entitygroup>
+		<entitygroup name="DireWolfGroup">animalDireWolf</entitygroup>
+		<entitygroup name="DoeGroup">animalDoe</entitygroup>
+		<entitygroup name="MountainLionGroup">animalMountainLion</entitygroup>
+		<entitygroup name="StagGroup">animalStag</entitygroup>
+		<entitygroup name="ZombieVultureRadiatedGroup">animalZombieVultureRadiated</entitygroup>
+</append>
+</if>    
+</conditional>
+</COMPOPACK>

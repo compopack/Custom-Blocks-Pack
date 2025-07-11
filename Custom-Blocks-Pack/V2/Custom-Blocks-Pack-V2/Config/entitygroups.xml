@@ -6,11 +6,12 @@
 		<entitygroup name="mannequinZombieMale">mannequinZombieMale</entitygroup>		
 		<entitygroup name="mannequinZombieFemaleFreeze">mannequinZombieFemaleFreeze</entitygroup>
 		<entitygroup name="mannequinZombieMaleFreeze">mannequinZombieMaleFreeze</entitygroup>
-	
-		<entitygroup name="animalRatKing">animalRatKing</entitygroup>
+		
+		<!--<entitygroup name="animalRatKing">animalRatKing</entitygroup>
 		<entitygroup name="animalRatBabies">animalRatBabies</entitygroup>
+		<entitygroup name="cbp_animalRat">cbp_animalRat</entitygroup>-->
 		<entitygroup name="cbp_animalZombieBat">cbp_animalZombieBat</entitygroup>
-		<entitygroup name="cbp_animalRat">cbp_animalRat</entitygroup>
+		
 		
 		<entitygroup name="cbpGhostBoe">cbpGhostBoe</entitygroup>
 		<entitygroup name="cbpGhostJoe">cbpGhostJoe</entitygroup>
@@ -89,8 +90,91 @@
 		<entitygroup name="cbpGhostFemaleFatRadiated">cbpGhostFemaleFatRadiated</entitygroup>
 		<entitygroup name="cbpGhostScreamerRadiated">cbpGhostScreamerRadiated</entitygroup>
 		
+	<!-- *** POI_Mannequin_GROUP -->
+		<entitygroup name="mannequinGroup">
+		mannequinZombieFemale,1
+		mannequinZombieMale,1
+	</entitygroup>
+		<entitygroup name="mannequinGroupGS1">
+		mannequinZombieFemale,1
+		mannequinZombieMale,1
+	</entitygroup>
+		<entitygroup name="mannequinGroupGS50">
+		mannequinZombieFemale,2
+		mannequinZombieMale,2
+	</entitygroup>
+		<entitygroup name="mannequinGroupGS100">
+		mannequinZombieFemale,3
+		mannequinZombieMale,3
+	</entitygroup>
+		<entitygroup name="mannequinGroupGS200">
+		mannequinZombieFemale,4
+		mannequinZombieMale,4
+	</entitygroup>
+		<entitygroup name="mannequinGroupGS400">
+		mannequinZombieFemale,5
+		mannequinZombieMale,5
+	</entitygroup>
+		<entitygroup name="mannequinGroupGS800">
+		mannequinZombieFemale,6
+		mannequinZombieMale,6
+	</entitygroup>
+	<!-- *** POI_Mannequin_GROUP -->
+	<!-- *** POI_Mannequin_Freeze_GROUP -->
+		<entitygroup name="mannequinFreezeGroup">
+		mannequinZombieFemaleFreeze,1
+		mannequinZombieMaleFreeze,1
+	</entitygroup>
+		<entitygroup name="mannequinFreezeGroupGS1">
+		mannequinZombieFemaleFreeze,1
+		mannequinZombieMaleFreeze,1
+	</entitygroup>
+		<entitygroup name="mannequinFreezeGroupGS50">
+		mannequinZombieFemaleFreeze,2
+		mannequinZombieMaleFreeze,2
+	</entitygroup>
+		<entitygroup name="mannequinFreezeGroupGS100">
+		mannequinZombieFemaleFreeze,3
+		mannequinZombieMaleFreeze,3
+	</entitygroup>
+		<entitygroup name="mannequinFreezeGroupGS200">
+		mannequinZombieFemaleFreeze,4
+		mannequinZombieMaleFreeze,4
+	</entitygroup>
+		<entitygroup name="mannequinFreezeGroupGS400">
+		mannequinZombieFemaleFreeze,5
+		mannequinZombieMaleFreeze,5
+	</entitygroup>
+		<entitygroup name="mannequinFreezeGroupGS800">
+		mannequinZombieFemaleFreeze,6
+		mannequinZombieMaleFreeze,6
+	</entitygroup>
+	<!-- *** POI_Mannequin_Freeze_GROUP -->			
+	<!-- *** POI_Bat_GROUP -->
+		<entitygroup name="ZombieBatGroup">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<entitygroup name="ZombieBatGroupGS1">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<entitygroup name="ZombieBatGroupGS50">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<entitygroup name="ZombieBatGroupGS100">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<entitygroup name="ZombieBatGroupGS200">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<entitygroup name="ZombieBatGroupGS400">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<entitygroup name="ZombieBatGroupGS800">
+		cbp_animalZombieBat,1
+	</entitygroup>
+		<!-- *** POI_Bat_GROUP -->
 	<!-- *** POI_Rat_GROUP -->
-		<entitygroup name="ZombieRatGroup">
+	<!--<entitygroup name="ZombieRatGroup">
 		animalRatKing,1
 		animalRatBabies,8
 	</entitygroup>
@@ -117,7 +201,7 @@
 		<entitygroup name="ZombieRatGroupGS800">
 		animalRatKing,1
 		animalRatBabies,20
-	</entitygroup>
+	</entitygroup>-->
 		<!-- *** POI_Rat_GROUP -->	
 	<!-- *** POI_Ghost_GROUP -->
 		<entitygroup name="ZombieGhostGroup">
@@ -667,7 +751,7 @@
 	<!-- *** POI_Ghost_Radiated_GROUP -->
 </append>
 
-<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add">
+<!--<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add">
         cbp_animalRat
 		cbp_animalZombieBat
     </csv>
@@ -740,7 +824,7 @@
 	<csv xpath="/entitygroups/entitygroup[@name='WildGameForestNight']/text()" delim="\n" op="add">
         cbp_animalRat
 		cbp_animalZombieBat
-    </csv>
+    </csv>-->
 
 <append xpath="/entitygroups">
 		<entitygroup name="CoyoteGroup">animalCoyote</entitygroup>

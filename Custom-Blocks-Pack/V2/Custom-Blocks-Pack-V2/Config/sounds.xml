@@ -3,7 +3,7 @@
     <if cond="game_version() &gt;= version(1,2,0)">
   <append xpath="/Sounds">
      <SoundDataNode name="SpiritAngry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
 
@@ -49,7 +49,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
     <SoundDataNode name="SpiritSounds">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
 
@@ -75,7 +75,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
     <SoundDataNode name="SpiritWhispers">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?all_alone" />
@@ -328,7 +328,7 @@
     </SoundDataNode>
 
 	<SoundDataNode name="angry_disgusting">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?disgusting" />
@@ -340,7 +340,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_get_out">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?get_out" />
@@ -352,7 +352,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_get_out2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?get_out2" />
@@ -364,7 +364,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_give_back_what_you_stole">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?give_back_what_you_stole" />
@@ -376,7 +376,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_give_me_what_i_want">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?give_me_what_i_want" />
@@ -388,7 +388,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_give_us_what_we_want">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?give_us_what_we_want" />
@@ -400,7 +400,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_hate_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_hate_you" />
@@ -412,7 +412,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_know_what_youve_done">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_know_what_youve_done" />
@@ -424,7 +424,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_know_what_youve_done2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_know_what_youve_done2" />
@@ -436,7 +436,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_know_what_you_are">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_know_what_you_are" />
@@ -448,7 +448,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_know_what_you_are2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_know_what_you_are2" />
@@ -460,7 +460,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_know_youre_there">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_know_youre_there" />
@@ -472,7 +472,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_remember_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_remember_everything" />
@@ -484,7 +484,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_will_find_you" />
@@ -496,7 +496,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_will_never_forgive_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_will_never_forgive_you" />
@@ -508,7 +508,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_i_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?i_wont_let_you" />
@@ -520,7 +520,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_leave_now">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?leave_now" />
@@ -532,7 +532,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_liar">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?liar" />
@@ -544,7 +544,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_may_the_rats_feast_on_your_eyes">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?may_the_rats_feast_on_your_eyes" />
@@ -556,7 +556,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_suffer_as_i_have_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?suffer_as_i_have_suffered" />
@@ -568,7 +568,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_we_will_never_forgive_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?we_will_never_forgive_you" />
@@ -580,7 +580,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_cannot_hide">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_cannot_hide" />
@@ -592,7 +592,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_cant_hide">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_cant_hide" />
@@ -604,7 +604,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_dont_know_pain_but_you_will">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_dont_know_pain_but_you_will" />
@@ -616,7 +616,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_should_be_afraid">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_should_be_afraid" />
@@ -628,7 +628,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_should_be_afraid2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_should_be_afraid2" />
@@ -640,7 +640,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_should_fear_me">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_should_fear_me" />
@@ -652,7 +652,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_will_fear_me">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_will_fear_me" />
@@ -664,7 +664,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_will_feel_my_hate">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_will_feel_my_hate" />
@@ -676,7 +676,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_will_know_pain">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_will_know_pain" />
@@ -688,7 +688,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_will_know_pain2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_will_know_pain2" />
@@ -700,7 +700,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_will_pay">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_will_pay" />
@@ -712,7 +712,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="angry_you_will_pay_for_what_youve_done">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritAngry.unity3d?you_will_pay_for_what_youve_done" />
@@ -728,7 +728,7 @@
 	<!-- SPIRITSOUNDS-->
 	
 	<SoundDataNode name="sounds_breath1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?breath1" />
@@ -740,7 +740,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_breath2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?breath2" />
@@ -752,7 +752,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>	
 	<SoundDataNode name="sounds_choking1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?choking1" />
@@ -764,7 +764,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_groan1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?groan1" />
@@ -776,7 +776,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_hush1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?hush1" />
@@ -788,7 +788,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_hush2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?hush2" />
@@ -800,7 +800,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_panting1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?panting1" />
@@ -812,7 +812,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_seeth1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?seeth1" />
@@ -824,7 +824,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_seeth2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?seeth2" />
@@ -836,7 +836,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_shiver1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?shiver1" />
@@ -848,7 +848,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_snarl1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?snarl1" />
@@ -860,7 +860,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_snarl2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?snarl2" />
@@ -872,7 +872,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_wheeze1">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?wheeze1" />
@@ -884,7 +884,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="sounds_wheeze2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritSounds.unity3d?wheeze2" />
@@ -900,7 +900,7 @@
 	<!-- WHISPERS -->
 	
 	<SoundDataNode name="whispers_all_alone">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?all_alone" />
@@ -912,7 +912,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_all_is_lost">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?all_is_lost" />
@@ -924,7 +924,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_all_is_lost2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?all_is_lost2" />
@@ -936,7 +936,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_ambling_moaning_shrieking">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?ambling_moaning_shrieking" />
@@ -948,7 +948,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_are_you_afraid">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?are_you_afraid" />
@@ -960,7 +960,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_are_you_afraid2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?are_you_afraid2" />
@@ -972,7 +972,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_beckoning">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?beckoning" />
@@ -984,7 +984,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_beware">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?beware" />
@@ -996,7 +996,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_be_careful">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?be_careful" />
@@ -1008,7 +1008,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_be_careful2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?be_careful2" />
@@ -1020,7 +1020,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_calling">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?calling" />
@@ -1032,7 +1032,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_cant_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?cant_find_you" />
@@ -1044,7 +1044,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_cant_you_see">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?cant_you_see" />
@@ -1056,7 +1056,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_canvas_of_grotesqueness">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?canvas_of_grotesqueness" />
@@ -1068,7 +1068,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_dark_is_the_hour">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?dark_is_the_hour" />
@@ -1080,7 +1080,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_death_is_your_only_escape">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?death_is_your_only_escape" />
@@ -1092,7 +1092,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_die">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?die" />
@@ -1104,7 +1104,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_disgusting2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?disgusting" />
@@ -1116,7 +1116,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_disgusting_little_creatures">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?disgusting_little_creatures" />
@@ -1128,7 +1128,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_dont_go">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?dont_go" />
@@ -1140,7 +1140,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_dont_go2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?dont_go2" />
@@ -1152,7 +1152,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_dont_touch">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?dont_touch" />
@@ -1164,7 +1164,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_dont_you_see">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?dont_you_see" />
@@ -1176,7 +1176,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_do_you_feel_it">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?do_you_feel_it" />
@@ -1188,7 +1188,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_do_you_hear_it">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?do_you_hear_it" />
@@ -1200,7 +1200,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_do_you_remember">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?do_you_remember" />
@@ -1212,7 +1212,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_do_you_see">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?do_you_see" />
@@ -1224,7 +1224,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_dreaming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?dreaming" />
@@ -1236,7 +1236,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_everything_gone">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?everything_gone" />
@@ -1248,7 +1248,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_fear_the_reaper">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?fear_the_reaper" />
@@ -1260,7 +1260,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_find_it">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?find_it" />
@@ -1272,7 +1272,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_fodder_for_the_hungry_wraiths">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?fodder_for_the_hungry_wraiths" />
@@ -1284,7 +1284,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_fodder_for_the_hungry_wraiths2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?fodder_for_the_hungry_wraiths2" />
@@ -1296,7 +1296,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_foreeeveeer">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?foreeeveeer" />
@@ -1308,7 +1308,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_forever">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?forever" />
@@ -1320,7 +1320,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_forget">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?forget" />
@@ -1332,7 +1332,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_get_out">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?get_out" />
@@ -1344,7 +1344,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_give_her_what_she_wants">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?give_her_what_she_wants" />
@@ -1356,7 +1356,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_give_him_what_he_wants">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?give_him_what_he_wants" />
@@ -1368,7 +1368,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_give_it_what_it_wants">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?give_it_what_it_wants" />
@@ -1380,7 +1380,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_give_me_what_i_want">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?give_me_what_i_want" />
@@ -1392,7 +1392,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_give_them_what_they_want">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?give_them_what_they_want" />
@@ -1404,7 +1404,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_give_us_what_we_want">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?give_us_what_we_want" />
@@ -1416,7 +1416,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_gnashing_mouths">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?gnashing_mouths" />
@@ -1428,7 +1428,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_help_me">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?help_me" />
@@ -1440,7 +1440,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_help_us">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?help_us" />
@@ -1452,7 +1452,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_hes_coming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?hes_coming" />
@@ -1464,7 +1464,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_hes_going_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?hes_going_to_kill_you" />
@@ -1476,7 +1476,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
     <SoundDataNode name="whispers_hes_trying_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?hes_trying_to_kill_you" />
@@ -1488,7 +1488,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_hates_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_hates_you" />
@@ -1500,7 +1500,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode> 
     <SoundDataNode name="whispers_he_is_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_is_here" />
@@ -1512,7 +1512,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode> 
     <SoundDataNode name="whispers_he_is_hungry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_is_hungry" />
@@ -1524,7 +1524,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_is_watching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_is_watching" />
@@ -1536,7 +1536,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_knows_youre_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_knows_youre_here" />
@@ -1548,7 +1548,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_knows_youre_there">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_knows_youre_there" />
@@ -1560,7 +1560,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_lusts_for_flesh">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_lusts_for_flesh" />
@@ -1572,7 +1572,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_remembers_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_remembers_everything" />
@@ -1584,7 +1584,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_wants_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_wants_to_kill_you" />
@@ -1596,7 +1596,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_he_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_will_find_you" />
@@ -1608,7 +1608,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_he_will_never_forgive_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_will_never_forgive_you" />
@@ -1620,7 +1620,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_he_will_never_let_you_leave">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_will_never_let_you_leave" />
@@ -1632,7 +1632,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_he_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?he_wont_let_you" />
@@ -1644,7 +1644,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_hidden">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?hidden" />
@@ -1656,7 +1656,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_hide">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?hide" />
@@ -1668,7 +1668,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_horrible_things">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?horrible_things" />
@@ -1680,7 +1680,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_hurry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?hurry" />
@@ -1692,7 +1692,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_im_sorry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?im_sorry" />
@@ -1704,7 +1704,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_infesting">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?infesting" />
@@ -1716,7 +1716,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_its_all_over">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_all_over" />
@@ -1728,7 +1728,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_its_all_over_now">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_all_over_now" />
@@ -1740,7 +1740,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_its_a_secret">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_a_secret" />
@@ -1752,7 +1752,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_its_coming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_coming" />
@@ -1764,7 +1764,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_its_going_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_going_to_kill_you" />
@@ -1776,7 +1776,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_its_no_use">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_no_use" />
@@ -1788,7 +1788,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_its_too_late">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_too_late" />
@@ -1800,7 +1800,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_its_trying_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?its_trying_to_kill_you" />
@@ -1812,7 +1812,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_hates_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_hates_you" />
@@ -1824,7 +1824,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_it_is_a_secret">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_is_a_secret" />
@@ -1836,7 +1836,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_is_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_is_here" />
@@ -1848,7 +1848,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_is_hungry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_is_hungry" />
@@ -1860,7 +1860,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_is_watching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_is_watching" />
@@ -1872,7 +1872,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_knows_youre_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_knows_youre_here" />
@@ -1884,7 +1884,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_knows_youre_there">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_knows_youre_there" />
@@ -1896,7 +1896,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_lusts_for_flesh">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_lusts_for_flesh" />
@@ -1908,7 +1908,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_remembers_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_remembers_everything" />
@@ -1920,7 +1920,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_remembers_everything2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_remembers_everything2" />
@@ -1932,7 +1932,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_it_wants_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_wants_to_kill_you" />
@@ -1944,7 +1944,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_will_find_you" />
@@ -1956,7 +1956,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_it_will_never_let_you_leave">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_will_never_let_you_leave" />
@@ -1968,7 +1968,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode> 
     <SoundDataNode name="whispers_it_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?it_wont_let_you" />
@@ -1980,7 +1980,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_am_coming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_am_coming" />
@@ -1992,7 +1992,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_am_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_am_here" />
@@ -2004,7 +2004,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_am_watching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_am_watching" />
@@ -2016,7 +2016,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_cant_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_cant_find_you" />
@@ -2028,7 +2028,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_i_hate_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_hate_you" />
@@ -2040,7 +2040,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_i_have_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_have_suffered" />
@@ -2052,7 +2052,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode> 
     <SoundDataNode name="whispers_i_hunger">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_hunger" />
@@ -2064,7 +2064,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_know_what_youve_done">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_know_what_youve_done" />
@@ -2076,7 +2076,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_know_what_you_are">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_know_what_you_are" />
@@ -2088,7 +2088,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_know_what_you_are2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_know_what_you_are2" />
@@ -2100,7 +2100,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_know_youre_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_know_youre_here" />
@@ -2112,7 +2112,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_know_youre_there">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_know_youre_there" />
@@ -2124,7 +2124,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_remember_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_remember_everything" />
@@ -2136,7 +2136,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_see_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_see_you" />
@@ -2148,7 +2148,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_i_see_you2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_see_you2" />
@@ -2160,7 +2160,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_will_find_you" />
@@ -2172,7 +2172,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_will_never_forgive_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_will_never_forgive_you" />
@@ -2184,7 +2184,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_i_will_never_let_you_leave">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_will_never_let_you_leave" />
@@ -2196,7 +2196,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_i_will_never_let_you_leave2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_will_never_let_you_leave2" />
@@ -2208,7 +2208,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_i_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?i_wont_let_you" />
@@ -2220,7 +2220,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_keep_away_from_the_window">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?keep_away_from_the_window" />
@@ -2232,7 +2232,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_keep_looking">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?keep_looking" />
@@ -2244,7 +2244,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_keep_searching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?keep_searching" />
@@ -2256,7 +2256,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_keep_to_the_shadows">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?keep_to_the_shadows" />
@@ -2268,7 +2268,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_leave_now3">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?leave_now" />
@@ -2280,7 +2280,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_liars">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?liar" />
@@ -2292,7 +2292,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_lies">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?lies" />
@@ -2304,7 +2304,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_look_out">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?look_out" />
@@ -2316,7 +2316,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_maggots_crawling_on_the_planets_face">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?maggots_crawling_on_the_planets_face" />
@@ -2328,7 +2328,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_may_your_victims_gobble_you_whole">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?may_your_victims_gobble_you_whole" />
@@ -2340,7 +2340,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_mistress">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?mistress" />
@@ -2352,7 +2352,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_neeeveeer">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?neeeveeer" />
@@ -2364,7 +2364,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_neeeveeer2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?neeeveeer2" />
@@ -2376,7 +2376,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_no">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?no" />
@@ -2388,7 +2388,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_nooo">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?nooo" />
@@ -2400,7 +2400,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_now_you_sleep">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?now_you_sleep" />
@@ -2412,7 +2412,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_no_more_time">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?no_more_time" />
@@ -2424,7 +2424,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_no_resistance">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?no_resistance" />
@@ -2436,7 +2436,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_please">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?please" />
@@ -2448,7 +2448,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_putrid_corruption">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?putrid_corruption" />
@@ -2460,7 +2460,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_putrid_rot">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?putrid_rot" />
@@ -2472,7 +2472,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_rats_feast_upon_your_eyes">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?rats_feast_upon_your_eyes" />
@@ -2484,7 +2484,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_reaching_out">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?reaching_out" />
@@ -2496,7 +2496,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_remember">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?remember" />
@@ -2508,7 +2508,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_rot_their_eyes">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?rot_their_eyes" />
@@ -2520,7 +2520,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_run">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?run" />
@@ -2532,7 +2532,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_run2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?run2" />
@@ -2544,7 +2544,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_searing_blistering_anguish">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?searing_blistering_anguish" />
@@ -2556,7 +2556,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_seeecreeet">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?seeecreeet" />
@@ -2568,7 +2568,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_seeecreeet2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?seeecreeet2" />
@@ -2580,7 +2580,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_shame">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?shame" />
@@ -2592,7 +2592,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_shes_coming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?shes_coming" />
@@ -2604,7 +2604,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_shes_going_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?shes_going_to_kill_you" />
@@ -2616,7 +2616,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_shes_trying_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?shes_trying_to_kill_you" />
@@ -2628,7 +2628,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_hates_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_hates_you" />
@@ -2640,7 +2640,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_hungers_for_flesh">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_hungers_for_flesh" />
@@ -2652,7 +2652,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_is_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_is_here" />
@@ -2664,7 +2664,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_is_hungry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_is_hungry" />
@@ -2676,7 +2676,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_is_watching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_is_watching" />
@@ -2688,7 +2688,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_knows_youre_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_knows_youre_here" />
@@ -2700,7 +2700,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_knows_youre_here2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_knows_youre_here2" />
@@ -2712,7 +2712,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_knows_youre_there">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_knows_youre_there" />
@@ -2724,7 +2724,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_she_remembers_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_remembers_everything" />
@@ -2736,7 +2736,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_wants_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_wants_to_kill_you" />
@@ -2748,7 +2748,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_will_find_you" />
@@ -2760,7 +2760,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_she_will_never_forgive_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_will_never_forgive_you" />
@@ -2772,7 +2772,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_will_never_let_you_leave">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_will_never_let_you_leave" />
@@ -2784,7 +2784,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_she_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?she_wont_let_you" />
@@ -2796,7 +2796,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_sleep_for_all_eternity">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?sleep_for_all_eternity" />
@@ -2808,7 +2808,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_sleep_for_all_eternity2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?sleep_for_all_eternity2" />
@@ -2820,7 +2820,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_so_cold">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?so_cold" />
@@ -2832,7 +2832,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_so_cold2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?so_cold2" />
@@ -2844,7 +2844,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_spectres_madly_dancing">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?spectres_madly_dancing" />
@@ -2856,7 +2856,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_SpirtWhispers">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?SpirtWhispers" />
@@ -2868,7 +2868,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stare_into_the_void">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stare_into_the_void" />
@@ -2880,7 +2880,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_stay_away">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_away" />
@@ -2892,7 +2892,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_here" />
@@ -2904,7 +2904,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_here2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_here2" />
@@ -2916,7 +2916,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_in_the_shadows">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_in_the_shadows" />
@@ -2928,7 +2928,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_with_me">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_with_me" />
@@ -2940,7 +2940,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_with_me2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_with_me2" />
@@ -2952,7 +2952,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_with_us">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_with_us" />
@@ -2964,7 +2964,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_stay_with_us2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?stay_with_us2" />
@@ -2976,7 +2976,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_suffer_as_he_has_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?suffer_as_he_has_suffered" />
@@ -2988,7 +2988,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_suffer_as_it_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?suffer_as_it_suffered" />
@@ -3000,7 +3000,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_suffer_as_i_have_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?suffer_as_i_have_suffered" />
@@ -3012,7 +3012,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_suffer_as_she_has_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?suffer_as_she_has_suffered" />
@@ -3024,7 +3024,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_suffer_as_they_have_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?suffer_as_they_have_suffered" />
@@ -3036,7 +3036,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_suffer_as_we_have_suffered">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?suffer_as_we_have_suffered" />
@@ -3048,7 +3048,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_there_is_no_going_back">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?there_is_no_going_back" />
@@ -3060,7 +3060,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_there_is_no_time">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?there_is_no_time" />
@@ -3072,7 +3072,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_theyre_all_gone">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?theyre_all_gone" />
@@ -3084,7 +3084,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_theyre_coming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?theyre_coming" />
@@ -3096,7 +3096,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_theyre_going_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?theyre_going_to_kill_you" />
@@ -3108,7 +3108,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_theyre_trying_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?theyre_trying_to_kill_you" />
@@ -3120,7 +3120,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_are_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_are_here" />
@@ -3132,7 +3132,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_they_are_here2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_are_here2" />
@@ -3144,7 +3144,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_are_hungry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_are_hungry" />
@@ -3156,7 +3156,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_are_looking_for_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_are_looking_for_you" />
@@ -3168,7 +3168,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_are_watching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_are_watching" />
@@ -3180,7 +3180,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_came_from_darkness">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_came_from_darkness" />
@@ -3192,7 +3192,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_hate_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_hate_you" />
@@ -3204,7 +3204,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_know_youre_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_know_youre_here" />
@@ -3216,7 +3216,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_know_youre_there">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_know_youre_there" />
@@ -3228,7 +3228,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_lust_for_flesh">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_lust_for_flesh" />
@@ -3240,7 +3240,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_remember_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_remember_everything" />
@@ -3252,7 +3252,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_shall_not_be_pleased">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_shall_not_be_pleased" />
@@ -3264,7 +3264,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_want_to_kill_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_want_to_kill_you" />
@@ -3276,7 +3276,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_they_want_to_kill_you2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_want_to_kill_you2" />
@@ -3288,7 +3288,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_they_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_will_find_you" />
@@ -3300,7 +3300,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_they_will_never_forgive_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_will_never_forgive_you" />
@@ -3312,7 +3312,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_they_will_never_let_you_leave">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_will_never_let_you_leave" />
@@ -3324,7 +3324,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_they_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?they_wont_let_you" />
@@ -3336,7 +3336,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_the_void">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?the_void" />
@@ -3348,7 +3348,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_vomitous_mass">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?vomitous_mass" />
@@ -3360,7 +3360,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_were_coming">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?were_coming" />
@@ -3372,7 +3372,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_we_are_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_are_here" />
@@ -3384,7 +3384,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_we_are_hungry">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_are_hungry" />
@@ -3396,7 +3396,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_we_are_watching">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_are_watching" />
@@ -3408,7 +3408,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_we_hate_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_hate_you" />
@@ -3420,7 +3420,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_we_hunger_for_flesh">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_hunger_for_flesh" />
@@ -3432,7 +3432,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
 	<SoundDataNode name="whispers_we_remember_everything">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_remember_everything" />
@@ -3444,7 +3444,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>
     <SoundDataNode name="whispers_we_will_find_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_will_find_you" />
@@ -3456,7 +3456,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_we_will_never_let_you_leave">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_will_never_let_you_leave" />
@@ -3468,7 +3468,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_we_wont_let_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?we_wont_let_you" />
@@ -3480,7 +3480,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_where_are_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?where_are_you" />
@@ -3492,7 +3492,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_where_are_you2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?where_are_you2" />
@@ -3504,7 +3504,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_whhhyyy">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?whhhyyy" />
@@ -3516,7 +3516,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_who_are_you">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?who_are_you" />
@@ -3528,7 +3528,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_who_are_you2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?who_are_you2" />
@@ -3540,7 +3540,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_whyyy">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?whyyy" />
@@ -3552,7 +3552,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_writhe_in_your_pestilence">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?writhe_in_your_pestilence" />
@@ -3564,7 +3564,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_yes">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?yes" />
@@ -3576,7 +3576,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>    
     <SoundDataNode name="whispers_yes2">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?yes2" />
@@ -3588,7 +3588,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_cannot_hide">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_cannot_hide" />
@@ -3600,7 +3600,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_you_dont_know_pain">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_dont_know_pain" />
@@ -3612,7 +3612,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_you_dont_know_pain_but_you_will">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_dont_know_pain_but_you_will" />
@@ -3624,7 +3624,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_should_be_afraid">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_should_be_afraid" />
@@ -3636,7 +3636,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_should_fear_me">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_should_fear_me" />
@@ -3648,7 +3648,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_you_should_never_have_come">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_should_never_have_come" />
@@ -3660,7 +3660,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_should_never_have_come_here">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_should_never_have_come_here" />
@@ -3672,7 +3672,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_feel_her_hate">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_feel_her_hate" />
@@ -3684,7 +3684,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_feel_his_hate">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_feel_his_hate" />
@@ -3696,7 +3696,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_feel_my_hate">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_feel_my_hate" />
@@ -3708,7 +3708,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_you_will_feel_our_hate">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_feel_our_hate" />
@@ -3720,7 +3720,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_feel_their_hate">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_feel_their_hate" />
@@ -3732,7 +3732,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_know_fear">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_know_fear" />
@@ -3744,7 +3744,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_you_will_never_be_forgiven">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_never_be_forgiven" />
@@ -3756,7 +3756,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_never_see">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_never_see" />
@@ -3768,7 +3768,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>   
     <SoundDataNode name="whispers_you_will_pay">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_pay" />
@@ -3780,7 +3780,7 @@
       <MaxRepeatRate name="3.0" />
     </SoundDataNode>  
     <SoundDataNode name="whispers_you_will_pay_for_what_youve_done">
-      <AudioSource name="Sounds/AudioSource_VO" />
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO.prefab" />
       <Channel name="Mouth"/>
       <Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.1" heat_map_time="60" />
       <AudioClip ClipName="#@modfolder:Resources/SpiritWhispers.unity3d?you_will_pay_for_what_youve_done" />

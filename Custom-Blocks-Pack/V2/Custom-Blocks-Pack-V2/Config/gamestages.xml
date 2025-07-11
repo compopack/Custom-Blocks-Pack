@@ -3,12 +3,13 @@
     <if cond="game_version() &gt;= version(1,2,0)">
 <append xpath="/gamestages">
 
-<group name="GroupRats" spawner="AnimalRatHorde"/>
+<!--<group name="GroupRats" spawner="AnimalRatHorde"/>-->
 <group name="GroupZombieGhost" spawner="GhostHorde"/>
 <group name="GroupZombieFeralGhost" spawner="GhostFeralHorde"/>
 <group name="GroupZombieRadiatedGhost" spawner="GhostRadiatedHorde"/>
+<group name="GroupBats" spawner="AnimalBatHorde"/>
 
-<group name="animalRatKing" spawner="animalRatKing"/>
+<!--<group name="animalRatKing" spawner="animalRatKing"/>
 <group name="animalRatBabies" spawner="animalRatBabies"/>
 
 	<spawner name="animalRatKing">
@@ -20,7 +21,7 @@
 		<gamestage stage="1">
 			<spawn group="animalRatBabies" num="1" maxAlive="1" duration="10"/>
 		</gamestage>
-	</spawner>
+	</spawner>-->
 
 <group name="cbpGhostBoe" spawner="cbpGhostBoe"/>
 <group name="cbpGhostJoe" spawner="cbpGhostJoe"/>
@@ -473,7 +474,7 @@
 	</spawner>
 
 <!-- CP Rats Group -->
-<spawner name="AnimalRatHorde">
+<!--<spawner name="AnimalRatHorde">
 			<gamestage stage="1">
 				<spawn group="ZombieRatGroupGS1" num="1" maxAlive="1" duration="1" />
 			</gamestage>
@@ -492,13 +493,37 @@
 			<gamestage stage="800">
 				<spawn group="ZombieRatGroupGS800" num="1" maxAlive="1" duration="1" />
 			</gamestage>
-</spawner>
+</spawner>-->
 <!-- CP Rats Group -->	
+<!-- CP Bats Group -->
+<spawner name="AnimalBatHorde">
+			<gamestage stage="1">
+				<spawn group="ZombieBatGroupGS1" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="ZombieBatGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="ZombieBatGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="ZombieBatGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="ZombieBatGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="ZombieBatGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+</spawner>
+<!-- CP Bats Group -->	
 <!-- XYTH SPHEREII MANNEQUINS -->
 			<group name="mannequinZombieFemale" spawner="mannequinZombieFemale"/>
 			<group name="mannequinZombieMale" spawner="mannequinZombieMale"/>
 			<group name="mannequinZombieFemaleFreeze" spawner="mannequinZombieFemaleFreeze"/>
 			<group name="mannequinZombieMaleFreeze" spawner="mannequinZombieMaleFreeze"/>
+			<group name="GroupMannequins" spawner="mannequins"/>
+			<group name="GroupMannequinFreeze" spawner="mannequinFreeze"/>
 			
 			<spawner name="mannequinZombieFemale">
 				<gamestage stage="1">
@@ -522,6 +547,48 @@
 					<spawn group="mannequinZombieMaleFreeze" num="1" maxAlive="1" duration="10"/>
 				</gamestage>
 			</spawner>
+
+			<spawner name="mannequins">
+			<gamestage stage="1">
+				<spawn group="mannequinGroupGS1" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="mannequinGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="mannequinGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="mannequinGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="mannequinGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="mannequinGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+
+		<spawner name="mannequinFreeze">
+			<gamestage stage="1">
+				<spawn group="mannequinFreezeGroupGS1" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="mannequinFreezeGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="mannequinFreezeGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="mannequinFreezeGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="mannequinFreezeGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="mannequinFreezeGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
 <!-- XYTH SPHEREII MANNEQUINS -->
 <!-- CBP Ghost Group -->
 		<spawner name="GhostHorde">
